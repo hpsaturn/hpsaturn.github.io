@@ -7,8 +7,13 @@ comments: false
 ---
 
 <center>
-Mobile applications specialist, open culture enthusiast, software freedom activist. Co-founder 
+<h3>{{ site.title }}</h3>
+<p>{{ site.description }}</p>
+
+<p>Co-founder:
 <a href="http://lumera.co/ks"><b>Lumera</b></a> & <a href="http://hackbo.co"><b>HackBo</b></a>
+</p>
+<img src="{{ site.url }}/{{ site.photo }}" alt="{{ site.title }} photo" height="128" width="128" >
 </center>
 
 
