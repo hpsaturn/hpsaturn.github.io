@@ -21,7 +21,24 @@ layout: compress
                         <i class="fa fa-chevron-left"></i>
                     </a>
                 </div>
-                {{ content }}
+                <div class='columns-page-wrapper'>
+                  <div class='row'>
+                    <div class='column'>
+                      <div class='left-column'>
+                        {{ content }}
+                      </div>
+                    </div>
+                    <div class='column'>
+                      <div class='right-column'>
+                        <p>
+                        <a href="{{ site.url }}/{{ site.photo }}">
+                          <img src="{{ site.url }}/{{ site.photo }}" alt="{{ site.title }} photo" class="author-photo-tiny">
+                        </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 {% include social-links.html %}
             </div>
         </div>

@@ -128,7 +128,7 @@ img {
 }
 .author-photo-tiny {
     margin-top: 0;
-    width: 300px;
+    width: 240px;
 }
 .image-right {
     float: right;
@@ -210,3 +210,31 @@ kbd {
     font-weight: 300;
     margin-bottom: 10px;
 }
+
+// testing columns
+.columns-page-wrapper {
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.left-column {
+  height: 340px;
+}
+
+.right-column {
+  height: 340px;
+}
+
