@@ -212,29 +212,29 @@ kbd {
 }
 
 // testing columns
-.columns-page-wrapper {
+.about-page-wrapper {
   margin: 10px;
 }
 
-.row {
+.about-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.column {
+.about-column {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
 }
 
-.left-column {
+.about-column-left {
   height: 340px;
 }
 
-.right-column {
+.about-column-right {
   height: 340px;
 }
 
