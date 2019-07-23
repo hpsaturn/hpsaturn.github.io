@@ -17,6 +17,11 @@ Co-founder:
 <a href="http://lumera.co/ks" target="_blank"><b>Lumera</b></a> & <a href="http://hackbo.co" target="_blank"><b>HackBo</b></a>
 </p>
 
+<p style="font-size:0.8rem;font-weight:300">
+Founder:
+<a href="http://canair.io" target="_blank"><b>CanAirIO</b></a>
+</p>
+
 </center>
 
 
