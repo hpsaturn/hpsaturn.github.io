@@ -27,10 +27,13 @@ layout: compress
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                            <p>{{ post.excerpt }}</p>
+                            <p>
+                                {{ post.excerpt }}
+                                <a class="zoombtn" href="{{ site.url }}{{ post.url }}" style="box-align: end;  font-size: 12px; margin-left: 240px"; >{{ post.date | date: ' %b %d, %Y' }}</a>
+                            </p>
                             <p>
                                 <a href="{{ site.url }}{{ post.url }}">
-                                    <img src="{{ site.url }}/assets/img/{{ post.imghead }}" align="left">
+                                    <img src="{{ site.url }}/assets/img/{{ post.imghead }}">
                                 </a>
                             </p>
                             <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
