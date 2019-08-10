@@ -2,7 +2,7 @@
 layout: post
 title:  "MatrixVoice with PlatformIO"
 date:   2018-08-02
-excerpt: "How to build and upload for MatrixVoice using PlatformIO"
+excerpt: "How to build and upload for MatrixVoice board using PlatformIO"
 tag:
 - MatrixVoice
 - Arduino
