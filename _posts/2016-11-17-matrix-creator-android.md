@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MatrixCreator Android via MALOS"
+title:  "MatrixCreator Android demo via MALOS"
 date:   2018-08-02
 excerpt: "Android application that interfaces with MATRIX Creator MALOS layer"
 tag:
@@ -13,9 +13,21 @@ tag:
 - OpenHardware
 comments: false
 ---
+  
+Android application that interfaces with MATRIX Creator MALOS layer. 
 
-# Matrix Creator Android MALOS Demo
-Android application that interfaces with MATRIX Creator MALOS layer. <a href="https://github.com/matrix-io/matrix-creator-malos-android/blob/master/screenshot.jpg"><img src="https://github.com/matrix-io/matrix-creator-malos-android/blob/master/screenshot.jpg" align="right" height="426" width="240" ></a>
+<!-- 
+<div class="row">
+  <div class="col-md-4" markdown="1">
+  </div>
+  <div class="col-md-4" markdown="1">
+  <figure>
+    <a href="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"><img src="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"></a>
+    <figcaption>Android MALOS demo - Main controls.</figcaption>
+  </figure>
+  </div>
+</div>
+ -->
 
 ## Current Features
 
@@ -29,8 +41,7 @@ Android application that interfaces with MATRIX Creator MALOS layer. <a href="ht
 * Auto discovery Matrix Creator on LAN network
 * Manual IP Matrix device target
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=ihV_v7zFO7A" target="_blank"><img src="http://img.youtube.com/vi/ihV_v7zFO7A/0.jpg" 
-alt="Matrix Creator Android-MALOS demo" width="234" height="180" border="5" /></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ihV_v7zFO7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## TODO
 - [X] GPIO callback
