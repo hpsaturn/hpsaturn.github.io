@@ -31,14 +31,10 @@ I'm using different technologies in the current project: <br/>
 ## Current Features
 
 <img src="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"
-srcset="{{ site.url }}/assets/img/ 10w,{{ site.url }}/assets/img/ 20w, {{ site.url }}/assets/img/matrixcreatorandroid.jpg 100w, {{ site.url }}/assets/img/matrixcreatorandroid.jpg 200w"
-sizes="5vw"
+srcset="{{ site.url }}/assets/img/matrixcreatorandroid.jpg 100w, {{ site.url }}/assets/img/matrixcreatorandroid.jpg 200w"
+sizes="10vw"
 align="right"
 alt="image alt text">
-
-<!-- 
-<a href="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"><img src="{{ site.url }}/assets/img/matrixcreatorandroid.jpg" align="right"></a>
- -->
 
 * Everloop RGB color control
 * Humidity Sensor
