@@ -30,7 +30,8 @@ I'm using different technologies in the current project: <br/>
 
 ## Current Features
 
-{% if -page.mobile %}
+{% if page.mobile %}
+{% else %}
 <a href="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"><img src="{{ site.url }}/assets/img/matrixcreatorandroid.jpg" align="right"></a>
 {% endif %}
 
