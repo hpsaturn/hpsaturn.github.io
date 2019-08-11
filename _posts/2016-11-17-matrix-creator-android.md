@@ -30,7 +30,9 @@ I'm using different technologies in the current project: <br/>
 
 ## Current Features
 
+{% if page.feature %}
 <a href="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"><img src="{{ site.url }}/assets/img/matrixcreatorandroid.jpg" align="right"></a>
+{% endif %}
 
 * Everloop RGB color control
 * Humidity Sensor
