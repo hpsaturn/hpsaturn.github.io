@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "MatrixCreator Android demo via MALOS"
+title:  "MatrixCreator Android"
 date:   2018-08-02
-excerpt: "Android application that interfaces with MATRIX Creator MALOS layer"
+excerpt: "Android application that interfaces with MATRIX Creator MALOS layer."
+feature: http://hpsaturn.com/assets/img/matrixcreatorheader.png
 tag:
 - MatrixVoice
 - MatrixCreator
@@ -16,20 +17,20 @@ comments: false
   
 Android application that interfaces with MATRIX Creator MALOS layer. 
 
-<!-- 
-<div class="row">
-  <div class="col-md-4" markdown="1">
-  </div>
-  <div class="col-md-4" markdown="1">
-  <figure>
-    <a href="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"><img src="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"></a>
-    <figcaption>Android MALOS demo - Main controls.</figcaption>
-  </figure>
-  </div>
-</div>
- -->
+## Technologies
+
+I'm using different technologies in the current project: <br/> 
+
+* `MatrixCreator`: fully-featured [development board](https://www.espressif.com/en/products/hardware/esp32/overview) with different technologies like `Z-Wave`, `zigbee` and `NFC`. Also it include `Xilinx Spartan FPGA`, Microphone Array (8 MEMS audio sensors), Everloop (35 RGBW LEDS) and UV, IR, IMU modules.<br/>
+* `MALOS`: MATRIX Creator [abstraction layer](https://github.com/matrix-io/matrix-creator-malos) that using `ZeroMQ` [technology](http://zeromq.org/).
+* `Protocol buffers`: are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data.<br/>
+* `Android`: is the world's most popular mobile platform. <br/>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ihV_v7zFO7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Current Features
+
+<a href="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"><img src="{{ site.url }}/assets/img/matrixcreatorandroid.jpg" align="right"></a>
 
 * Everloop RGB color control
 * Humidity Sensor
@@ -40,8 +41,6 @@ Android application that interfaces with MATRIX Creator MALOS layer.
 * GPIO updates callbacks
 * Auto discovery Matrix Creator on LAN network
 * Manual IP Matrix device target
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ihV_v7zFO7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## TODO
 - [X] GPIO callback
