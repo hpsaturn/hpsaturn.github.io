@@ -23,7 +23,7 @@ The current guide show how build and upload any firmware for the [MatrixVoice ES
 
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/A_T4X2NtwiM" frameborder="0"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A_T4X2NtwiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prerequisites
 
