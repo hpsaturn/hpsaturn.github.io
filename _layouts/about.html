@@ -31,9 +31,10 @@ layout: compress
                     <div class='about-column'>
                       <div class='about-column-right'>
                         <p>
-                        <a href="{{ site.url }}/{{ site.photo }}">
-                          <img src="{{ site.url }}/{{ site.photo }}" alt="{{ site.title }} photo" class="author-photo-tiny">
-                        </a>
+                          <img src="{{ site.url }}/{{ site.photo }}"
+                          srcset="{{ site.url }}/{{ site.photo }} 100w, {{ site.url }}/{{ site.photo }} 200w"
+                          sizes="6vw"
+                          alt="image alt text">
                         </p>
                       </div>
                     </div>
