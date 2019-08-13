@@ -2,7 +2,7 @@
 layout: post
 title:  "MatrixCreator PocketSphinx"
 date:   2016-10-18
-excerpt: "Voice assistant alternative with Wakeword feature using `PocketSphinx` on a `MATRIXCreator` board"
+excerpt: "PocketSphinx migration to MATRIXCreator board"
 feature: http://hpsaturn.com/assets/img/matrixcreatorheader.png
 tag:
 - MatrixVoice
@@ -18,11 +18,11 @@ comments: false
 
 # MatrixCreator PocketSphinx
 
-Voice assistant alternative with Wakeword feature using `PocketSphinx` on a `MATRIXCreator` board.
+Continuous voice detection using `PocketSphinx` and `MATRIXCreator` board.
 
 ## Compile from sources
 
-### Step 1: MATRIXIO Software
+### Step 1: MatrixCreator Software
 
 ``` bash 
 curl https://apt.matrix.one/doc/apt-key.gpg | sudo apt-key add -
@@ -63,7 +63,7 @@ and try it with executing commands with your voice like this:
 - `matrix clear`
 - ...
 
-### (optional) Custom lenguage and phrases for recognition 
+### (optional) Custom lenguage and phrases for voice recognition 
 
 + Make a text plane like this: 
 ``` 
