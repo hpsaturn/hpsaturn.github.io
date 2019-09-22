@@ -30,8 +30,9 @@ Wakeword voice service for MALOS. The last version support:
 * disable voice recognition service (stop pshinx main thread)
 * optional: support for null paths and models (not recommend, bad performance)
 
-
 ## Installation
+
+Please review the last version of this document in [github](https://github.com/matrix-io/matrix-malos-wakeword).
 
 ### MATRIXIO MALOS 
 

@@ -53,6 +53,8 @@ alt="image alt text">
 
 ## Compile and firmware upload
 
+Please review the last version of this document in [github](https://github.com/hpsaturn/esp32_wemos_oled.git).
+
 #### Setup WiFi
 
 Setup your WiFi on `secrets.load` and run:
