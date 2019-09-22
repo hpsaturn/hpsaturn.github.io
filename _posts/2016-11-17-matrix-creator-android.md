@@ -28,6 +28,8 @@ I'm using different technologies in the current project: <br/>
 * `Protocol buffers`: are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data.<br/>
 * `Android`: is the world's most popular mobile platform. <br/>
 
+Please review the last version of this document in [github](https://github.com/matrix-io/matrix-creator-malos-android.git).
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ihV_v7zFO7A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Current Features

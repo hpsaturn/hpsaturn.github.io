@@ -18,9 +18,12 @@ comments: false
 
 # MatrixCreator PocketSphinx
 
-Continuous voice detection using `PocketSphinx` and `MATRIXCreator` board.
+Continuous voice detection using `PocketSphinx` and `MATRIXCreator` board.  
+
 
 ## Compile from sources
+
+Please review the last version of this document in [github](https://github.com/matrix-io/matrix-creator-pocketsphinx).
 
 ### Step 1: MatrixCreator Software
 

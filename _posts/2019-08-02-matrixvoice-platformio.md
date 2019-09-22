@@ -27,6 +27,8 @@ The current guide show how build and upload any firmware for the [MatrixVoice ES
 
 ## Prerequisites
 
+Please review the last version of this document in [github](https://github.com/hpsaturn/matrixvoice_platformio.git)
+
 ### PlatformIO software
 
 Please install first [PlatformIO](http://platformio.org/) open source ecosystem for IoT development and its command line tools (Windows, MacOs and Linux). Also, you may need to install [git](http://git-scm.com/) in your system (PC).
