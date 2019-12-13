@@ -9,8 +9,7 @@ photo:              'assets/img/photo.jpg'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://hpsaturn.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Jekyll
 permalink:          /:title/
