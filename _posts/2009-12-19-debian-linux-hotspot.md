@@ -13,7 +13,13 @@ comments: false
 
 # Debian Hotspot loader
 
-Install in `/usr/bin/` the next script:
+#### Last update: 2019.12.20
+
+Debian hotspot on Wifi device using `dnsmask` and `hostapd` with a simple bash script for `enable/disable` it.
+
+## Installation
+
+Please create the next script in `/usr/bin/loadhotspot`, also you can download it [here](https://raw.githubusercontent.com/hpsaturn/linux_scripts/master/loadhotspot)
 
 ``` bash
 #!/bin/sh
@@ -94,8 +100,6 @@ exit 0
 
 ```
 
-Also you can download it [here](https://raw.githubusercontent.com/hpsaturn/linux_scripts/master/loadhotspot)
-
 Please change the next lines to right values
 
 ``` bash
@@ -103,7 +107,7 @@ DEVICE=wlo1      # Change to right Wlan0 device
 MODULE=iwldvm    # Change for right Kernel module device
 ```
 
-## Dependencies
+### Dependencies
 
 Install the next packages:
 
@@ -129,4 +133,58 @@ rsn_pairwise=CCMP
 #ignore_broadcast_ssid=1   # uncomment it if you want SSID hide
 ```
 
+Add dnsmasq config file `/etc/dnsmasq_ap.conf` like this:
 
+``` bash
+interface=wlo1                              # the same than above
+listen-address=127.0.0.1                   
+bind-interfaces
+domain=YourDomainOrAny                      # set network domain name
+dhcp-range=192.168.3.100,192.168.3.200,12h  # define dhcp range
+```
+
+## Starting hotspot deamons
+
+``` bash
+sudo loadhotspot start
+```
+
+Output:  
+
+```
+remove modules..done.
+install modules..done.
+set static gateway..ok
+start hostapd:
+start NAT:
+start dnsmask:
+```
+
+## Stop hotspot
+
+``` bash
+sudo loadhotspot stop
+```
+
+Output:  
+
+```
+stop services..done.
+remove modules..rmmod iwldvm
+done.
+```
+
+### Troubleshooting
+
+If you have the next error:
+
+``` bash
+Failed to start hostapd.service: Unit hostapd.service is masked.
+```
+
+Please run:
+
+``` bash
+sudo systemctl unmask hostapd
+sudo systemctl enable hostapd
+```
