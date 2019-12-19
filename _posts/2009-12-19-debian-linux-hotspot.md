@@ -113,5 +113,20 @@ sudo apt-get install hostapd dnsmasq
 
 ## Configuration
 
+Please add `/etc/hostapd.conf`
+
+``` bash
+interface=wlo1      # The same Wifi device than above
+ssid=HostapName     # SSID for your network
+channel=1
+hw_mode=g
+auth_algs=1
+wpa=3
+wpa_passphrase=xxyy        # network password
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP CCMP
+rsn_pairwise=CCMP
+#ignore_broadcast_ssid=1   # uncomment it if you want SSID hide
+```
 
 
