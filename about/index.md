@@ -6,22 +6,37 @@ date: 2018-11-18
 comments: false
 ---
 
-<center style="margin-top:40px;align:left">
+<center style="margin-top:30px">
 
-<p style="font-size:1.2rem;font-weight:200;">
+<p style="font-size:1.8rem;font-weight:100;">
+Alvaro Antonio Vanegas P.
+</p>
+
+<p style="font-size:1.2rem;font-weight:100;">
 {{ site.description }}
 </p>
 
-<p style="font-size:0.8rem;font-weight:200">
+<p style="font-size:0.8rem;font-weight:100">
 Co-founder:
 <a href="http://lumera.co/ks" target="_blank"><b>Lumera</b></a> & <a href="http://hackbo.co" target="_blank"><b>HackBo</b></a>
 </p>
 
-<p style="font-size:0.8rem;font-weight:200">
+<p style="font-size:0.8rem;font-weight:100">
 Founder:
 <a href="http://canair.io" target="_blank"><b>CanAirIO</b></a>
 </p>
-
 </center>
+
+<center style="margin-top:50px">
+<p style="font-size:1.0rem;font-weight:80;">
+"Talk is cheap. Show me the code" 
+</p>
+<p style="font-size:.8rem;font-weight:60;">
+Linus Torvalds 
+</p>
+</center>
+
+
+
 
 
