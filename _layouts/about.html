@@ -24,24 +24,14 @@ layout: compress
                 <div class='about-page-wrapper'>
                   <div class='about-row'>
                     <div class='about-column'>
-                      <div class='about-column-left'>
-                        {{ content }}
-                      </div>
-                    </div>
-                    <div class='about-column'>
-                      <div class='about-column-right'>
-                        <p>
-                        </br>
-                        <img src="{{ site.url }}/{{ site.photo }}"
-                        srcset="{{ site.url }}/{{ site.photo }} 100w, {{ site.url }}/{{ site.photo }} 200w"
-                        sizes="8vw"
-                        >
-                        </p>
-                      </div>
+                        {{ content }} 
                     </div>
                   </div>
                 </div>
                 {% include social-links.html %}
+                <!--               <img src="{{ site.url }}/{{ site.photo }}"-->
+                <!--                  srcset="{{ site.url }}/{{ site.photo }} 100w, {{ site.url }}/{{ site.photo }} 200w" -->
+                <!--                  sizes="8vw"> -->
             </div>
         </div>
         {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
