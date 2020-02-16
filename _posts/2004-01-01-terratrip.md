@@ -46,5 +46,17 @@ Rally computer for amateur and professional rally teams. Using a Hp48 calculator
 {% endcapture %}
 {% include gallery images=images caption="Hewlett Packard Hp48 application Nav48 screenshots" cols=3 %}
 
+## Nav48 Hardware
+
+{% capture images %}
+  {{ site.url }}/assets/img/nav48_hardware00.jpg
+  {{ site.url }}/assets/img/nav48_hardware02.jpg
+  {{ site.url }}/assets/img/nav48_hardware05.jpg
+  {{ site.url }}/assets/img/nav48_hardware07.jpg
+{% endcapture %}
+{% include gallery images=images caption="Nav48 hardware photos" cols=3 %}
+
+
+
 ---
 
