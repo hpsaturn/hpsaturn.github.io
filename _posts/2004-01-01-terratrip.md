@@ -1,63 +1,50 @@
 ---
 layout: post
-title:  "CanAirIO"
-imghead: collage_horizontal.jpg
-date:   2018-10-01
-excerpt: "Citizen Science Network for Air Quality Monitoring"
+title:  "Nav48 - Rally Terratrip"
+imghead: nav48_collage.jpg
+date:   2004-01-01
+excerpt: "Rally computer implementation on a Hp48 calculator and Motorola microcontroller"
 project: true
-#feature: http://hpsaturn.com/assets/img/canairiov2boxes.jpg
 tag:
-- ESP32
-- Android
-- PlatformIO
-- Arduino
+- assembler
 - C++
-- Citizen Science
 - IoT
-- OpenData
-- OpenHardware
+- Hp48
+- Hardware
+- Motorola
 comments: false
 ---
+
+## Technologies
+
+* `Motorola 68HC908`: Firmware developed in assembler on a Motorola `MC68HC908GP32` with a few code on `C`.<br/>
+* `CodeWarrior`: IDE, compiler, debugger and in-circuit debugger.
+* `Hp48`: Navigation software using a `Hewlett Packard Hp48` interfaced via Serial connection.<br/>
+* `Jazz library`: Low level IDE, compiler and debugger for `SysRPL` and `Hp48 Saturn CPU assembler`.
    
-<center><b>CanAirIO</b> Citizen Network for Air Quality Monitoring</center>
+## Target
 
-Citizen science project with mobile and fixed sensors for measuring air quality (PM 2.5) using [low-cost sensors](https://github.com/kike-canaries/esp32-hpma115s0) and smartphones. Built with a `ESP32` module board and `HPMA115s0 Honeywell` dust sensor, interfaced with an [CanAirIO Android client app](https://github.com/kike-canaries/android-hpma115s0).
+Rally computer for amateur and professional rally teams. Using a Hp48 calculator the rally team enter de race variables and the software give the next information:
 
-<a href="https://play.google.com/store/apps/details?id=hpsaturn.pollutionreporter" target="_blank"><img src="{{ site.url }}/assets/img/gplayicon.png" align="right"></a>
-
-**Full guide**: [English](https://github.com/kike-canaries/esp32-hpma115s0/wiki/Official-Guide-(EN)) **|** [Spanish](https://github.com/kike-canaries/esp32-hpma115s0/wiki/Official-Guide-(ES))<br/>
-**GitHub**: [Github organization](https://github.com/kike-canaries) <br/>
-**Landing page**: [canair.io](http://canair.io) <br/>
-**Twitter**: [@canairq](https://twitter.com/canairq)
-
+ - `Current position`, from odometer interfaced from car to hardware device with a switch sensor or hall effect sensor.
+ - `Target position`, calculated for keep car synced.
+ - `Distance offset`, calculated from current position and race data.
+ - `Current track`, from race information.
+ - `Multiple time mode`, track time, race time, start and end time, etc.
+ 
 ---
 
-## Screenshots
+## Nav48 app
 
 {% capture images %}
-  {{ site.url }}/assets/img/chart.jpg
-  {{ site.url }}/assets/img/settings.jpg
-  {{ site.url }}/assets/img/map.jpg
+  {{ site.url }}/assets/img/nav48_00.jpg
+  {{ site.url }}/assets/img/nav48_01.jpg
+  {{ site.url }}/assets/img/nav48_02.jpg
+  {{ site.url }}/assets/img/nav48_03.jpg
+  {{ site.url }}/assets/img/nav48_04.jpg
+  {{ site.url }}/assets/img/nav48_05.jpg
 {% endcapture %}
-{% include gallery images=images caption="CanAirio Android app screenshots" cols=3 %}
+{% include gallery images=images caption="Hewlett Packard Hp48 application Nav48 screenshots" cols=3 %}
 
 ---
 
-### Technologies
-
-![CanAirIO Homepage]({{ site.url }}/assets/img/collage_horizontal.jpg)
-
-I'm using different technologies in the current project: <br/> 
-
-`ESP32`: A Different IoT Power and Performance from [Espressif](https://www.espressif.com/en/products/hardware/esp32/overview) <br/>
-`PlatformIO`: is an open source ecosystem for [IoT development](https://platformio.org/) <br/>
-`Android`: is the world's most popular mobile platform. <br/>
-`InfluxDB`: The essential [time series toolkit](https://www.influxdata.com/products/) <br/>
-
-![CanAirIO Homepage]({{ site.url }}/assets/img/bme680_data.jpg)
-
----
-
-## License
-
-This project is free and open source software, distributed under the GPL License. So feel free to use this code and app for do a change on quality air issues.
