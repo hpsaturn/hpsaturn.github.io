@@ -6,7 +6,7 @@ date:   2004-01-01
 excerpt: "Rally computer implementation on a Hp48 calculator and Motorola microcontroller"
 project: true
 tag:
-- assembler
+- Assembler
 - C++
 - IoT
 - Hp48
@@ -56,6 +56,14 @@ Rally computer for amateur and professional rally teams. Using a Hp48 calculator
 {% endcapture %}
 {% include gallery images=images caption="Nav48 hardware photos" cols=3 %}
 
+## Awards
+
+With this hardware and software wrote that I wrote, my team won around 8 trophies and two championship on Bogotá on three years in two modalities, 4x4 and regularity.
+
+{% capture images %}
+  {{ site.url }}/assets/img/nav48_1280_collage.jpg
+{% endcapture %}
+{% include gallery images=images cols=1 %}
 
 
 ---
