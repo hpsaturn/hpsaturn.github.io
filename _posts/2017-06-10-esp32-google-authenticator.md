@@ -12,6 +12,7 @@ tag:
 - Bluetooth
 - Arduino
 - C++
+- Hardware
 - IoT
 - OpenHardware
 - Security
