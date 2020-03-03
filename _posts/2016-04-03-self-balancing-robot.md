@@ -8,6 +8,7 @@ tag:
 - ESP32
 - PlatformIO
 - Arduino
+- Teensy32
 - C++
 - IoT
 - OpenHardware
@@ -16,8 +17,6 @@ comments: false
 
 # Self Balancing Robot
 
-#### Click for last update video:
-[![Click for YouTube Video](https://github.com/HackBo/Self-Balancing-Robot/blob/master/images/anim_robot.gif)](https://youtu.be/7tfVts636bs)
 
 ##### Initial technologies and hardware:
 
@@ -31,6 +30,7 @@ comments: false
 ##### Alpha Test Boards:
 
 - NodeMCU 1.0 (ESP-12E Module) (ESP8266)
+- Teensy32
 - RaspberryPi 3
 
 ## Objectives:
@@ -40,6 +40,8 @@ comments: false
 - ESP8266 to RaspberryPi Wifi interface via CoAP or OSC protocols (Bus data, control, others)
 - RaspberryPi+Camera+ServoMotors (image processing via OpenCV)
 - Suggest others features!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7tfVts636bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  
 ## Current main config:
 
@@ -82,7 +84,6 @@ comments: false
    $ platformio run
    ```
    
-
 ## Schematics
 
 #### Initial basic robot (ArduinoProMini)
@@ -103,5 +104,3 @@ comments: false
 - Luka Gabrić, base code for MVC and testing IMU from Franco Robot @gabricluka https://github.com/lukagabric 
 - Camilo Soto, SDK and hardware alternatives, review code and drivers @tucanae47 https://github.com/tucanae47
 
-
-[![Click for YouTube Video](https://github.com/HackBo/Self-Balancing-Robot/blob/master/images/photo_robot.jpg)](https://youtu.be/7tfVts636bs)
