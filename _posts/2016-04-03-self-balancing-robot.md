@@ -2,7 +2,7 @@
 layout: post
 title:  "Self Balancing Robot"
 date:   2016-04-03
-excerpt: "DIY Self Balancing Robot."
+excerpt: "Teensy32 implementation of a Self Balancing Robot."
 feature: https://raw.githubusercontent.com/HackBo/Self-Balancing-Robot/master/images/photo_robot.jpg
 tag:
 - ESP32
