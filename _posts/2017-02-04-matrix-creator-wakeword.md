@@ -2,7 +2,7 @@
 layout: post
 title:  "MatrixCreator Wakeword"
 date:   2017-02-04
-excerpt: "Wakeword for voice assistant service in MALOS layer"
+excerpt: "Wakeword for voice assistant service in MALOS layer."
 feature: http://hpsaturn.com/assets/img/matrixcreatorheader.png
 tag:
 - MatrixVoice

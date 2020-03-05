@@ -2,7 +2,7 @@
 layout: post
 title:  "Easy Debian hotspot loader"
 date:   2009-12-19
-excerpt: "Debian Hotspot script for loading WPA AP in Wlan0"
+excerpt: "Debian Hotspot script for loading WPA AP in Wlan0."
 feature: ""
 tag:
 - GNU-Linux
