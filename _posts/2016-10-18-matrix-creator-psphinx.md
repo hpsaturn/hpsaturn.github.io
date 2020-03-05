@@ -2,7 +2,7 @@
 layout: post
 title:  "MatrixCreator PocketSphinx"
 date:   2016-10-18
-excerpt: "PocketSphinx migration to MATRIXCreator board"
+excerpt: "PocketSphinx migration to MATRIXCreator board."
 feature: http://hpsaturn.com/assets/img/matrixcreatorheader.png
 tag:
 - MatrixVoice

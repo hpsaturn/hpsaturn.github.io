@@ -3,7 +3,7 @@ layout: post
 title:  "Nav48 - Rally Terratrip"
 imghead: nav48_collage.jpg
 date:   2004-01-01
-excerpt: "Rally computer implementation on a Hp48 calculator and Motorola microcontroller"
+excerpt: "Rally computer implementation on a Hp48 calculator and Motorola microcontroller."
 project: true
 tag:
 - Assembler
