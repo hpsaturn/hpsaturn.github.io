@@ -6,7 +6,7 @@ date: 2018-11-18
 comments: false
 ---
 
-<center style="margin-top:-20px">
+<center style="margin-top:-30px">
 
 <p style="font-size:1.8rem;font-weight:100;">
 Alvaro Antonio Vanegas P.
@@ -26,8 +26,8 @@ Founder:
 <a href="http://canair.io" target="_blank"><b>CanAirIO</b></a>
 </p>
 </center>
-
-<center style="margin-top:30px">
+<hr>
+<center style="margin-top:10px">
 <p style="font-size:1.0rem;font-weight:80;">
 "Talk is cheap. Show me the code" 
 </p>
