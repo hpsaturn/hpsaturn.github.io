@@ -78,7 +78,22 @@
 }
 .post-list {
     .btn {
-        @include font-rem(14);
+        @include font-rem(12);
+    }
+    .tag {
+        @include font-rem(9);
+        span {
+          float: right;
+          padding: 2px 3px;
+        }
+    }
+    .entry-tags {
+      display: block;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+      width: 100%;
+        margin-left: -0.5rem;
+        text-align: left;
     }
 }
 
