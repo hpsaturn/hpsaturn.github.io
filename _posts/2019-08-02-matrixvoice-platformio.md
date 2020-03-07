@@ -11,7 +11,6 @@ tag:
 - C++
 - IoT
 - PlatformIO
-- OpenHardware
 comments: false
 ---
 

@@ -11,7 +11,6 @@ tag:
 - ZeroMQ
 - Protobuf
 - IoT
-- OpenHardware
 comments: false
 ---
 

@@ -10,8 +10,9 @@ tag:
 - PocketSphinx
 - C++
 - IoT
-- OpenHardware
 - Voice Assistant
+- Protobuf
+- ZeroMQ
 - Wakeword
 comments: false
 ---
