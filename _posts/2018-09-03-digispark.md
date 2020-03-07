@@ -3,7 +3,7 @@ layout: post
 title:  "Digispark Projects"
 date:   2018-09-03
 excerpt: "Demo projects using ATTINY85 Digispark interfaced with a RGB LED Ring WS2812"
-feature: http://hpsaturn.com/assets/img/matrixvoiceheader.png
+feature: http://hpsaturn.com/assets/img/digispark_header.jpg
 tag:
 - PlatformIO
 - Arduino
