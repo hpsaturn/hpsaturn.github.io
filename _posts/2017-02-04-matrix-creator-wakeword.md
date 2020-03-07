@@ -9,9 +9,9 @@ tag:
 - MatrixCreator
 - PocketSphinx
 - C++
+- Protobuf
 - ZeroMQ
 - IoT
-- OpenHardware
 - Voice Assistant
 - Wakeword
 comments: false
