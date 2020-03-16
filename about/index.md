@@ -23,7 +23,7 @@ Co-founder:
 
 <p style="font-size:0.8rem;font-weight:100">
 Founder:
-<a href="http://canair.io" target="_blank"><b>CanAirIO</b></a>
+<a href="https://canair.io" target="_blank"><b>CanAirIO</b></a>
 </p>
 </center>
 <hr>
