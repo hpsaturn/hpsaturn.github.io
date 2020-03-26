@@ -34,6 +34,8 @@ Founder:
 <p style="font-size:.8rem;font-weight:60;margin-top:-15px">
 Linus Torvalds 
 </p>
+<script src="https://liberapay.com/Hpsaturn/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/Hpsaturn/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
 </center>
 
 
