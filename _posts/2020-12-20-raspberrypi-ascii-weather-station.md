@@ -3,7 +3,7 @@ layout: post
 title:  "RaspberryPi ASCII Weather Station"
 date:   2020-12-20
 excerpt: "WiFi Weather Station on Golang without X Desktop. (xinit alternative)"
-;feature: http://hpsaturn.com/assets/img/matrixvoiceheader.png
+feature: http://hpsaturn.com/assets/img/ascii_weather_feature.jpg
 tag:
 - RaspberryPi
 - Debian
