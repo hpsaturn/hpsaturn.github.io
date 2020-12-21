@@ -13,13 +13,13 @@ comments: false
 
 # RaspberryPi ASCII Weather Station
 
-The next guide reach that RaspberryPi launch a Go program that show the current weather and 3 days of weather forecast. I'm using a fork from [wego](https://github.com/hpsaturn/wego) developed by [Schachmat](https://github.com/schachmat). The main program is the only program that run in the Pi, for that I forced it to start with xinit on full screen, also I included some improvments for:
+The next guide reach that RaspberryPi launch a Go program that show the current weather and 3 days of weather forecast. I'm using a fork that I did from [wego](https://github.com/hpsaturn/wego) developed by [Schachmat](https://github.com/schachmat). The main program is the only program that run in the Pi, for that I forced it to start with xinit on full screen, also I included some improvments for:
 
 - [x] No window manger (only xinit with fullscreen mod)
-- [x] disbled extra system services
+- [x] disabled extra system services
 - [x] improved system logs only in memory
 - [x] disabled some devices for improve power consumption
-- [x] fast boot improvments
+- [x] fast boot improvements
 
 <a href="" target="_blank"><img src="{{ site.url }}/assets/img/ascii_weather_station.jpg" align="center"></a>
 
@@ -38,11 +38,13 @@ You can create an account and get a free API key by [signing up](https://home.op
 
 ## RaspiOS config on PC
 
-Please first install in your SD [RaspiOs lite](https://www.raspberrypi.org/software/operating-systems/) or any Raspberry OS compatible with it on your RaspberryPi. Before run please add the next changes:
+Please first install in your SD [RaspiOs lite](https://www.raspberrypi.org/software/operating-systems/) or any Raspberry OS compatible with it on your RaspberryPi. Before run it, please add the next changes:
 
 In the **boot** partition or boot folder, modify and add the next configs:
 
 ### Enable SSH:
+
+Add a simple empty file for enable SSH access in boot folder:
 
 ```bash
 touch ssh
@@ -70,7 +72,7 @@ More info about WiFi headless configure [here](https://www.raspberrypi.org/docum
 
 ## Dependencies
 
-Update and install some packages for build and run the wego application:
+Via [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/unix.md), please update and install the next packages for build and run the wego application:
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade
@@ -91,7 +93,10 @@ in the **console menu** please select **Anybody**
 go get -u github.com/hpsaturn/wego
 ```
 
-Then **configure wego** like is described [here](https://github.com/hpsaturn/wego?organization=hpsaturn&organization=hpsaturn#setup). Remember only fill the settings for **openweathermap**, forecast.io, now Darksky, was adquired by the fuck company Apple, and they closed it, for this reason please only use the API from others, the **steps 2 and following**.
+Then **configure wego** like is described [here](https://github.com/hpsaturn/wego?organization=hpsaturn&organization=hpsaturn#setup). Remember only fill the settings for **openweathermap**.
+
+**NOTE**: Unfortunately forecast.io, now Darksky, was acquired by the fuck company Apple, and they closed it, for this reason please only use these API, the **steps 2 and following**.
+
 
 ## Launcher
 
@@ -185,3 +190,7 @@ For example for turn off USB ports, put the next line **before** xinit line on *
 ```bash
 echo '1-1' |sudo tee /sys/bus/usb/drivers/usb/unbind &
 ```
+
+## Troubleshooting
+
+Any feedback, bug or issue, please report it in the [issue section](https://github.com/hpsaturn/hpsaturn.github.io/issues).
