@@ -21,7 +21,12 @@ The next guide reach that RaspberryPi launch a Go program that show the current 
 - [x] disabled some devices for improve power consumption
 - [x] fast boot improvements
 
-<a href="" target="_blank"><img src="{{ site.url }}/assets/img/ascii_weather_station.jpg" align="center"></a>
+
+{% capture images %}
+  {{ site.url }}/assets/img/ascii_weather_station.jpg
+{% endcapture %}
+{% include gallery images=images cols=1 %}
+
 
 # Materials
 
@@ -109,7 +114,11 @@ sudo su -l pi -c "xinit -geometry =800x400+0+0 -fn 8x13 -j -fg white -bg black /
 reboot the Pi and it is all, the Pi will start the Wego app like unique X application.
 
 
-<a href="" target="_blank"><img src="{{ site.url }}/assets/img/ascii_weather_station.gif" align="center"></a>
+{% capture images %}
+  {{ site.url }}/assets/img/ascii_weather_station.gif
+{% endcapture %}
+{% include gallery images=images cols=1 %}
+
 
 ---
 
