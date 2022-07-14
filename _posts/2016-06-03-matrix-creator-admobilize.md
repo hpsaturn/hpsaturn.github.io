@@ -4,23 +4,21 @@ title:  "MatrixCreator / MatrixVoice - Admobilize"
 imghead: matrixheader.jpg
 date:   2016-06-03
 excerpt: "Android and hardware integrations over MatrixLabs boards"
+feature: http://hpsaturn.com/assets/img/matrixvoiceheader.png
 project: true
 tag:
 - Android
 - PlatformIO
+- MatrixVoice
+- MatrixCreator
 - Alexa
 - GoogleHome
-- IA
 - PocketSphinx
 - ESP32
-- C++
-- NDK
-- AndroidThings
 - IoT
-- Protos
-- GRPC
+- C++
+- Protobuf
 - ZeroMQ
-- MatrixVoice
 comments: false
 ---
    
