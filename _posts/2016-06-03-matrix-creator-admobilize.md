@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MatrixCreator / MatrixVoice - Admobilize"
-imghead: matrixvoice_capture00.jpg
+imghead: matrixheader.jpg
 date:   2016-06-03
 excerpt: "Android and hardware integrations over MatrixLabs boards"
 project: true
@@ -44,6 +44,8 @@ Together with [Admobilize](https://www.admobilize.com/) team we released two boa
 - [x] Android Things implementation over RaspberryPi
 - [x] Our Balena implementation in parallel to Android Things development
 
+![Admobilize Face detection]({{ site.url }}/assets/img/admobilize_face_detection.jpg)
+
 ---
 
 <a href="https://youtu.be/YMRRN0Mzvw0" target="_blank"><img src="{{ site.url }}/assets/img/matrixvoice_youtube.jpg" align="center"></a>
@@ -57,7 +59,5 @@ Together with [Admobilize](https://www.admobilize.com/) team we released two boa
 {% capture images %}
   {{ site.url }}/assets/img/matrixcreatorheader.png
   {{ site.url }}/assets/img/matrixvoiceheader.png
-  {{ site.url }}/assets/img/matrixcreatorandroid.jpg
-  {{ site.url }}/assets/img/admobilize_face_detection.jpg
 {% endcapture %}
 {% include gallery images=images caption="MatrixCreator / MatrixVoice Gallery" cols=3 %}
