@@ -1,10 +1,8 @@
 ---
 layout: post
 title:  "Google Authenticator Key"
-imghead: esp32_potp_horizontal_collage.jpg
 date:   2017-06-10
 excerpt: "Portable ESP32 POTP key, One-Time Password for two-factor authentication."
-project: true
 tag:
 - ESP32
 - Android
