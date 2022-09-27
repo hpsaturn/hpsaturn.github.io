@@ -3,7 +3,7 @@ layout: post
 title:  "Your old laptop like a second monitor"
 date:   2022-09-10
 excerpt: "How to connect old monitor to virtual xorg space"
-feature: http://hpsaturn.com/assets/img/xorg-virtual-monitor.png
+feature: http://hpsaturn.com/assets/img/xorg-virtual-monitor.jpg
 tag:
 - Debian
 - Xorg
@@ -14,14 +14,14 @@ comments: false
 
 I have a Asus Zenbook UX534, it isn't a old laptop but I wanted join it to my new desktop machine, because this laptop has two monitors. For this reason here I post the conclusions of this goal.
 
-I don't want repeat some nice guides that I found, better I'm going to reference here:
 
 ## Context
 
-Previous documentation:
+I don't want repeat some documentation that I found, better I'm going to reference here:
 
-[Extreme Multihead - Extending a desktop beyond](https://wiki.archlinux.org/title/Extreme_Multihead#Extending_a_desktop_beyond_the_local_system)
-[Multiple dummy monitors on linux](https://unix.stackexchange.com/questions/651714/multiple-dummy-monitors-on-remote-headless-linux-for-vnc-to-local-multiple-monit)
+[Extreme Multihead - Extending a desktop beyond](https://wiki.archlinux.org/title/Extreme_Multihead#Extending_a_desktop_beyond_the_local_system)  
+
+With this and some searchs, I decided use the **"xrandr virtual screen"** solution, that generate extra space (virtual scree) on your current desktop machine, and then this shared via x11vnc server to your laptop, old pc, Android tablet, etc, and with this it is showed in the second screen.
 
 
 ## Results
@@ -42,7 +42,7 @@ P="HDMI-A-0"        #is the main screen, it can be calle eDP-1 or eDP1 depending
 O="DisplayPort-0"   #can be a virtual (recommended if possible) or real output accepted by the xog driver.
                     #more info: https://wiki.archlinux.org/title/Extreme_Multihead#VNC
 
-############# END SETUP ##############################################################
+################## END SETUP #################################################
 PW=`xrandr --current | egrep '\*' | awk '{print $1;}' | cut -d x -f 1 | head -n 1`
 
 # Create the virtual display
@@ -87,7 +87,7 @@ Orb="HDMI-A-1"      #can be a virtual (recommended if possible) or real output a
                     #sudo modprobe evdi initial_device_count=1
                     #xrandr --setprovideroutputsource 1 0
 
-############# END SETUP ##############################################################
+################## END SETUP #####################################
 
 showHelp() {
   printf "\r\nusage:\t[start|pause|stop|status|help]\r\n\n"
@@ -174,6 +174,11 @@ fi
 ```
 
 [source code](https://github.com/hpsaturn/linux_scripts/blob/master/virtual_screens)
+
+## Credits
+
+[Arch Documentation](https://wiki.archlinux.org/title/Extreme_Multihead)  
+[Android Tablet Script](https://gist.github.com/8bitbuddhist/7ab180286d6eb7fdc68d374063814175)
 
 ## Troubleshooting
 
