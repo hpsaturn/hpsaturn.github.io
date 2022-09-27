@@ -29,7 +29,7 @@ With this and some searchs, I decided use the **"xrandr virtual screen"** soluti
 After this documentatioo, I wrote a simple utility that enable the virtual space in my current xorg session on my desktop, and it launch the VNC server for my laptop, then the laptop should be start a vnc client and show what happend in this virtual desktop. Of course you are able to put many monitors if you want too.
 
 
-```python
+```bash
 #!/bin/bash
 
 # Secondary display resolution
@@ -68,7 +68,7 @@ xrandr --output ${O} --off
 
 The next version has a some improvements to stat/stop/status the virtual spaces and servers on **WindowMaker** window manager:
 
-```python
+```bash
 #!/bin/bash
 
 # Secondary display resolution
