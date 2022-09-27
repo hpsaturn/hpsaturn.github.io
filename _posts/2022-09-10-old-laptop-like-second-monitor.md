@@ -26,9 +26,8 @@ With this and some searchs, I decided use the **"xrandr virtual screen"** soluti
 
 ## Results
 
-After this documentatioo, I wrote a simple utility that enable virtual spaces in my current xorg session on my desktop, and launch the VNC server for my laptop, than the laptop will start a vnc client and show what happend in this virtual desktop. Of course you are able to put many monitors if you want too.
+After this documentatioo, I wrote a simple utility that enable the virtual space in my current xorg session on my desktop, and it launch the VNC server for my laptop, then the laptop should be start a vnc client and show what happend in this virtual desktop. Of course you are able to put many monitors if you want too.
 
-### External monitor alternative
 
 ```python
 #!/bin/bash
@@ -65,7 +64,7 @@ xrandr --output ${O} --off
 ```
 [source code](https://gist.github.com/hpsaturn/7b6d15f149eb5bb9bdb19b94b1b34c42)
 
-### Two external screens
+## Two external screens
 
 The next version has a some improvements to stat/stop/status the virtual spaces and servers on **WindowMaker** window manager:
 
@@ -175,11 +174,12 @@ fi
 
 [source code](https://github.com/hpsaturn/linux_scripts/blob/master/virtual_screens)
 
-## Credits
+# Troubleshooting
+
+The main issue or concern is that in some Linux versions with some GPU drivers like AMD or Nvidia, the `virtual displays` are not supported and you need use some hacks on XOrg or use **dummy** drivers, that is mentioned in the references. But on the other hand you can use **unused outputs** in your system, for example in my scripts I used the un used `DisplayPort` (for Mac) and the second unused `HDMI` on my desktop machine.
+
+# Credits
 
 [Arch Documentation](https://wiki.archlinux.org/title/Extreme_Multihead)  
 [Android Tablet Script](https://gist.github.com/8bitbuddhist/7ab180286d6eb7fdc68d374063814175)
 
-## Troubleshooting
-
-The main issue or concern is that in some Linux versions with some GPU drivers like AMD or Nvidia, the `virtual displays` are not supported and you need use some hacks on XOrg or use **dummy** drivers, that is mentioned in the references. But on the other hand you can use **unused outputs** in your system, for example in my scripts I used the un used `DisplayPort` (for Mac) and the second unused `HDMI` on my desktop machine.
