@@ -21,12 +21,12 @@ I don't want repeat some documentation that I found, better I'm going to referen
 
 [Extreme Multihead - Extending a desktop beyond](https://wiki.archlinux.org/title/Extreme_Multihead#Extending_a_desktop_beyond_the_local_system)  
 
-With this and some searchs, I decided use the **"xrandr virtual screen"** solution, that generate extra space (virtual scree) on your current desktop machine, and then this shared via x11vnc server to your laptop, old pc, Android tablet, etc, and with this it is showed in the second screen.
+With this and some searchs, I decided use the **"xrandr virtual screen"** solution, that generate extra space (virtual screen) on your current desktop machine, and then this shared via x11vnc server to your laptop, old pc, Android tablet, etc, and with this it is showed in the second screen.
 
 
 ## Results
 
-After this documentatioo, I wrote a simple utility that enable the virtual space in my current xorg session on my desktop, and it launch the VNC server for my laptop, then the laptop should be start a vnc client and show what happend in this virtual desktop. Of course you are able to put many monitors if you want too.
+After understand this documentation, I wrote a simple utility that enable the virtual space in my current xorg session on my desktop, and it launch the VNC server for my laptop, then the laptop should be start a vnc client and show what happend in this virtual desktop. Of course you are able to put many monitors if you want too.
 
 
 ```bash
@@ -176,7 +176,7 @@ fi
 
 # Troubleshooting
 
-The main issue or concern is that in some Linux versions with some GPU drivers like AMD or Nvidia, the `virtual displays` are not supported and you need use some hacks on XOrg or use **dummy** drivers, that is mentioned in the references. But on the other hand you can use **unused outputs** in your system, for example in my scripts I used the un used `DisplayPort` (for Mac) and the second unused `HDMI` on my desktop machine.
+The main issue or concern is that in some Linux versions with some GPU drivers like AMD or Nvidia, the `virtual displays` are not supported and you need use some hacks on XOrg or use **dummy** drivers, that is mentioned in the main documentation. But on the other hand you can use **unused outputs** in your system, for example in my scripts I used the unused `DisplayPort` (for Mac) and the second unused `HDMI` on my desktop machine.
 
 # Credits
 
