@@ -12,7 +12,7 @@ comments: false
 
 # Your old laptop like a second monitor
 
-I have a Asus Zenbook UX534, it isn't a old laptop but I wanted join it to my new desktop machine, because this laptop has two monitors. For this reason here I post the conclusions of this goal.
+I have an Asus Zenbook UX534, it isn't a old laptop but I wanted join it to my new desktop machine, because this laptop has two monitors. For this reason here I post the conclusions of this goal.
 
 
 ## Context
@@ -62,6 +62,14 @@ xrandr --output ${O} --off
 # On the old laptop please run:
 # vncviewer -shared -ViewOnly -Fullscreen <host ip>
 ```
+--- 
+
+In your old laptop you should start the VNC client:
+
+```bash
+vncviewer -shared -ViewOnly ip_of_your_host_pc:5900
+```
+
 [source code](https://gist.github.com/hpsaturn/7b6d15f149eb5bb9bdb19b94b1b34c42)
 
 ## Two external screens
