@@ -26,6 +26,7 @@ Founder:
 <a href="https://canair.io" target="_blank"><b>CanAirIO</b></a>
 </p>
 </center>
+
 <hr>
 <center style="margin-top:10px">
 <p style="font-size:1.0rem;font-weight:80;">
@@ -34,16 +35,11 @@ Founder:
 <p style="font-size:.8rem;font-weight:60;margin-top:-15px">
 Linus Torvalds 
 </p>
-<p>
-<iframe src="https://github.com/sponsors/hpsaturn/button" title="Sponsor hpsaturn" height="35" width="116" style="border: 0;"></iframe>
-</p>
-<script src="https://liberapay.com/Hpsaturn/widgets/button.js"></script>
-<noscript><a href="https://liberapay.com/Hpsaturn/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
-
-
+<!-- <script src="https://liberapay.com/Hpsaturn/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/Hpsaturn/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript> -->
 </center>
 
+<hr>
 
-
-
-
+<!-- [![GitHub Sponsor](https://img.shields.io/github/sponsors/hpsaturn?label=Sponsor&logo=GitHub)](https://github.com/sponsors/hpsaturn/button)  
+[![Liberapay Status](http://img.shields.io/liberapay/receives/CanAirIO.svg?logo=liberapay)](https://liberapay.com/CanAirIO) -->
