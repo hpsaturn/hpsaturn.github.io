@@ -3,6 +3,7 @@ layout: post
 title:  "Virtual Serial Port"
 date:   2022-09-10
 excerpt: "How to create a virtual port like /dev/tty over WiFi"
+feature: http://hpsaturn.com/assets/img/virtual_serial_port.jpg
 tag:
 - C++
 - IoT
@@ -88,12 +89,10 @@ $GPGGA,,,,,,0,00,99.99,,,,,,*48
 $GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,99.99*30
 $GPGSV,1,1,00*79
 $GPGLL,,,,,,V,N*64
-V,1,1,00*79
 $GPGLL,,,,,,V,N*64
 $GPRMC,,V,,,,,,,,,,N*53
-^XPVTG,,,,,,,,,N*30
 $GPGGA,,,,,,0,00,99.99,,,,,,*48
-$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99,^C
+$GPGSA,A,1,,,,,,,,,,,,,99.99,99.99
 ``` 
 Now we need redirect this output to fake serial port. For that we need first launch in one terminal the input and output sockets, for that we using the next command:
 
@@ -116,7 +115,7 @@ In other terminal connect the UDP port to the fake input serial port:
 netcat -u -l -p 9000 > /dev/pts/15
 ```
 
-And that it is. You can test the serial port using `tail`:
+And that it's! You can test the serial port using `tail`:
 
 ```bash
 tail -f /dev/pts/14
@@ -149,6 +148,8 @@ Then launch PyGPSClient and configure a TCP/UDP connection like this:
 
 ![PyGPSClient UDP config](/assets/img/pygpsclient_udp_config.jpg)
 
-Click on TCP/UDP button and with that your remote GPS device will be connect.
+Click on TCP/UDP button and with that your remote GPS device will be connect :D
+
+
 
 
