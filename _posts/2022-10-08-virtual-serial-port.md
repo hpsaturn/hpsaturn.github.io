@@ -63,7 +63,7 @@ void loop() {
 }
 ```
 
-The full example:  
+The full example use the [ESP32 WiFi CLI library](https://github.com/hpsaturn/esp32-wifi-cli#readme) for configure the WiFI credentials, and also to choose the kind of the redirection, to UDP or to the primary serial port. More details here:  
 [GPS UDP modem - source code](https://github.com/hpsaturn/esp32-wifi-cli/tree/master/examples/gps-udp-modem)
 
 ## Virtual Interface
