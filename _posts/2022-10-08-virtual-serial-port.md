@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Virtual Serial Port"
-date:   2022-09-10
+date:   2022-10-08
 excerpt: "How to create a virtual port like /dev/tty over WiFi"
 feature: http://hpsaturn.com/assets/img/virtual_serial_port.jpg
 tag:
