@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MatrixCreator Android"
-date:   2018-08-02
+date:   2016-11-17
 excerpt: "Android application that interfaces with MATRIX Creator MALOS layer."
 feature: http://hpsaturn.com/assets/img/matrixcreatorheader.png
 tag:
