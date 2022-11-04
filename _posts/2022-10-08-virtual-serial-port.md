@@ -115,10 +115,23 @@ In other terminal connect the UDP port to the fake input serial port:
 netcat -u -l -p 9000 > /dev/pts/15
 ```
 
-And that it's! You can test the serial port using `tail`:
+And that it's! You can test the serial port using `cat`:
 
 ```bash
-tail -f /dev/pts/14
+cat /dev/pts/14
+```
+
+You should see the GPS output like this:
+
+```bash
+cat /dev/pts/10
+,,,,,,99.99,99.99,99.99*30
+$GPGSV,1,1,00*79
+$GPGLL,,,,,,V,N*64
+$GPRMC,,V,,,,,,,,,,N*53
+$GPVTG,,,,,,,,,N*30
+$GPGGA,,,,,,0,00,99.99,,,,,,*48
+
 ```
 
 With that you able to use the serial, for example for debugging or some application like `PyGPSClient`.
@@ -127,28 +140,21 @@ With that you able to use the serial, for example for debugging or some applicat
 
 ![PyGPSClient](/assets/img/pygpsclient.jpg)
 
-For instance we can use our virtual port with this soffware. For that you only put the new serial port in the next [python script](https://github.com/semuconsulting/PyGPSClient/blob/master/examples/socket_server.py) like this: 
-
-Change the last lines to:
+For instance we can use our virtual port with this soffware. For that you only launch PyGPSClient like that: 
 
 ```python
-  SERIAL = "/dev/tty.usbmodem14101"
-  BAUD = 115200
-  PORT = 50010
-  MAXCLIENTS = 5
+export PYGPSCLIENT_USERPORT="/dev/pts/14"
+pygpsclient
 ```
 
-launch the python socket server:
+Then select our fake serial port in the box and click on USB/UART button:
 
-```python
-python3 socket_server.py
-```
+![screenshot20221104_120455](https://user-images.githubusercontent.com/423856/199958122-37e0153e-5e3e-4fee-882e-7e3323058e3f.jpg)
 
-Then launch PyGPSClient and configure a TCP/UDP connection like this:
+![screenshot20221102_231819](https://user-images.githubusercontent.com/423856/199613436-ef607d92-e06d-44ef-8d0f-0e99e49bf481.jpg)
 
-![PyGPSClient UDP config](/assets/img/pygpsclient_udp_config.jpg)
 
-Click on TCP/UDP button and with that your remote GPS device will be connect :D
+The remote GPS device will be connected :D
 
 
 
