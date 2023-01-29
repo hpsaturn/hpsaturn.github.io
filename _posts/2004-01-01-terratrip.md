@@ -18,13 +18,13 @@ comments: false
 ## Technologies
 
 * `Motorola 68HC908`: Firmware developed in assembler on a Motorola `MC68HC908GP32` with a few code on `C`.<br/>
-* `CodeWarrior`: IDE, compiler, debugger and in-circuit debugger.
+* `CodeWarrior`: IDE, compiler, debugger and in-circuit programming.
 * `Hp48`: Navigation software using a `Hewlett Packard Hp48` interfaced via Serial connection.<br/>
 * `Jazz library`: Low level IDE, compiler and debugger for `SysRPL` and `Hp48 Saturn CPU assembler`.
    
 ## Target
 
-Rally computer for amateur and professional rally teams. Using a Hp48 calculator the rally team enter de race variables and the software give the next information:
+Rally computer for amateur and professional rally teams. Using a Hp48 calculator, the rally team enter the race variables and the software give the next information:
 
  - `Current position`, from odometer interfaced from car to hardware device with a switch sensor or hall effect sensor.
  - `Target position`, calculated for keep car synced.
@@ -58,7 +58,7 @@ Rally computer for amateur and professional rally teams. Using a Hp48 calculator
 
 ## Awards
 
-With this hardware and software that I wrote, my team won around 8 trophies and two championship on Bogotá on three years in two modalities, 4x4 and regularity.
+With this hardware and software that I did, my team won around 8 trophies and two championship on Bogotá on three years in two modalities, 4x4 and regularity.
 
 {% capture images %}
   {{ site.url }}/assets/img/nav48_1280_collage.jpg
