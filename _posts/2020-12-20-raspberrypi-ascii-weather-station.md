@@ -100,8 +100,11 @@ go get -u github.com/hpsaturn/wego
 
 Then **configure wego** like is described [here](https://github.com/hpsaturn/wego?organization=hpsaturn&organization=hpsaturn#setup). Remember only fill the settings for **openweathermap**.
 
-**NOTE**: Unfortunately forecast.io, now Darksky, was acquired by the fuck company Apple, and they closed it, for this reason please only use these API, the **steps 2 and following**.
+**NOTES**:  
 
+- Unfortunately forecast.io, now Darksky, was acquired by the fuck company Apple, and they closed it, for this reason please only use these API, the **steps 2 and following**.
+- The last version of go and dependencies on some Debian version has some troubles. On Debian Buster it should be works, but if you have issues, I added the complete **go** directory to the assets here in [Hackaday](https://hackaday.io/project/176491-ascii-weather-station/files) and also a pre-build **wego** binary
+- Sometimes a third party of OpenWeather API that maybe retrieve the city from your coordinates fails, is better use your exact coordinates of your city, the official coordinates (centroid) in the config file.
 
 ## Launcher
 
