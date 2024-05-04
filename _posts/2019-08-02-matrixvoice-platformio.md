@@ -6,11 +6,12 @@ excerpt: "How to build and upload for MatrixVoice board using PlatformIO."
 feature: http://hpsaturn.com/assets/img/matrixvoiceheader.png
 tag:
 - MatrixVoice
-- Arduino
+- MatrixCreator
 - ESP32
 - C++
 - IoT
 - PlatformIO
+- Arduino
 comments: false
 ---
 
