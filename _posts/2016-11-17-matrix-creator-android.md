@@ -50,13 +50,14 @@ alt="image alt text">
 * Manual IP Matrix device target
 
 ## TODO
-- [X] GPIO callback
-- [X] Pressure
-- [ ] Mic Array visualization (beamforming localization)
-- [ ] ZigbeeBulb basic control
-- [ ] LIRC custom control config
-- [ ] RaspberryPi Wifi config via BT4
-- [ ] MALOS WakeWord config via Android (in development)
+
+- [X]  GPIO callback
+- [X]  Pressure
+- [ ]  Mic Array visualization (beamforming localization)
+- [ ]  ZigbeeBulb basic control
+- [ ]  LIRC custom control config
+- [ ]  RaspberryPi Wifi config via BT4
+- [ ]  MALOS WakeWord config via Android (in development)
 
 ## Preriquisities
 
@@ -71,7 +72,7 @@ sudo apt install matrixio-malos
 reboot
 ```
 
-**NOTE**: 
+**NOTE**:
 * For more details: [Getting Started Guide](https://matrix-io.github.io/matrix-documentation/matrix-core/getting-started/core-installation/)
 * Your creator on the same network
 * Android 4.4.x or later
@@ -91,17 +92,19 @@ cd matrix-creator-malos-android
 #### Fabric configuration
 
 create file matrix-malos-demo/app/fabric.properties with:
-```
+
+```bash
 apiSecret=<YOUR FABRIC SECRET>
 apiKey=<YOUR FABRIC API KEY>
 ```
+
 (or open your project on AndroidStudio and config crashlytics fabric plugin or remove this dependency on gradle app file)
 
 #### Building and install
 
-```
+```bash
 ./gradlew assembleDebug
 ./gradlew installDebug
 ```
-(or with AndroidStudio IDE)
 
+(or with AndroidStudio IDE)

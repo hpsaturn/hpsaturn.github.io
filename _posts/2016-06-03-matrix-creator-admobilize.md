@@ -22,7 +22,9 @@ tag:
 comments: false
 ---
    
-<center><b>MatrixCreator / MatrixVoice</b>Android and hardware integrations over MatrixLabs boards</center>
+# MatrixCreator / MatrixVoice
+
+**Android and hardware integrations over MatrixLabs boards**
 
 Together with [Admobilize](https://www.admobilize.com/) team we released two boards in four years that using different technologies. In the main part of time I worked on low level layers of Android with C++ integrations using OpenCV and ZeroMQ techologies. Also we working with some Google technologies like GRPC and Protocol Buffers for try to generate different SDK to some software languages.
 
@@ -49,6 +51,7 @@ Together with [Admobilize](https://www.admobilize.com/) team we released two boa
 <a href="https://youtu.be/YMRRN0Mzvw0" target="_blank"><img src="{{ site.url }}/assets/img/matrixvoice_youtube.jpg" align="center"></a>
 
 [MatrixCreator](https://matrix-io.github.io/matrix-documentation/matrix-creator/overview/)  
+[MatrixVoice](https://matrix-io.github.io/matrix-documentation/matrix-voice/overview/)  
 [Admobilize](https://www.admobilize.com/)  
 [Github organization](https://github.com/matrix-io/)  
 [MatrixVoice posts here](https://hpsaturn.com/tags/#MatrixVoice)
