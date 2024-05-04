@@ -48,11 +48,10 @@ Together with [Admobilize](https://www.admobilize.com/) team we released two boa
 
 <a href="https://youtu.be/YMRRN0Mzvw0" target="_blank"><img src="{{ site.url }}/assets/img/matrixvoice_youtube.jpg" align="center"></a>
 
-[MatrixLabs](https://www.matrix.one/)  
+[MatrixCreator](https://matrix-io.github.io/matrix-documentation/matrix-creator/overview/)  
 [Admobilize](https://www.admobilize.com/)  
 [Github organization](https://github.com/matrix-io/)  
 [MatrixVoice posts here](https://hpsaturn.com/tags/#MatrixVoice)
-
 
 {% capture images %}
   {{ site.url }}/assets/img/matrixcreatorheader.png

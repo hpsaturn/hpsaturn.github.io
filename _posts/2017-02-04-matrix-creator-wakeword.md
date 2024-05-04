@@ -47,11 +47,10 @@ reboot
 
 ### MATRIXIO MALOS-WakeWord
 
-``` bash 
+```bash 
 sudo apt install matrixio-malos-wakeword 
 sudo reboot
 ```
-
 
 ### NodeJS Dependency
 
@@ -68,7 +67,6 @@ n 6.5
 # check version
 node -v
 ```
-
 
 ### Run sample DEMO
 
@@ -125,13 +123,14 @@ export PATH=$PATH:$PWD
 The driver follows the [MALOS protocol](https://github.com/matrix-io/matrix-creator-malos/blob/master/README.md#protocol).
 
 ### 0MQ Port
-```
+
+```bash
 60001
 ```
 
 ### Protocol buffers
 
-``` javascript
+```javascript
 message WakeWordParams {
   // Wake Word
   string wake_word = 1;
@@ -164,8 +163,8 @@ message WakeWordParams {
   // stop recognition service
   bool stop_recognition = 6;
 }
-
 ```
+
 The message is defined in [driver.proto](https://github.com/matrix-io/protocol-buffers/blob/master/malos/driver.proto).
 
 ### JavaScript example
@@ -176,14 +175,14 @@ First, define the address and port of the MATRIX Creator. In this case we make i
 because we are connecting from the local host but it needs to be different if we
 connect from another computer.
 
-``` javascript
+```javascript
 var creator_ip = '127.0.0.1'
 var creator_wakeword_base_port = 60001;
 ```
 
 #### Config and start wakeupword service
 
-``` javascript
+```javascript
 function startWakeUpRecognition(){
   console.log('<== config wakeword recognition..')
   var wakeword_config = matrix_io.malos.v1.io.WakeWordParams.create({
@@ -200,7 +199,7 @@ function startWakeUpRecognition(){
 
 #### Stop wakeupword service
 
-``` javascript
+```javascript
 function stopWakeUpRecognition(){
   console.log('<== stop wakeword recognition..')
   var wakeword_config = matrix_io.malos.v1.io.WakeWordParams.create({stopRecognition: true});
@@ -210,7 +209,7 @@ function stopWakeUpRecognition(){
 
 #### Register wakeupword callbacks (voice commands)
 
-``` javascript
+```javascript
 var updateSocket = zmq.socket('sub')
 updateSocket.connect('tcp://' + creator_ip + ':' + (creator_wakeword_base_port + 3))
 updateSocket.subscribe('')
@@ -239,9 +238,9 @@ updateSocket.on('message', function(wakeword_buffer) {
 });
 ```
 
-## Custom language and phrases for recognition 
+## Custom language and phrases for recognition
 
-1. Make a text plane like this: 
+1. Make a text plane like this:
 
   ``` nodejs
   matrix everloop
@@ -261,7 +260,6 @@ updateSocket.on('message', function(wakeword_buffer) {
 3. Dowload *TARXXXXX.tgz* and upgrade assets directory.
 
 4. **NOTE**: change wakeword and paths on config/start wakeword service method
-
 
 ## Build Debian package from source (optional)
 
@@ -285,4 +283,3 @@ cd ..
 sudo dpkg -i ../matrixio-malos-wakeword_xxx_armhf.deb
 sudo service matrixio-malos-wakeword start
 ```
-

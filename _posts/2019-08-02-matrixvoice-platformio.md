@@ -32,7 +32,6 @@ Please review the last version of this document in [github](https://github.com/h
 
 Please install first [PlatformIO](http://platformio.org/) open source ecosystem for IoT development and its command line tools (Windows, MacOs and Linux). Also, you may need to install [git](http://git-scm.com/) in your system (PC).
 
-
 ### MatrixVoice software
 
 For get OTA updates without RaspberryPi, first you should have a one RaspberryPi with `MatrixVoice` software. Please run into your RaspberryPi shell or ssh:
@@ -45,19 +44,26 @@ echo "deb https://apt.matrix.one/raspbian $(lsb_release -sc) main" | sudo tee /e
 ```
 
 ##### update your repository and packages:
+
 ```bash
 sudo apt-get update
 sudo apt-get upgrade
 ```
-#####  install the MATRIX init package:
+
+##### install the MATRIX init package
+
 ```bash
 sudo apt install matrixio-creator-init
 ```
-#####  reboot your Raspberry Pi:
+
+##### reboot your Raspberry Pi
+
 ```bash
 sudo reboot
 ```
+
 ##### SSH back into the pi, execute this command:
+
 ```bash
 voice_esp32_enable
 ```
@@ -70,21 +76,27 @@ Return to your PC and clone this repository:
 git clone https://github.com/hpsaturn/matrixvoice_platformio.git
 cd matrixvoice_platformio
 ```
+
 Copy `platformio.ini` sample and change your network parameters:
+
 ```bash
 cp platformio.ini.sample platformio.ini
 ```
+
 **NOTE:** plase change `platformio.ini` and set your `SSID` and `PASSW` like this:
 
 ```python
 '-DWIFI_SSID="MyWifiSsid"'
 '-DWIFI_PASS="MyWifiPassw"'
 ```
-##### building
+
+#### building
+
 ```bash
 pio run
 ```
-##### upload
+
+#### upload
 
 Enter to OTA directory and upload the firmware. Please replace the `ip` parameter with your `RaspberryPi` ip like this:
 
@@ -92,9 +104,11 @@ Enter to OTA directory and upload the firmware. Please replace the `ip` paramete
 cd ota
 ./install.sh 192.168.178.65
 ```
+
 **Note**: also you can try with raspberry.local instead ip address (sometimes it works)
 
 The console output should be like this:
+
 ```bash
 (master) avp:ota$ ./install.sh 192.168.178.65
 
@@ -128,6 +142,7 @@ done
 
 [SUCCESS] Please disconnect your MatrixVoice from the RaspberryPi and reconnect it alone for future OTA updates.
 ```
+
 (end of `Prerequisites`)
 
 ---
@@ -135,11 +150,13 @@ done
 ## Upload via PlatformIO OTA
 
 After that, you can using your MatrixVoice `without` RaspberryPi. For send new OTA updates, you only need:
+
 ```bash
 pio run --target upload
 ```
 
 For update `MatrixVoice` libraries in the future, you only need:
+
 ```bash
 pio lib update
 ```
@@ -148,11 +165,11 @@ pio lib update
 
 ## Troubleshooting
 
-#### Uploading issues
+### Uploading issues
 
 If `pio run --target upload` not works, please check `MVID` parameter, it should be a short name, or you can passing ESP32 ip in `upload_port` parameter in `platformio.ini` file.
 
-#### Building issues
+### Building issues
 
 For a complete `clean` of the project and get the last version of the libraries, please test the next commands:
 
