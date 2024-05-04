@@ -32,23 +32,24 @@ Together with [Admobilize](https://www.admobilize.com/) team we released two boa
 
 ## Technologies
 
-
-- [x] Android JNI using CMake variant to NDK
-- [x] OpenCV in Android to have a low level camera in Background
-- [x] Bluetooth low energy (BLE) GATT sever for communications
-- [x] ESP32 integration with PlatformIO CI
-- [x] Hal abstraction layer in C++ over Raspbian for each board.
-- [x] Multi user - multi language hardware abstraction using ZMQ
-- [x] Wakeword implementations on C++ using PocketSphinx
-- [x] GRPC and protocol buffers for realtime communication and APIs
-- [x] Android Things implementation over RaspberryPi
-- [x] Our Balena implementation in parallel to Android Things development
+- Android JNI using CMake variant to NDK
+- OpenCV in Android to have a low level camera in Background
+- Bluetooth low energy (BLE) GATT sever for communications
+- ESP32 integration with PlatformIO CI
+- Hal abstraction layer in C++ over Raspbian for each board.
+- Multi user - multi language hardware abstraction using ZMQ
+- Wakeword implementations on C++ using PocketSphinx
+- GRPC and protocol buffers for realtime communication and APIs
+- Android Things implementation over RaspberryPi
+- Our Balena implementation in parallel to Android Things development
 
 ![Admobilize Face detection]({{ site.url }}/assets/img/admobilize_face_detection.jpg)
 
 ---
 
 <a href="https://youtu.be/YMRRN0Mzvw0" target="_blank"><img src="{{ site.url }}/assets/img/matrixvoice_youtube.jpg" align="center"></a>
+
+## References
 
 [MatrixCreator](https://matrix-io.github.io/matrix-documentation/matrix-creator/overview/)  
 [MatrixVoice](https://matrix-io.github.io/matrix-documentation/matrix-voice/overview/)  
