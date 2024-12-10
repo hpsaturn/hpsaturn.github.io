@@ -14,7 +14,7 @@ tag:
 comments: false
 ---
 
-# ESP Coredump with Arduino Framework using PlatformIO
+## ESPCoredump with Arduino Framework and PlatformIO
 
 The latest version of PlatformIO and Espressif for the Arduino Framework includes the option for Coredump in FLASH. This means that you can capture exceptions with more information even when you are not connected to the device. The coredump binaries will be stored in your flash memory, allowing you to retrieve and analyze this information later. Additionally, this coredump provides more information than the standard exception decoder filter in PlatformIO, such as the complete stack backtrace, the current tasks at the moment of the crash, and other relevant details. Previously, this option was only available for IDF projects [^1], but it is now possible with the Arduino Framework. This guide aims to explain what you need to get started.
 
@@ -151,9 +151,6 @@ In this command, -p specifies the USB port to which your device is connected, an
 Finishing, the output would contains the complete information of the exception and the core dump information, like this:
 
 ### Output:
-
-<details>
-<summary><strong>==> Click to expand <==</strong></summary>
 
 ```cpp
 espcoredump.py v1.12.0
@@ -358,7 +355,6 @@ Name   Address   Size   Attrs
 ===============================================================
 Done!
 ```
-</details>
 
 (You also can download this coredump output example from [here](https://termbin.com/ddur) to better view)
 
