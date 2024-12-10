@@ -13,7 +13,8 @@ url: "https://hpsaturn.com" # the base hostname & protocol for your site, e.g. h
 
 # Jekyll
 permalink:          /:title/
-markdown:           kramdown
+# markdown:           kramdown
+markdown: CommonMarkGhPages
 highlighter:        rouge
 kramdown:
   auto_ids:         true
@@ -21,6 +22,7 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
+  parse_block_html: true
 mathjax:            true
 sass:
   sass_dir:         _sass
