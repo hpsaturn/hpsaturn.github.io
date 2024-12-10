@@ -92,24 +92,26 @@ void setup(){
 
 ## esp-coredump installation
 
-This utility is included in the tools of the IDF toolchain, but you may not have this tool if your project only uses the Arduino Framework and PlatformIO. Here, I found an alternative way to install this tool using the current PlatformIO setup:
+This utility is included in the tools of the IDF toolchain, but you may not have this tool if your project only uses the Arduino Framework and PlatformIO. Here, I found an alternative way to install this tool using the current PlatformIO setup, please follow the next steps:
 
-1. Change to PlatformIO IDF installation directory**:
+### 1. Change to PlatformIO IDF installation directory**:
 
 ```bash
 cd ~/.platformio/packages/framework-espidf
 ```
 
-2. Perform the installation of Espressif toolchain from there following the next steps:
+### 2. Perform the installation of Espressif toolchain
+
+From this directory execute the next commads:
 
 ```bash
 chmod 755 install.sh export.sh
 ./install.sh
 ```
 
-this should install the tools in your home, in the directory `~/.espressif/`
+this should install the tools in your home, specifically in `~/.espressif/`
 
-3. Run `export.sh` like this:
+### 3. Run `export.sh` like this:
 
 ```bash
 . ./export.sh
@@ -123,7 +125,7 @@ You can add this alias configuration to your `.bashrc` or shell configuration fi
 alias get_idf=". ~/.platformio/packages/framework-espidf/export.sh"
 ```
 
-4. Validate that the command was installed by running: 
+### 4. Validate that the command was installed by running: 
 
 ```bash
 esp-coredump --version
