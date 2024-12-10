@@ -142,9 +142,6 @@ In this command, -p specifies the USB port to which your device is connected, an
 
 And the output could contains the complete information of the exception and the coredump information like this:
 
-<details>
-<summary>Click to expand</summary>
-
 ```cpp
 espcoredump.py v1.12.0
 INFO: Invoke esptool to read image.
@@ -384,8 +381,6 @@ Name   Address   Size   Attrs
 ===============================================================
 Done!
 ```
-
-</details>
 
 You also can download this coredump output example from [here](https://termbin.com/jl3j).
 
