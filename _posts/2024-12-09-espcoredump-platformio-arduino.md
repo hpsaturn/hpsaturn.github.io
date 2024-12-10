@@ -153,7 +153,7 @@ Finishing, the output would contains the complete information of the exception a
 ### Output:
 
 <details>
-<summary>Click to expand</summary>
+<summary><strong>==> Click to expand <==</strong></summary>
 
 ```cpp
 espcoredump.py v1.12.0
@@ -360,9 +360,9 @@ Done!
 ```
 </details>
 
-### Analisys
+(You also can download this coredump output example from [here](https://termbin.com/ddur) to better view)
 
-You also can download this coredump output example from [here](https://termbin.com/ddur) to better view.
+### Analisys
 
 To better understand this information, you can watch the video [^2] included in the #references section. However, to summarize, you can focus on this section:
 
