@@ -271,7 +271,6 @@ a15            0x3                 3
   6    process 1070535100 0x4037ed64 in vPortEnterCritical (mux=0x3fcf0d94) at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/include/freertos/portmacro.h:578
   7    process 1070518840 0x4037ec02 in vPortEnterCritical (mux=0x3fcec904) at /home/runner/work/esp32-arduino-lib-builder/esp32-arduino-lib-builder/esp-idf/components/freertos/port/xtensa/include/freertos/portmacro.h:578
 
-
        TCB             NAME PRIO C/B  STACK USED/FREE
 ---------- ---------------- -------- ----------------
 0x3fcec088         loopTask      1/1        2112/6072
