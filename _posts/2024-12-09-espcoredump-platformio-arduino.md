@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ESPCoredump with Arduino Framework using PlatformIO"
+title:  "ESPCoredump with Arduino Framework"
 date:   2024-12-09
 excerpt: "Using esp-coredump with Arduino Framework and PlatformIO"
 feature: http://hpsaturn.com/assets/img/esp-coredump-preview.jpg
@@ -16,11 +16,11 @@ comments: false
 
 # ESP Coredump with Arduino Framework using PlatformIO
 
-The latest version of PlatformIO and Espressif for the Arduino Framework includes the option for Coredump in FLASH. This means that you can capture exceptions with more information even when you are not connected to the device. The coredump binaries will be stored in your flash memory, allowing you to retrieve and analyze this information later. Additionally, this coredump provides more information than the standard exception decoder filter in PlatformIO, such as the complete stack backtrace, the current tasks at the moment of the crash, and other relevant details. Previously, this option was only available for IDF projects, but it is now possible with the Arduino Framework. This guide aims to explain what you need to get started.
+The latest version of PlatformIO and Espressif for the Arduino Framework includes the option for Coredump in FLASH. This means that you can capture exceptions with more information even when you are not connected to the device. The coredump binaries will be stored in your flash memory, allowing you to retrieve and analyze this information later. Additionally, this coredump provides more information than the standard exception decoder filter in PlatformIO, such as the complete stack backtrace, the current tasks at the moment of the crash, and other relevant details. Previously, this option was only available for IDF projects [^1], but it is now possible with the Arduino Framework. This guide aims to explain what you need to get started.
 
 ## Prerequisites
 
-I assume that you are familiar with PlatformIO and have already deployed any firmware or app using the Arduino framework option.
+I assume that you are familiar with PlatformIO and have already deployed any firmware or app using the Arduino framework option, and maybe you will need a code that have problems, exceptions, core panics :D
 
 ## Partition config
 
@@ -57,7 +57,11 @@ build_flags =
   -D CORE_DEBUG_LEVEL=5   ; recommended only for debugging
 ```
 
-Note: if your project use a different partition schema, you should change it to have this partition coredump.
+Note: if your project use a different partition schema, you should change it to have this partition coredump, for instance adding one line more like this:
+
+```bash
+coredump, data, coredump,,        64K
+```
 
 ## Code
 
@@ -351,19 +355,33 @@ Name   Address   Size   Attrs
 Done!
 ```
 
-You also can download this coredump output example from [here](https://termbin.com/ddur).
+You also can download this coredump output example from [here](https://termbin.com/ddur) to better view.
+
+To better understand this information, you can watch the video [^2] included in the #references section. However, to summarize, you can focus on this section:
+
+```cpp
+========= THREAD 1 (TCB: 0x3fcec088, name: 'loopTask') ==========
+#0  0x4201c5bc in esp_now_is_peer_exist ()
+#1  0x42002855 in sendMessage (msglen=249, mac=0x3fc95df0 <radio> "\377\377\377\377\377\377", <incomplete sequence \364>) at examples/lib/espcamlib/src/ESPNowCam.cpp:76
+#2  0x42002a15 in ESPNowCam::sendData (this=0x3fc95df0 <radio>, data=<optimized out>, lenght=<optimized out>) at examples/lib/espcamlib/src/ESPNowCam.cpp:50
+#3  0x42002387 in processFrame () at examples/xiao-fpv-sender/xiao-fpv-sender.cpp:31
+#4  processFrame () at examples/xiao-fpv-sender/xiao-fpv-sender.cpp:26
+#5  0x420024be in loop () at examples/xiao-fpv-sender/xiao-fpv-sender.cpp:90
+```
+
+It shows the lines where the main thread, specifically the loop thread of the Arduino code, is crashing. For instance, it indicates that the **xiao-fpv-sender** example calls other functions from a library that caused the problem; in this case, the library object was never initialized (I forced this by commenting out the initialization).
 
 # Troubleshooting
 
-** If you don't have the directory:
+If you don't have this directory:
 
 ```bash
 cd ~/.platformio/packages/framework-espidf
 ```
 
-then, you only run a basic hello world in PlatformIO using `framework = espidf`.
+You only run a basic hello world in PlatformIO using `framework = espidf`.
 
 # References
 
-- [Espressif Coredump documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/core_dump.html)  
-- [Video: Using the core dump via Serial with IDF](https://youtu.be/MpD_3oVJAEs?si=xyctwDvsdBflVIRM)
+[^1]: [Espressif Coredump documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/core_dump.html)  
+[^2]: [Video: Using the core dump via Serial with IDF](https://youtu.be/MpD_3oVJAEs?si=xyctwDvsdBflVIRM)
