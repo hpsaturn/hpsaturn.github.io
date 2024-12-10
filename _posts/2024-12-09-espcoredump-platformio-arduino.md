@@ -119,13 +119,15 @@ this should install the tools in your home, specifically in `~/.espressif/`
 
 Optional:
 
-You can add this alias configuration to your `.bashrc` or shell configuration file like this:
+You can add the next alias configuration to your `.bashrc` or shell configuration, for future executions:
 
 ```bash
 alias get_idf=". ~/.platformio/packages/framework-espidf/export.sh"
 ```
 
-### 4. Validate that the command was installed by running: 
+with that you should have the command `get_idf` that it will load the idf tools commands like esp-coredump.
+
+### 4. Validate that the command was loaded:
 
 ```bash
 esp-coredump --version
@@ -134,7 +136,7 @@ espcoredump.py v1.12.0
 
 ## Execution and analisys
 
-In your project, after compiling and uploading your buggy code, if you encounter an exception, core panic, or any crash in your firmware, the coredump information will be in this partition. To retrieve the information, you should execute this tool in the root of your PlatformIO project like this:
+In your project, after compiling and uploading your buggy code, if you encounter an exception, core panic, or any crash in your firmware, the coredump information will be in this partition. To retrieve the information, you should execute this tool in the root of your PlatformIO project, like this:
 
 ```bash
 esp-coredump -p /dev/ttyACM0 info_corefile .pio/build/esp32dev/firmware.elf
@@ -142,7 +144,7 @@ esp-coredump -p /dev/ttyACM0 info_corefile .pio/build/esp32dev/firmware.elf
 
 In this command, -p specifies the USB port to which your device is connected, and the build directory corresponds to your env:xxxx declaration in your PlatformIO ini file.
 
-And the output could contains the complete information of the exception and the coredump information like this:
+Finishing, the output would contains the complete information of the exception and the core dump information, like this:
 
 ```cpp
 espcoredump.py v1.12.0
