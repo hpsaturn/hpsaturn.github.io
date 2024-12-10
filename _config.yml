@@ -28,6 +28,10 @@ sass:
   sass_dir:         _sass
   style:            compressed
 
+commonmark:
+  options: ["UNSAFE", "SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+
 # Comments
 disqus_shortname:   taylantatli
 
