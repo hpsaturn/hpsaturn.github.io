@@ -138,7 +138,7 @@ esp-coredump --version
 espcoredump.py v1.12.0
 ```
 
-# Execution and analisys
+# Execution and Analysis
 
 In your project, after compiling and uploading your buggy code, if you encounter an exception, core panic, or any crash in your firmware, the coredump information will be in this partition. To retrieve the information, you should execute this tool in the root of your PlatformIO project, like this:
 
@@ -358,7 +358,7 @@ Done!
 
 (You also can download this coredump output example from [here](https://termbin.com/ddur) to better view)
 
-### Analisys
+### Analysis
 
 To better understand this information, you can watch the video [^2] included in the #references section. However, to summarize, you can focus on this section:
 
