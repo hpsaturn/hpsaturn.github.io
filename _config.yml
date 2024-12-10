@@ -13,24 +13,26 @@ url: "https://hpsaturn.com" # the base hostname & protocol for your site, e.g. h
 
 # Jekyll
 permalink:          /:title/
-# markdown:           kramdown
-markdown: CommonMarkGhPages
+markdown:           kramdown
+# markdown:           CommonMarkGhPages
 highlighter:        rouge
+# CommonMarkGhPages:
 kramdown:
   auto_ids:         true
   footnote_nr:      1
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
-  parse_block_html: true
+  parse_block_html: false
 mathjax:            true
 sass:
   sass_dir:         _sass
   style:            compressed
 
+# CommonMarkGhPages
 commonmark:
   options: ["UNSAFE", "SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+  extensions: ["strikethrough", "table", "tagfilter"]
 
 # Comments
 disqus_shortname:   taylantatli
