@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MatrixCreator / MatrixVoice - Admobilize"
+title:  "Matrix Creator"
 imghead: matrixheader.jpg
 date:   2016-06-03
 excerpt: "Android and hardware integrations over MatrixLabs boards"
