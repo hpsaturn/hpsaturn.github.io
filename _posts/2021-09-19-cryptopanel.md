@@ -18,6 +18,12 @@ comments: false
 
 ESP32-Powered eInk Panel for Cryptocurrency Updates and News, using a LilyGo EDP47 board.
 
+## References
+
+`Sourcecode`: Last version of this guide and source code is in  [GitHub](https://github.com/hpsaturn/crypto-panel) <br/>
+`Webinstaller`: This project has its own web installer [here](https://hpsaturn.com/crypto-panel-installer/) <br/>
+`PlatformIO`: is an open source ecosystem for [IoT development](https://platformio.org/) <br/>
+
 ## Features
 
 - Panel installation and configuration via an easy [Web installer](https://hpsaturn.com/crypto-panel-installer/)
@@ -30,6 +36,8 @@ ESP32-Powered eInk Panel for Cryptocurrency Updates and News, using a LilyGo EDP
 - Deep sleep configurable (default: 10min).
 - Panel temperature ambient configurable (for improve colors)
 - Included optional basic 3D-Print frame
+
+![CryptoPanel dashboard photo](https://hpsaturn.com/assets/img/crypto_panel_preview.jpg)
 
 ## Firmware install
 
