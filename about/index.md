@@ -18,12 +18,12 @@ Alvaro Antonio Vanegas P.
 
 <p style="font-size:0.8rem;font-weight:100">
 Co-founder:
-<a href="http://bit.ly/1zLt9DA" target="_blank"><b>Lumera</b></a> & <a href="http://hackbo.org" target="_blank"><b>HackBo</b></a>
+<a href="{{ site.url }}/hackbo" target="_blank"><b>HackBo</b></a> & <a href="http://bit.ly/1zLt9DA" target="_blank"><b>Lumera</b></a>
 </p>
 
 <p style="font-size:0.8rem;font-weight:100">
 Founder:
-<a href="https://canair.io" target="_blank"><b>CanAirIO</b></a>
+<a href="{{ site.url }}/canairio" target="_blank"><b>CanAirIO</b></a>
 </p>
 </center>
 
