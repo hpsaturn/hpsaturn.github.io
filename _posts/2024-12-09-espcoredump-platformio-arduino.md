@@ -50,7 +50,8 @@ platform = espressif32
 board = esp32dev
 framework = arduino
 monitor_speed = 115200
-board_build.partitions = default_16MB.csv ; <===== this ======
+build_type = debug                        
+board_build.partitions = default_16MB.csv ; <===== this
 monitor_filters = 
   esp32_exception_decoder ; recommended
 build_flags = 
@@ -62,6 +63,8 @@ Note: if your project use a different partition schema, you should change it to 
 ```bash
 coredump, data, coredump,,        64K
 ```
+
+also is important notice that the `build_type` option, because in the last PlatformIO versions, this option remove the debug symbols. Change it to **debug**.
 
 ## Code
 
