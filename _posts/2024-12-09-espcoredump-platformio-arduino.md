@@ -385,7 +385,7 @@ If you don't have this directory:
 cd ~/.platformio/packages/framework-espidf
 ```
 
-You only run a basic hello world in PlatformIO using `framework = espidf`.
+You only should run a basic hello world in PlatformIO using `framework = espidf`.
 
 # References
 
