@@ -64,7 +64,3 @@ With this hardware and software that I did, my team won around 8 trophies and tw
   {{ site.url }}/assets/img/nav48_1280_collage.jpg
 {% endcapture %}
 {% include gallery images=images cols=1 %}
-
-
----
-

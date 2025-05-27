@@ -20,6 +20,9 @@ comments: false
 
 # Google Authenticator Key
 
+! ! ! D E P R E C A T E D ! ! !  
+(soon I'm going to release a new version)
+
 Portable EAP Protected One-Time Password (EAP-POTP). Hardware for provides two-factor user authentication. This is a
 PlatformIO project that using `WeMOS` like board with a `ESP32` and OLED SSD1306 display that interfaced with `GoogleAuthenticator` Android app. 
 
@@ -53,15 +56,15 @@ alt="image alt text">
 
 ## Compile and firmware upload
 
-Please review the last version of this document in [github](https://github.com/hpsaturn/esp32_wemos_oled.git).
+Please checkout the last version of this document in [github](https://github.com/hpsaturn/esp32_potp.git).
 
 #### Setup WiFi
 
 Setup your WiFi on `secrets.load` and run:
 
 ``` bash
-git clone https://github.com/hpsaturn/esp32_wemos_oled.git
-cd esp32_wemos_oled
+git clone https://github.com/hpsaturn/esp32_potp.git
+cd esp32_potp.git
 cp secrets.load.sample secrets.load
 chmod 755 secrets.load
 ```
@@ -70,7 +73,7 @@ chmod 755 secrets.load
 
 ```javascript
 platformio run --target upload
-``` 
+```
 
 #### OTA Updates (Optional)
 
@@ -78,7 +81,7 @@ For faster firmare updates via air (OTA)
 
 ```javascript
 platformio run --target upload --upload-port 192.168.1.107
-``` 
+```
 
 ### Library installation Troubleshooting
 
@@ -88,5 +91,6 @@ if you have the next error:
 src/Main.cpp:27:18: fatal error: sha1.h: No such file or directory
 compilation terminated.
 ```
+
 it is because the TOTP Arduino library is broken, please clean and remove hidden directories with `rm -rf .pioenvs .piolibdeps` and run `git pull origin master` again.
 

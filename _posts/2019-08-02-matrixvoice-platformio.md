@@ -10,6 +10,7 @@ tag:
 - ESP32
 - C++
 - IoT
+- Alexa
 - PlatformIO
 - Arduino
 comments: false

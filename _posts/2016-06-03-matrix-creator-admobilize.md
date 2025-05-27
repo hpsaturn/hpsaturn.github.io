@@ -12,7 +12,6 @@ tag:
 - MatrixVoice
 - MatrixCreator
 - Alexa
-- GoogleHome
 - PocketSphinx
 - ESP32
 - IoT

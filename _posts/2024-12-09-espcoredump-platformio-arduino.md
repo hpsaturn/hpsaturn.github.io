@@ -2,7 +2,7 @@
 layout: post
 title:  "ESPCoredump with Arduino Framework"
 date:   2024-12-09
-excerpt: "Using esp-coredump with Arduino Framework and PlatformIO"
+excerpt: "Improve debugging process using Coredump partition and Espressif tools"
 feature: http://hpsaturn.com/assets/img/esp-coredump-preview.jpg
 tag:
 - PlatformIO
