@@ -2,7 +2,7 @@
 layout: post
 title:  "Hotspot using Network Manager CLI"
 date:   2025-05-26
-excerpt: "How to do a Hotspot using NMCLI"
+excerpt: "How to share your connection using NMCLI on headless devices"
 feature: ""
 tag:
 - GNU-Linux
