@@ -20,21 +20,22 @@ ESP32-Powered eInk Panel for Cryptocurrency Updates and News, using a LilyGo EDP
 
 ## References
 
-`Sourcecode`: Last version of this guide and source code is in  [GitHub](https://github.com/hpsaturn/crypto-panel) <br/>
-`Webinstaller`: This project has its own web installer [here](https://hpsaturn.com/crypto-panel-installer/) <br/>
+`Sourcecode`: last version of this guide and source code in [GitHub](https://github.com/hpsaturn/crypto-panel) <br/>
+`Webinstaller`: this project has its own web installer [here](https://hpsaturn.com/crypto-panel-installer/) <br/>
 `PlatformIO`: is an open source ecosystem for [IoT development](https://platformio.org/) <br/>
 
 ## Features
 
-- Panel installation and configuration via an easy [Web installer](https://hpsaturn.com/crypto-panel-installer/)
-- Configuration via command line (CLI) using builtin console on the web installer
+- Panel installation and configuration using an easy [Web installer](https://hpsaturn.com/crypto-panel-installer/)
+- Configuration via command line (CLI) using the web installer or any Serial console
 - Support hundreds of coins from [Coingecko API](https://api.coingecko.com/api/v3/coins/list?include_platform=false)
 - Random cryptocurrencies news from Cointelegrah and others news portals
-- The coin news are follow via QR code
+- QR Code of each coin news link
 - Base currency USD/EUR configurable
 - Firmware update via automatic OTA updates
-- Deep sleep configurable (default: 10min).
+- Deep sleep configurable (default: 30 min).
 - Panel temperature ambient configurable (for improve colors)
+- Time Zone configurable
 - Included optional basic 3D-Print frame
 
 ![CryptoPanel dashboard photo](https://hpsaturn.com/assets/img/crypto_panel_preview.jpg)
