@@ -9,26 +9,19 @@ tag:
 - Arduino
 - IDF
 - C++
-- GNU-Linux
 - IoT
+- ESP32
 comments: false
 ---
 
-## ESPNowCam - Data streamer
+[![PlatformIO](https://github.com/hpsaturn/esp32s3-cam/workflows/PlatformIO/badge.svg)](https://github.com/hpsaturn/esp32s3-cam/actions/){: style="float: left"}[![Platforms](https://github.com/hpsaturn/esp32s3-cam/workflows/Scheduled/badge.svg)](https://github.com/hpsaturn/esp32s3-cam/actions/){: style="float: left"}![ViewCount](https://views.whatilearened.today/views/github/hpsaturn/esp32s3-cam.svg){: style="float: left"}<br/>
 
-[![PlatformIO](https://github.com/hpsaturn/esp32s3-cam/workflows/PlatformIO/badge.svg)](https://github.com/hpsaturn/esp32s3-cam/actions/)[![All  Platforms](https://github.com/hpsaturn/esp32s3-cam/workflows/Scheduled/badge.svg)](https://github.com/hpsaturn/esp32s3-cam/actions/)![ViewCount](https://views.whatilearened.today/views/github/hpsaturn/esp32s3-cam.svg)
+## ESPNowCam - Data streamer
 
 The ESPNowCam library is a simple and direct video or data streamer designed for popular ESP32 devices, utilizing the ESPNow protocol. No need for IPs, routers, or credentials—keeping it straightforward and hassle-free! :D
 
 **This library is for general purpose**, as it accepts pointers to various types of data, including buffers, strings, images, or any byte-formatted content. This flexibility enables transmission of larger packages across different scenarios, not limited to cameras alone. For instance, a buffer of 4000 bytes takes approximately 1/9 of a second to transmit, resulting in a frame rate of around 9FPS.
 
-<table>
-  <tr>
-    <td>
-      Don't forget to star ⭐ this repository
-    </td>
-  </tr>
-</table>
 
 ## Features
 
@@ -82,14 +75,12 @@ pio pkg install --library "hpsaturn/ESPNowCam@^0.1.17"
 
 **Arduino IDE**:
 
->[!IMPORTANT]
->For `Arduino IDE` is a little bit more complicated because the Arduino IDE dependencies resolver is very bad, but you only need:
->
->1. Download and install the [Nanopb library](https://github.com/nanopb/nanopb/releases/tag/nanopb-0.4.8) using the `Include Library` section via zip file
->2. and then with the **Library Manager** find **ESPNowCam** and install it.
+For `Arduino IDE` is a little bit more complicated because the Arduino IDE dependencies resolver is very bad, but you only need:
 
->[!TIP]
->Nanobp is not included as a dependency because, despite being 25 years after the invention of symbolic links, Arduino IDE does not support these types of files. Consider exploring PlatformIO for your future developments, as it offers a more versatile and modern development environment.
+1. Download and install the [Nanopb library](https://github.com/nanopb/nanopb/releases/tag/nanopb-0.4.8) using the `Include Library` section via zip file
+2. and then with the **Library Manager** find **ESPNowCam** and install it.
+
+Nanobp is not included as a dependency because, despite being 25 years after the invention of symbolic links, Arduino IDE does not support these types of files. Consider exploring PlatformIO for your future developments, as it offers a more versatile and modern development environment.
 
 ## Usage
 
@@ -118,10 +109,10 @@ void onDataReady(uint32_t lenght) {
   tft.drawJpg(fb, lenght , 0, 0, dw, dh);
 }
 ```
+
 [full receiver implementation example](https://github.com/hpsaturn/ESPNowCam/blob/master/examples/m5core2-basic-receiver/m5core2-basic-receiver.ino)
 
->[!NOTE]
->If you don't define any specific target, the radio will work in broadcasting mode, that means **1:N mode**, for instance one camera sending video to multiple screen receivers.
+If you don't define any specific target, the radio will work in broadcasting mode, that means **1:N mode**, for instance one camera sending video to multiple screen receivers.
 
 ### P2P mode (1:1)
 
@@ -133,8 +124,7 @@ radio.setTarget(macRecv);
 radio.init();
 ```
 
->[!TIP]
->This mode is very recommended to increase the performance, and also it reduces the noise and possible glitches.
+This mode is very recommended to increase the performance, and also it reduces the noise and possible glitches.
 
 ### Multi camera mode (N:1)
 
@@ -159,8 +149,7 @@ The library includes some pre-defined camera configs to have an easy implementat
 CamFreenove Camera;
 ```
 
->[!TIP]
->For now, it includes drivers for FreenoveS3, XIAOS3, M5UnitCamS3, Freenove WRover, ESP32Cam AI-Thinker and the TTGO T-Journal cameras, but you are able to define your custom camera like is shown in the [custom-camera-sender](https://github.com/hpsaturn/ESPNowCam/tree/master/examples/custom-camera-sender) example. If you can run it in a different camera, please notify me via a [GitHub issue](https://github.com/hpsaturn/ESPNowCam/issues/new) or please contribute with the project sending a pull request :D
+For now, it includes drivers for FreenoveS3, XIAOS3, M5UnitCamS3, Freenove WRover, ESP32Cam AI-Thinker and the TTGO T-Journal cameras, but you are able to define your custom camera like is shown in the [custom-camera-sender](https://github.com/hpsaturn/ESPNowCam/tree/master/examples/custom-camera-sender) example. If you can run it in a different camera, please notify me via a [GitHub issue](https://github.com/hpsaturn/ESPNowCam/issues/new) or please contribute with the project sending a pull request :D
 
 ### Channel
 
@@ -188,7 +177,14 @@ more details in the sample [xiao-internal-jpg-sender](https://github.com/hpsatur
 
 ## Examples
 
-[![Tank Example - Video demo](https://raw.githubusercontent.com/hpsaturn/ESPNowCam/master/pictures/tank_example.jpg)](https://youtu.be/nhLr7XEUdfU) [![ESPNowCam Broadcasting - Video demo](https://raw.githubusercontent.com/hpsaturn/ESPNowCam/master/pictures/broadcasting_example.jpg)](https://youtu.be/zXIzP1TGlpA) [![Multi camera - Video demo](https://raw.githubusercontent.com/hpsaturn/ESPNowCam/master/pictures/multi-camera.jpg)](https://youtu.be/ip6RohVEg2s)
+{% capture images %}
+  https://raw.githubusercontent.com/hpsaturn/ESPNowCam/master/pictures/tank_example.jpg
+  https://raw.githubusercontent.com/hpsaturn/ESPNowCam/master/pictures/broadcasting_example.jpg
+  https://raw.githubusercontent.com/hpsaturn/ESPNowCam/master/pictures/multi-camera.jpg
+{% endcapture %}
+{% include gallery images=images cols=3 %}  
+
+[[Tank Example]](https://youtu.be/nhLr7XEUdfU) [[Broadcasting Example] ](https://youtu.be/zXIzP1TGlpA) [[Multi camera Example]](https://youtu.be/ip6RohVEg2s)
 
 For install and run the [examples](https://github.com/hpsaturn/ESPNowCam/tree/master/examples), first install [PlatformIO](http://platformio.org/) open source ecosystem for IoT development compatible with **Arduino** IDE and its command line tools (Windows, MacOs and Linux). Also, you may need to install [git](http://git-scm.com/) in your system.
 
@@ -216,15 +212,13 @@ Also I'm working in a complete Camera configurator and test suite for this libra
 
 ## Troubleshooting
 
-> [!NOTE]
->To increase the performance, **the recommended use is the 1:1 mode**, and also is a good practice to configure the other radio senders around of this device in this mode, because if you have other senders in broadcasting mode together, them could be generating interference.
->
->The **Freenove camera** sometimes needs good power cable and also takes some seconds to stabilization, that means, that not worries for initial video glitches.
->
->**pb_decode.h error**: For **Arduino IDE users**, if you have a compiler error, maybe you forget install **NanoPb library**. Please see above in [library installation](#library-installation) section.
+To increase the performance, **the recommended use is the 1:1 mode**, and also is a good practice to configure the other radio senders around of this device in this mode, because if you have other senders in broadcasting mode together, them could be generating interference.
 
-> [!TIP]
-> This project was developed and thoroughly tested on PlatformIO. While I did compile and execute it successfully on Arduino IDE using Espressif 2.0.11 and Arduino IDE 2.2.1, with PSRAM enabled, I generally avoid using Arduino IDE due to its tendency to mix everything and its buggy nature. Therefore, **I highly recommend using PlatformIO** for a smoother and more reliable development experience.
+The **Freenove camera** sometimes needs good power cable and also takes some seconds to stabilization, that means, that not worries for initial video glitches.
+
+**pb_decode.h error**: For **Arduino IDE users**, if you have a compiler error, maybe you forget install **NanoPb library**. Please see above in [library installation](#library-installation) section.
+
+This project was developed and thoroughly tested on PlatformIO. While I did compile and execute it successfully on Arduino IDE using Espressif 2.0.11 and Arduino IDE 2.2.1, with PSRAM enabled, I generally avoid using Arduino IDE due to its tendency to mix everything and its buggy nature. Therefore, **I highly recommend using PlatformIO** for a smoother and more reliable development experience.
 
 ## TODO
 
@@ -246,4 +240,3 @@ I want to extend my gratitude to:
 [@turmandreams](https://github.com/turmandreams) for tests on the AI-Thinker Camera and the M5Core receiver.  
 
 ---
-
