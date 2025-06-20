@@ -2,7 +2,7 @@
 layout: post
 title:  "ESPNowCam Library"
 date:   2023-12-19
-excerpt: "A simple and direct video or data streamer utilizing the ESPNow protocol"
+excerpt: "It is simple and direct video or data streamer utilizing the ESPNow protocol"
 feature: https://img.youtube.com/vi/ibuKil7jjsg/maxresdefault.jpg
 tag:
 - PlatformIO
@@ -16,12 +16,13 @@ comments: false
 
 [![PlatformIO](https://github.com/hpsaturn/esp32s3-cam/workflows/PlatformIO/badge.svg)](https://github.com/hpsaturn/esp32s3-cam/actions/){: style="float: left"}[![Platforms](https://github.com/hpsaturn/esp32s3-cam/workflows/Scheduled/badge.svg)](https://github.com/hpsaturn/esp32s3-cam/actions/){: style="float: left"}![ViewCount](https://views.whatilearened.today/views/github/hpsaturn/esp32s3-cam.svg){: style="float: left"}<br/>
 
-## ESPNowCam - Data streamer
+## ESPNowCam
 
-The ESPNowCam library is a simple and direct video or data streamer designed for popular ESP32 devices, utilizing the ESPNow protocol. No need for IPs, routers, or credentials—keeping it straightforward and hassle-free! :D
+This library is a simple and direct data streamer, designed for popular ESP32 devices, utilizing the ESPNow protocol. No need for IPs, routers, or credentials—keeping it straightforward and hassle-free! :D
 
 **This library is for general purpose**, as it accepts pointers to various types of data, including buffers, strings, images, or any byte-formatted content. This flexibility enables transmission of larger packages across different scenarios, not limited to cameras alone. For instance, a buffer of 4000 bytes takes approximately 1/9 of a second to transmit, resulting in a frame rate of around 9FPS.
 
+**Source Code**: [Github](https://github.com/ESPNowCam)
 
 ## Features
 
@@ -84,16 +85,19 @@ Nanobp is not included as a dependency because, despite being 25 years after the
 
 ## Usage
 
+### Default mode (1:N)
+
+If you don't define any specific target, the radio will work in broadcasting mode, that means **1:N mode**, for instance one camera sending video to multiple screen receivers.
+
 **To send** any kind of data, you only need a buffer and the size to send:
 
 ```cpp
-#include <ESPNowCam.h>
-
 ESPNowCam radio;
 
 radio.init();
 radio.sendData(data, data_len);
 ```
+
 [full sender implementation example](https://github.com/hpsaturn/ESPNowCam/blob/master/examples/xiao-espnow-sender/xiao-espnow-sender.cpp)
 
 **To receive** the data, you only need to define a buffer and callback:
@@ -111,8 +115,6 @@ void onDataReady(uint32_t lenght) {
 ```
 
 [full receiver implementation example](https://github.com/hpsaturn/ESPNowCam/blob/master/examples/m5core2-basic-receiver/m5core2-basic-receiver.ino)
-
-If you don't define any specific target, the radio will work in broadcasting mode, that means **1:N mode**, for instance one camera sending video to multiple screen receivers.
 
 ### P2P mode (1:1)
 
@@ -184,7 +186,7 @@ more details in the sample [xiao-internal-jpg-sender](https://github.com/hpsatur
 {% endcapture %}
 {% include gallery images=images cols=3 %}  
 
-[[Tank Example]](https://youtu.be/nhLr7XEUdfU) [[Broadcasting Example] ](https://youtu.be/zXIzP1TGlpA) [[Multi camera Example]](https://youtu.be/ip6RohVEg2s)
+[[Tank Example]](https://youtu.be/nhLr7XEUdfU) [[Broadcasting Example]](https://youtu.be/zXIzP1TGlpA) [[Multi camera Example]](https://youtu.be/ip6RohVEg2s)
 
 For install and run the [examples](https://github.com/hpsaturn/ESPNowCam/tree/master/examples), first install [PlatformIO](http://platformio.org/) open source ecosystem for IoT development compatible with **Arduino** IDE and its command line tools (Windows, MacOs and Linux). Also, you may need to install [git](http://git-scm.com/) in your system.
 
