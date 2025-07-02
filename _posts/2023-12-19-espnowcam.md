@@ -7,10 +7,11 @@ feature: https://img.youtube.com/vi/ibuKil7jjsg/maxresdefault.jpg
 tag:
 - PlatformIO
 - Arduino
-- IDF
 - C++
 - IoT
 - ESP32
+- ESPIDF
+
 comments: false
 ---
 

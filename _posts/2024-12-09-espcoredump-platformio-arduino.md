@@ -7,10 +7,11 @@ feature: http://hpsaturn.com/assets/img/esp-coredump-preview.jpg
 tag:
 - PlatformIO
 - Arduino
-- IDF
 - C++
 - GNU-Linux
 - IoT
+- ESP32
+- ESPIDF
 comments: false
 ---
 
