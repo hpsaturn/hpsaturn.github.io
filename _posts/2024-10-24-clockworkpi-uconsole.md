@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "uConsole - x48ng"
-date:   2024-10-24
+date:   2025-07-03
 excerpt: "How to use the uConsole like a Hp48 calculator"
 feature: "https://hpsaturn.com/assets/img/uconsole_x48ng_preview.jpg"
 tag:
@@ -43,6 +43,45 @@ x48ng --tui-tiny --mono -T
 This alternative runs a ncurses version for any terminal:
 
 ![x48ng Filer Screenshot](/assets/img/uconsole_x48ng_filer.jpg)
+
+### Transfer files
+
+Maybe the easy way for transfer files to the emulator is using Kermit protocol, but is possible also other protocols like XModem. Here I'm going to explain the alternive using **ckermit**:
+
+```shell
+sudo apt install ckermit
+```
+
+Then, write a script in you user binary directory on ~/bin for instance with the name kermit48, with the next contents:
+
+```bash
+#!/bin/bash
+
+if [ "$1" = "" ]; then
+  echo "usage: kermit48 /dev/ttyxx"
+  exit 1
+fi
+
+kermit -l $1 -C "set modem type direct, set prefixing all, set speed 9600, set carrier-watch off, set flow none, set parity none, set block 3"
+```
+
+(don't forget set executable permissions with `chmod +x ~/bin/kermit48`)
+
+Run the emulator, and its bottom line you are able to see something like this:
+
+```shell
+wire: /dev/pts/16
+```
+
+Then run kermit script like this:
+
+```shell
+kermit48 /dev/pts/16
+```
+
+On the kermit terminal, you are able to navitage to any directory and send commands with `send xxx`. Previosly you should start in the emulator, the kermit server with `server` command or with the RIGHT SHIFT + RIGHT ARROW.
+
+![x48ng uconsole kermit demo](/assets/img/uconsole_x48ng_kermit_demo.jpg)
 
 ### ROM state backups
 
