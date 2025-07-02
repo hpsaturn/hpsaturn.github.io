@@ -14,7 +14,7 @@ comments: false
 
 ## x48ng - uConsole
 
-Diving into the past with this nostalgic HP48Gx, a powerful handheld calculator from the 90s, now running here on an x48ng emulator in this #uConsole or any GNU-Linux device.
+Diving into the past with this nostalgic HP48Gx, a powerful handheld calculator from the 90s, now running on an x48ng emulator in the awesome [uConsole](https://youtu.be/eDFSc6imKTk) or any GNU-Linux device.
 
 ## Installation
 
@@ -100,6 +100,6 @@ tar zxf ~/bkp20241020_135648.tar.gz -C ~/.config/x48ng/
 
 ## Demo
 
-It's a little demo, of how to we used in these years the Jazz 6.8 library and TED editor to navigate, edit, and even decompile system calls and third-party programs written in Assembler or SysRPL, right on your device, and do all that in the middle of your coding session, was truly amazing in those years. Thanks to these awesome programs and features, we had a lot of "open source" software in this era.
+It's a [little demo](https://www.youtube.com/shorts/AzAMqLjMT-Q), of how to we used in these years the Jazz 6.8 library and TED editor to navigate, edit, and even decompile system calls and third-party programs written in Assembler or SysRPL, right on your device, and do all that in the middle of your coding session, was truly amazing in those years. Thanks to these awesome programs and features, we had a lot of "open source" software in this era.
 
 [![x48ng uConsole Demo](/assets/img/uconsole_x48ng_video.jpg)](https://www.youtube.com/shorts/AzAMqLjMT-Q)
