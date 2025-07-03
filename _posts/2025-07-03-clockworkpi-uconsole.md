@@ -52,7 +52,7 @@ Maybe the easy way for transfer files to the emulator is using Kermit protocol, 
 sudo apt install ckermit
 ```
 
-Then, write a script in you user binary directory on ~/bin for instance with the name kermit48, with the next contents:
+Then, write a script in your user binary directory on `~/bin` for instance with the name `kermit48`, with the next contents:
 
 ```bash
 #!/bin/bash
@@ -79,9 +79,10 @@ Then run kermit script like this:
 kermit48 /dev/pts/16
 ```
 
-On the kermit terminal, you are able to navitage to any directory and send commands with `send xxx`. Previosly you should start in the emulator, the kermit server with `server` command or with the RIGHT SHIFT + RIGHT ARROW.
+On the kermit terminal, you are able to navitage to any directory and send commands with `send xxx`. Previosly you should start in the emulator, the kermit server with the `server` command or with the RIGHT SHIFT + RIGHT ARROW shortcut.
 
 ![x48ng uconsole kermit demo](/assets/img/uconsole_x48ng_kermit_demo.jpg)
+(left: kermit tranfering a file. right: x48ng receiving this file)
 
 ### ROM state backups
 
@@ -106,9 +107,8 @@ It's a [little demo](https://www.youtube.com/shorts/AzAMqLjMT-Q), of how to we u
 
 ## Troubleshotting
 
-- Sometimes the Emulator go to standby off state, and is difficult to power on agai. Please, try many times with the ON shortcut.. Sometimes try to perform reset shortuct (ON+C).
+Sometimes the x48ng emulator will be to standby or poweroff state, and it is very difficult to poweron again. Please, try many times with the (ON) shortcut.. Or ometimes, you should perform reset shortuct (ON+C).  
 
-- Some assembler executables sometimes freeze de execution. Please report it in the GitHub issues sections.
+Some assembler executables sometimes freeze de execution. Please report it in the GitHub issues section.  
 
-- The emulated serial comm or wire, sometimes changes. Plese keep in mind it when you repeat the kermit command. Check the serial device number in the bottom line of the emulator screen.
-
+The emulated serial comm device or `wire`, sometimes changes. Please keep in mind it when you are repeating the kermit command to transfer files. Check the serial device number in the bottom line of the emulator screen, and change this script parameter of `kermit48`.
