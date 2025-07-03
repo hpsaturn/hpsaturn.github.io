@@ -14,7 +14,7 @@ comments: false
 
 ## x48ng - uConsole
 
-Diving into the past with this nostalgic HP48Gx, a powerful handheld calculator from the 90s, now running on an x48ng emulator in the awesome [uConsole](https://youtu.be/eDFSc6imKTk) or any GNU-Linux device.
+Diving into the past with this nostalgic HP48Gx, a powerful handheld calculator from the 90s, now running with the x48ng emulator on the awesome [uConsole](https://youtu.be/eDFSc6imKTk) or any GNU-Linux device.
 
 ## Installation
 
@@ -67,7 +67,7 @@ kermit -l $1 -C "set modem type direct, set prefixing all, set speed 9600, set c
 
 (don't forget set executable permissions with `chmod +x ~/bin/kermit48`)
 
-Run the emulator, and its bottom line you are able to see something like this:
+Run the emulator, and in the its bottom line you are able to see something like this:
 
 ```shell
 wire: /dev/pts/16
@@ -103,3 +103,12 @@ tar zxf ~/bkp20241020_135648.tar.gz -C ~/.config/x48ng/
 It's a [little demo](https://www.youtube.com/shorts/AzAMqLjMT-Q), of how to we used in these years the Jazz 6.8 library and TED editor to navigate, edit, and even decompile system calls and third-party programs written in Assembler or SysRPL, right on your device, and do all that in the middle of your coding session, was truly amazing in those years. Thanks to these awesome programs and features, we had a lot of "open source" software in this era.
 
 [![x48ng uConsole Demo](/assets/img/uconsole_x48ng_video.jpg)](https://www.youtube.com/shorts/AzAMqLjMT-Q)
+
+## Troubleshotting
+
+- Sometimes the Emulator go to standby off state, and is difficult to power on agai. Please, try many times with the ON shortcut.. Sometimes try to perform reset shortuct (ON+C).
+
+- Some assembler executables sometimes freeze de execution. Please report it in the GitHub issues sections.
+
+- The emulated serial comm or wire, sometimes changes. Plese keep in mind it when you repeat the kermit command. Check the serial device number in the bottom line of the emulator screen.
+
