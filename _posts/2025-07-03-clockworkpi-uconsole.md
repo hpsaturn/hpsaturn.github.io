@@ -107,7 +107,7 @@ It's a [little demo](https://www.youtube.com/shorts/AzAMqLjMT-Q), of how to we u
 
 ## Troubleshotting
 
-Sometimes the x48ng emulator will be to standby or poweroff state, and it is very difficult to poweron again. Please, try many times with the (ON) shortcut.. Or ometimes, you should perform reset shortuct (ON+C).  
+Sometimes the x48ng emulator will be to standby or poweroff state, and it is very difficult to poweron again. Please, try many times with the (ON) shortcut.. Or sometimes, you should perform reset shortuct (ON+C).  
 
 Some assembler executables sometimes freeze de execution. Please report it in the GitHub issues section.  
 
