@@ -3,7 +3,7 @@ layout: post
 title:  "Hotspot using Network Manager CLI"
 date:   2025-05-26
 excerpt: "How to share your connection using NMCLI on headless devices"
-feature: "http://influxdb.canair.io:8080/images/pilauncher_feature.jpg"
+feature: "https://hpsaturn.com/assets/img/pilauncher_feature.jpg"
 tag:
 - GNU-Linux
 - Debian
