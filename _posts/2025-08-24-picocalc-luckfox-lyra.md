@@ -2,7 +2,7 @@
 layout: post
 title:  "Picocal Luckfox Lyra"
 date:   2025-08-24
-excerpt: "Picocalc with Linux from scratch without uses Windows"
+excerpt: "Picocalc with Linux from scratch without use Windows tools"
 feature: "https://hpsaturn.com/assets/img/uconsole_x48ng_preview.jpg"
 tag:
 - GNU-Linux
@@ -13,10 +13,10 @@ comments: false
 
 ## Picocal Luckfox Lyra
 
-Here's the current status of my migration of the x48ng emulator to Picocalc using a modified Luckfox Lyra board. For now, only the Ncurses version works, but I plan to add SDL support as well. It's already functional! :)
+Here's the current status of my migration of the x48ng emulator to Picocalc using a modified Luckfox Lyra board and its Linux from scratch modified. For now, only the Ncurses version works, but I plan to add SDL support as well. It's already functional! Also I did it entirely without closed-source Windows tools, which was the biggest challenge! :)
 
 Current issues and steps to replicate it:
-https://github.com/gwenhael-le-moine/x48ng/issues/31
+[here](https://github.com/benklop/picocalc-luckfox-lyra/pull/7)
 
 ## Pull Request status
 
@@ -41,8 +41,9 @@ This PR is trying to add [x48ng emulator](https://github.com/gwenhael-le-moine/x
 - [x] https://github.com/gwenhael-le-moine/x48ng/issues/29
 - [x] https://github.com/gwenhael-le-moine/x48ng/issues/30
 - [x] https://github.com/gwenhael-le-moine/x48ng/issues/31
-- [x]  https://github.com/gwenhael-le-moine/x48ng/issues/33
-- [ ]  https://github.com/gwenhael-le-moine/x48ng/issues/35
+- [x] https://github.com/gwenhael-le-moine/x48ng/issues/33
+- [ ] https://github.com/gwenhael-le-moine/x48ng/issues/35
+
 ## Installation steps
 
 ### buildroot base
