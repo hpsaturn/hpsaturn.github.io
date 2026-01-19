@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Picocal Luckfox Lyra"
+title:  "Picocal Luckfox Lyra - x48ng"
 date:   2025-08-24
 excerpt: "Picocalc with Linux from scratch without use Windows tools"
 feature: "https://hpsaturn.com/assets/img/picocalc_x48ng_preview.jpg"
@@ -73,3 +73,5 @@ cd picocalc-luckfox-lyra
 4. change the fbterm config file with mono font and size 7
 5. run `x48ng --tui-tiny --mono` (try with -r if not response and press F5 to ON)
 6. F1 to exit
+
+![preview x48ng on Picocalc](https://hpsaturn.com/assets/img/picocalc_x48ng_preview.jpg)

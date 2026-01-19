@@ -5,6 +5,7 @@ imghead: nav48_collage.jpg
 date:   2004-01-01
 excerpt: "Rally computer implementation on a Hp48 calculator and Motorola microcontroller."
 project: true
+feature: "https://hpsaturn.com/assets/img/nav48_1280_collage.jpg"
 tag:
 - Assembler
 - C++
@@ -17,21 +18,21 @@ comments: false
 
 ## Technologies
 
-* `Motorola 68HC908`: Firmware developed in assembler on a Motorola `MC68HC908GP32` with a few code on `C`.<br/>
+* `Motorola 68HC908`: Firmware developed in assembler on a Motorola `MC68HC908GP32` with a few code on `C`.
 * `CodeWarrior`: IDE, compiler, debugger and in-circuit programming.
-* `Hp48`: Navigation software using a `Hewlett Packard Hp48` interfaced via Serial connection.<br/>
-* `Jazz library`: Low level IDE, compiler and debugger for `SysRPL` and `Hp48 Saturn CPU assembler`.
-   
+* `Hp48`: Navigation software using a `Hewlett Packard Hp48` interfaced via Serial connection.
+* `Jazz library`: Low level IDE, compiler and debugger for `SysRPL` and `Hp48 Saturn CPU assembler`
+
 ## Target
 
 Rally computer for amateur and professional rally teams. Using a Hp48 calculator, the rally team enter the race variables and the software give the next information:
 
- - `Current position`, from odometer interfaced from car to hardware device with a switch sensor or hall effect sensor.
- - `Target position`, calculated for keep car synced.
- - `Distance offset`, calculated from current position and race data.
- - `Current track`, from race information.
- - `Multiple time mode`, track time, race time, start and end time, etc.
- 
+* `Current position`, from odometer interfaced from car to hardware device with a switch sensor or hall effect sensor.
+* `Target position`, calculated for keep car synced.
+* `Distance offset`, calculated from current position and race data.
+* `Current track`, from race information.
+* `Multiple time mode`, track time, race time, start and end time, etc.
+
 ---
 
 ## Nav48 app
@@ -50,7 +51,7 @@ Rally computer for amateur and professional rally teams. Using a Hp48 calculator
 
 Unfortunately I lost the source code directory, but in 2025 I found some things. Right now this data archeology and forensic tasks will be here:
 
-https://github.com/hpsaturn/nav48
+[https://github.com/hpsaturn/nav48](https://github.com/hpsaturn/nav48)
 
 ## Nav48 Hardware
 
