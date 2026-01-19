@@ -46,6 +46,12 @@ Rally computer for amateur and professional rally teams. Using a Hp48 calculator
 {% endcapture %}
 {% include gallery images=images caption="Hewlett Packard Hp48 application Nav48 screenshots" cols=3 %}
 
+## Source code
+
+Unfortunately I lost the source code directory, but in 2025 I found some things. Right now this data archeology and forensic tasks will be here:
+
+https://github.com/hpsaturn/nav48
+
 ## Nav48 Hardware
 
 {% capture images %}
