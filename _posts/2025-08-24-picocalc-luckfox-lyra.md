@@ -3,7 +3,7 @@ layout: post
 title:  "Picocal Luckfox Lyra"
 date:   2025-08-24
 excerpt: "Picocalc with Linux from scratch without use Windows tools"
-feature: "https://hpsaturn.com/assets/img/picocalc_luckfox_lyra_top.jpg"
+feature: "https://hpsaturn.com/assets/img/picocalc_x48ng_preview.jpg"
 tag:
 - GNU-Linux
 - Picocalc
