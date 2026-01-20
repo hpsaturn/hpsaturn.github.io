@@ -15,12 +15,10 @@ comments: false
 
 Here's the current status of my migration of the x48ng emulator to Picocalc using a modified Luckfox Lyra board and its Linux from scratch modified. For now, only the Ncurses version works, but I plan to add SDL support as well. It's already functional! Also I did it entirely without closed-source Windows tools, which was the biggest challenge! :)
 
+## Status
+
 Current issues and steps to replicate it:
 [here](https://github.com/benklop/picocalc-luckfox-lyra/pull/7)
-
-## Pull Request status
-
-This PR is trying to add [x48ng emulator](https://github.com/gwenhael-le-moine/x48ng) package to the buildroot system.
 
 ## Migration status
 
