@@ -4,6 +4,7 @@ title:  "Berlin Colombian Beans"
 imghead: colombian_beans_header.jpg
 date:   2024-10-30
 excerpt: "Recipe of colombian cargamanto red beans in Berlin"
+feature: https://hpsaturn.com/assets/img/colombian_beans.jpg
 life: true
 tag:
 - Recipe
