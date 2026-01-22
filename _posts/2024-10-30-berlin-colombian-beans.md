@@ -26,7 +26,7 @@ This recipe is for me the best preparation of the special red beans of Colombia,
 * 2 or more garlics
 * 1/4 Panela (optional)
 * 1 African or latin american banana (optional)
-* 1 Chili spice pepper
+* 1 Chili spice pepper (optional)
 
 ## Berlin ingredients
 
@@ -44,10 +44,12 @@ Well, for me the best beans its with pork meat and beacon. For that I shoud do t
 
 First put 1kg of pork in a pressure cooker with a complete onion and complete tomatos and black beans or red beans (two cups), salt and pepper and some garlic (a bit) for 1h
 
-After that, extract the onion and tomatos cut these very small joined with more leek onion (puerros) and tomato maybe more garlic (one garlic), pepper and salt and re-introduce to the pot but now for 30 minutes without pressure, with the lid open a medium fire.
+After that, extract the onion and tomatos cut these very small joined with more leek onion (puerros) and tomato maybe more garlic, pepper and salt and re-introduce to the pot but now for 30 minutes without pressure, with the lid open a medium fire. If you want also add spice pepper.
 
-If you want a bit sweet you could add in the last step a small cube of "panela" (3x3x3 cms). I love this, and I did it for this opportunity.
+If you want a bit sweet, you could add in the last step a small cube of "panela" (3x3x3 cms). I love this.
 
-Of course, if you are vegan you only change the meat with something.
+Other option for replace the "panela" is the African banano, that is different to the normal banano. That is a well replace of the latino-american banano. Only put one "banano maduro" in the last step in cubes. Not to much because it is sweet if the banano is black, but if it is more yellow is not too sweet but the flavor is different.
 
-Other option for replace the "panela" is the African banano, that is different to the normal banano. That is a well replace of the latino-american banano. Only put one "banano maduro" in the last step in cubes. Not to much.
+Of course, if you are vegan you only change the meat with something. This alternative is also so good and you can use it also with other side dishes.
+
+If you want add a comment or report an issue, please use the botton below.
