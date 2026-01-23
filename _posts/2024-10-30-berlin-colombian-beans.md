@@ -41,11 +41,16 @@ Possible Berlin places:
 * Chili mix pepper spice in [REWE](https://www.rewe.de/shop/p/rewe-feine-welt-chili-mix-scharf-30g/7033652)
 * All special ingredients maybe in [Latino point Supermarket](https://maps.app.goo.gl/dYSf5JsrmprxLX728)
 
+{% capture images %}
+  {{ site.url }}/assets/img/colombian_beans.jpg
+{% endcapture %}
+{% include gallery images=images cols=1 %}
+
 ## Preparation
 
 Well, for me the best beans are with pork meat and bacon. For that, I should do the following:
 
-First put 1kg of pork in a pressure cooker with a whole onion and whole tomatoes and red beans (two cups), salt and pepper and some garlic cloves (a bit) for 1h
+First put 1kg of pork in a pressure cooker with a whole onion and whole tomatoes and red beans (two cups), salt and pepper and some garlic cloves (a bit) for 1h.
 
 After that, extract the onion and tomatoes cut these into very small pieces along with more leek (puerro) and tomato maybe more garlic, pepper and salt and re-introduce to the pot and cook for 30 minutes without pressure, with the lid open over medium heat. If you want also add chili pepper spice.
 
@@ -55,4 +60,12 @@ Another option to replace the "panela" is the African banana, that is different 
 
 Of course, if you are vegan, you can simply replace the meat with something else. This alternative is also very good and can be served with other side dishes.
 
+
+{% capture images %}
+  {{ site.url }}/assets/img/colombian_beans_cargamanto.jpg
+  {{ site.url }}/assets/img/colombian_beans_maduro.jpg
+{% endcapture %}
+{% include gallery images=images cols=2 %}
+
 If you want to add a comment or report an issue, please use the button below.
+
