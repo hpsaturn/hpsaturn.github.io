@@ -1,6 +1,6 @@
 ---
 layout: life
-title: Life Non Tech Posts
-excerpt: "A List of Personal no Tech posts"
+title: Non Tech Life
+excerpt: "A list of non tech personal posts"
 comments: false
 ---
