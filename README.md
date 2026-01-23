@@ -1,6 +1,6 @@
 # Hpsaturn Blog
 
-Source code of https://hpsatur.com or https://hpsaturn.github.io
+Source code of https://hpsaturn.com or https://hpsaturn.github.io
 
 ![Hpsturn Preview](assets/img/preview.jpg)
 
