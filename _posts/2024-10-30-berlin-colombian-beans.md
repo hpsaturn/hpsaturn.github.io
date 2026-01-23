@@ -16,18 +16,20 @@ comments: false
 
 <center><b>Colombian Red beans - Frijoles verdes</b></center>
 
-This recipe is for me the best preparation of the special red beans of Colombia, with "Frijol verde" or "Cargamanto" variaty. I'm not a profesional chef, I'm only sharing my recipe and ingredients with its locations for Berlin - Germany. Of course is possible change this around your wishes, and maybe it should more easy and better if you are in South America.
+This recipe is for me the best preparation of the special red beans of Colombia, with "Frijol verde" or "Cargamanto" variety. I'm not a professional chef, I'm only sharing my recipe and ingredients with their locations in Berlin - Germany. Of course it's possible to change this according to your preferences, and maybe it would be easier and better if you are in South America.
+
+The title is a bit confusing, but I don't know why in Colombia, the red beans are called "Frijol verde" or green beans, maybe because sometimes it is sold with their green plant containers or "vainas".
 
 ## Ingredients
 
 * 2 cups of red beans cargamanto or similar beans
-* 1kg of pork or beacon or any meat or replacement of it for slow cook
-* 1 complete white onion and some "puerro" onion
-* 2 tomatos
-* 2 or more garlics
+* 1kg of pork, bacon or any meat or replacement of it for slow cook
+* 1 whole white onion and some leek (puerro)
+* 2 tomatoes
+* 2 or more garlic cloves
 * 1/4 Panela (optional)
-* 1 African or latin american banana (optional)
-* 1 Chili spice pepper (optional)
+* 1 African or Latin American ripe banana (optional)
+* 1 Chili pepper spice (optional)
 
 ## Berlin ingredients
 
@@ -41,16 +43,16 @@ Possible Berlin places:
 
 ## Preparation
 
-Well, for me the best beans its with pork meat and beacon. For that I shoud do the next:
+Well, for me the best beans are with pork meat and bacon. For that, I should do the following:
 
-First put 1kg of pork in a pressure cooker with a complete onion and complete tomatos and black beans or red beans (two cups), salt and pepper and some garlic (a bit) for 1h
+First put 1kg of pork in a pressure cooker with a whole onion and whole tomatoes and red beans (two cups), salt and pepper and some garlic cloves (a bit) for 1h
 
-After that, extract the onion and tomatos cut these very small joined with more leek onion (puerros) and tomato maybe more garlic, pepper and salt and re-introduce to the pot but now for 30 minutes without pressure, with the lid open a medium fire. If you want also add spice pepper.
+After that, extract the onion and tomatoes cut these into very small pieces along with more leek (puerro) and tomato maybe more garlic, pepper and salt and re-introduce to the pot and cook for 30 minutes without pressure, with the lid open over medium heat. If you want also add chili pepper spice.
 
-If you want a bit sweet, you could add in the last step a small cube of "panela" (3x3x3 cms). I love this.
+If you want it a bit sweet, you could add in the last step a small cube of "panela" (3x3x3 cm). I love this.
 
-Other option for replace the "panela" is the African banano, that is different to the normal banano. That is a well replace of the latino-american banano. Only put one "banano maduro" in the last step in cubes. Not to much because it is sweet if the banano is black, but if it is more yellow is not too sweet but the flavor is different.
+Another option to replace the "panela" is the African banana, that is different to the normal banana. That is a good replacement for the Latin American banana. Just add one ripe banana in cubes during the last step. Not too much because it will be very sweet if the banana is black, but if it's more yellow, it won't be too sweet and the flavor will be different.
 
-Of course, if you are vegan you only change the meat with something. This alternative is also so good and you can use it also with other side dishes.
+Of course, if you are vegan, you can simply replace the meat with something else. This alternative is also very good and can be served with other side dishes.
 
-If you want add a comment or report an issue, please use the botton below.
+If you want to add a comment or report an issue, please use the button below.
