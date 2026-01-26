@@ -73,3 +73,7 @@ pio run --target upload
 - Thanks to @techiesms by first idea and [original project](https://github.com/techiesms/) for Arduino IDE
 - Thanks to @hacksics from some icons and fonts of project [HA dashboard project](https://github.com/hacksics/lilygo-t5-47-ha)
 - This project use the last version of [EPDIY driver](https://github.com/vroland/epdiy) of @vroland
+
+## Troubleshooting
+
+Any feedback, bug or issue, please report it using the report issue button below.

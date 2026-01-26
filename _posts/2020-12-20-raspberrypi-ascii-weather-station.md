@@ -205,4 +205,4 @@ echo '1-1' |sudo tee /sys/bus/usb/drivers/usb/unbind &
 
 ## Troubleshooting
 
-Any feedback, bug or issue, please report it in the [issue section](https://github.com/hpsaturn/hpsaturn.github.io/issues).
+Any feedback, bug or issue, please report it using the report issue button below.
