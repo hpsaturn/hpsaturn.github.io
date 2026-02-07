@@ -1,6 +1,21 @@
+---
+layout: post
+title:  "Linux Scripts Compendium"
+date:   2016-04-22
+excerpt: "My personal curated Linux scripts"
+feature: https://raw.githubusercontent.com/hpsaturn/linux_scripts/refs/heads/master/images/freemem.gif
+tag:
+- Android
+- GNU-Linux
+- Python
+- Bash
+- Hp48
+comments: false
+---
+
 # Linux Tools and Scripts
 
-This document provides an overview of various scripts available in this repository.
+This document provides an overview of various scripts available in [this repository](https://github.com/hpsaturn/linux_scripts) that I used in my whole life. Some are mine, but others were improvements that I made from others.
 
 ## Linux System Utilities
 
@@ -19,6 +34,7 @@ This document provides an overview of various scripts available in this reposito
 | **build_pkg**     | Utility for building Debian `.deb` packages using `checkinstall`.           |
 | **cpfromfile**    | Utility for copying files from a specified list.                            |
 | **gitrev**        | Returns revision and version names of the current repository.               |
+| **get-public-ip** | Returns the current public IP. |
 | **ikvpn**         | Utility for manual operations over an OpenVPN connection.                   |
 | **jsonlint**      | Validates a JSON file locally.                                              |
 | **x11sockets**    | Lists the current X11 sockets used by each application.                     |
@@ -29,7 +45,7 @@ This document provides an overview of various scripts available in this reposito
 
 | |
 |:-------------------------------------------------------------------:|
-|![freemem demo](images/freemem.gif)|
+|![freemem demo](https://raw.githubusercontent.com/hpsaturn/linux_scripts/refs/heads/master/images/freemem.gif)|
 | freemem utility |
 
 ## Windowmaker Utilities
@@ -67,7 +83,7 @@ This document provides an overview of various scripts available in this reposito
 | **pmmediack**         | Force media scan trigger (for instance, when you push videos via adb)       |
 | **pmaudioinfo**       | Retreive audio device info for bug reports                                  |
 
-![pmvideo android tool demo](images/pmvideo.gif)
+![pmvideo android tool demo](https://raw.githubusercontent.com/hpsaturn/linux_scripts/refs/heads/master/images/pmvideo.gif)
 
 ## HDMI (xrandr Utilities)
 
@@ -91,7 +107,7 @@ This document provides an overview of various scripts available in this reposito
 | **kermit48**          | Utility that launch Kermit preconfigured for Hp48g calculators.           |
 | **firefox_cookies**   | Utility that export your Firefox session cookies.                         |
 
-![Countdown Demo](images/countdown.gif)
+![Countdown Demo](https://raw.githubusercontent.com/hpsaturn/linux_scripts/master/images/countdown.gif)
 
 ## Backup Utility
 
@@ -132,6 +148,8 @@ Related scripts: nasbackup, bkpinflxdb.sh
 | **cpustat**                | Utility for monitoring CPU statistics.                                 |
 | **lanips**                 | Returns the used IPs in the LAN network.                               |
 | **loadhotspot**            | Old hotspot implementation using `iptables` and Network Addressing.    |
+
+## References
 
 [^1]: For a complete guide to this script, please visit [here](https://hpsaturn.com/virtual-serial-port/).  
 [^2]: Utility extracted from the [CanAirIO Project](https://github.com/kike-canaries/canairio_firmware).
