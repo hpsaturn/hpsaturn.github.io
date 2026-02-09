@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Howto - CanAirIO Bike"
+title:  "CanAirIO Bike"
 date:   2021-06-27
-excerpt: "Build tutorial for CanAirIO Bike version"
+excerpt: "CanAirIO Bike device version tutorial. (documentation mirror)"
 feature: https://hpsaturn.com/assets/img/canairio_bike_instructions_display.jpg
 tag:
 - ESP32
