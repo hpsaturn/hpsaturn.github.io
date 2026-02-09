@@ -27,6 +27,8 @@ Also CanAirIO firmware supports [more sensors](https://github.com/kike-canaries/
 
 ## Features
 
+![CanAirIO Bike 3D printer files]({{ site.url }}/assets/img/canairio_bike_header.jpg)
+
 These devices able to work in standalone mode without clouds, apps, Bluetooth, WiFi, etc. but also you could have the next features:
 
 - Citizen Science community
