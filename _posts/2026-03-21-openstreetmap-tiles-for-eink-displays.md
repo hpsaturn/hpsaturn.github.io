@@ -15,13 +15,13 @@ comments: false
 
 On some map apps using microcontrollers and eInk displays, like Meshtastic or Meshcore, you need special map tiles, but some guides using restricted API to download maps with special rules for improve the tiles for this kind of screens, the problem is that in some cases these APIs have a free quote or don't have all zones.
 
-This alternative use Maperitive without tricky rules, only the default rule and a some scripts to post procesing these tiles. That means that this guide also works with old downloaded tiles for TFT or color screens.
+This alternative use Maperitive without tricky rules, only the default rule and one Python script to post-procesing these tiles. That is also useful for previous downloaded tiles, for instance, your old color tiles for your TFT screens.
 
-Also in this guide, I included some tips for Linux, because this tool only works there, and some improvements in the copy of these tiles to the SDCard of the device, in this case all here was tested on a LilyGO T-Deck Pro that has eInk display.
+Also in this guide, I included some tips for Linux, and some improvements in the copy of these tiles to the SDCard of the device. All here was tested on a LilyGO T-Deck Pro that has eInk display.
 
 ## Maperitive installation (Linux)
 
-Download first [Maperative](http://maperitive.net/). This is a software only for Windows but we have some alternatives here for running it on Linux: 
+Download first [Maperative](http://maperitive.net/). This is a software only for Windows but we have some alternatives here for running it on Linux:
 
 ### docker-wine
 
@@ -44,7 +44,7 @@ chmod +x ./Maperitive.sh
 
 ## Tiles Generation
 
-After launch Maperitive your able to select your zone and generate your tiles. For that enter to `MAP-> Set Geometry bounds` and then draw or expand the square of your zone and run the next commands in the `Command prompt` box: 
+After launch Maperitive your able to select your zone and generate your tiles. For that enter to `MAP-> Set Geometry bounds` and then draw or expand the square of your zone and run the next commands in the `Command prompt` box:
 
 (only for docker-wine option:)
 
@@ -128,5 +128,3 @@ sudo umount /mnt/img
   {{ site.url }}/assets/img/meshcore_map_tiles_preview02.jpg
 {% endcapture %}
 {% include gallery images=images cols=3 %}
-
-
