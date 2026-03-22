@@ -6,8 +6,8 @@ excerpt: "Alternative to pay APIs for get scale grays map tiles optimized for eI
 feature: "https://hpsaturn.com/assets/img/picocalc_x48ng_preview.jpg"
 tag:
 - GNU-Linux
-- Picocalc
-- Hp48
+- OSM
+- ESP32
 comments: false
 ---
 
@@ -21,59 +21,112 @@ Also in this guide, I included some tips for Linux, because this tool only works
 
 ## Maperitive installation (Linux)
 
-Current issues and steps to replicate it:
-[here](https://github.com/benklop/picocalc-luckfox-lyra/pull/7)
+Download first [Maperative](http://maperitive.net/). This is a software only for Windows but we have some alternatives here for running it on Linux: 
 
-## Migration status
+### docker-wine
 
-- [x] Compiling issues
-- [x] Linking issues
-- [x] Package installation issue
-- [x] execution test: x48ng -help [PASS]
-- [x] execution full emulation [PASS]
-- [x] F7 shortcut fails (general problem with Lyra). Fix: F1 new Exit
-- [ ] SDL2 support
-- [ ] hash commit missing for buildroot
-- [ ] possible patch for improve buildroot recipe
-
-[![Image](https://github.com/user-attachments/assets/c619a56a-a758-4fa0-b04e-9f73c8ae40c2)](https://youtu.be/7uAfvPzB3bs)
-
-## Issues
-
-- [x] https://github.com/gwenhael-le-moine/x48ng/issues/29
-- [x] https://github.com/gwenhael-le-moine/x48ng/issues/30
-- [x] https://github.com/gwenhael-le-moine/x48ng/issues/31
-- [x] https://github.com/gwenhael-le-moine/x48ng/issues/33
-- [ ] https://github.com/gwenhael-le-moine/x48ng/issues/35
-
-## Installation steps
-
-### buildroot base
+This version of wine is easy to launch and it contains everthing already tunned for have a good desktop integration. Download [docker-wine](https://hub.docker.com/r/scottyhardy/docker-wine/) and run it on the Maperitive directory like this:
 
 ```bash
-git clone -b x48ng_package git@github.com:hpsaturn/picocalc-luckfox-lyra.git
-cd picocalc-luckfox-lyra
-./setup.sh
-./build.all
+cd Maperitive
+docker-wine --as-root --force-owner --volume=$PWD:/data wine /data/Maperitive.exe
 ```
 
-### x48ng build and install
+### mono
+
+Other alternative to run Maperitive is using [Mono libraries](https://wiki.openstreetmap.org/wiki/Maperitive#Ubuntu_10.04_-_12.10). But the disadvantage of this option is that you should install these libraries in your system. With docker-wine all stuff will be in an image that you could remove in any moment without affect your system. After install mono run this:
 
 ```bash
-./build.sh buildroot-make:x48ng-dirclean
-./build.sh buildroot-make:x48ng
-./build.sh buildroot-make:fbterm
-./build.sh all
-./flash.sh update
+cd Maperitive
+chmod +x ./Maperitive.sh
+./Maperitive.sh
 ```
 
-### Lyra execution steps
+## Tiles Generation
 
-1. run x48ng in your host. 
-2. transfer your `.config/x48ng` host directory to your Lyra home directory
-3. login in your Lyra for instance via adb
-4. change the fbterm config file with mono font and size 7
-5. run `x48ng --tui-tiny --mono` (try with -r if not response and press F5 to ON)
-6. F1 to exit
+After launch Maperitive your able to select your zone and generate your tiles. For that enter to `MAP-> Set Geometry bounds` and then draw or expand the square of your zone and run the next commands in the `Command prompt` box: 
 
-![preview x48ng on Picocalc](https://hpsaturn.com/assets/img/picocalc_x48ng_preview.jpg)
+(only for docker-wine option:)
+
+```bash
+change-dir /data/
+```
+
+tiles generation:
+
+```bash
+generate-tiles minzoom=6 maxzoom=17
+```
+
+it could takes long time, maybe 1 hour or more depending your area and zoom. After that you should have your Tiles in the Maperitive directory.
+
+{% capture images %}
+  {{ site.url }}/assets/img/maperitive_tiles_generation.jpg
+{% endcapture %}
+{% include gallery images=images cols=1 %}
+
+## Grey Scale Tiles Convertion
+
+Now we could convert these tiles to an optimized version for eInk display, for instance for our T-Deck Pro. For that download this script [osm_tile_to_eink.py](https://gist.github.com/hpsaturn/757f4ffb77f97570b42d355e355120e9) and run it like this:
+
+```bash
+python osm_tile_to_eink.py Tiles tiles_grey --mode bw
+```
+
+the `Tiles` directory should be in Maperitive directory. And then will be not modified. You are able to backup these for instance for TFT displays or other color devices.
+
+## Transfer Tiles to SD
+
+Depending what firmware or device you are using, you should copy this tiles in the root of its SD card, for instance for Meshcore, it should be in `tiles` directory in the root of the SD.
+
+The copy could be so slow because are many files. For that, here I shared some alternatives:
+
+### rsync
+
+It is better than the normal `cp` command, but also could be taking many time in the process.
+
+```bash
+rsync -av --progress /path/to/source/Tiles /mnt/sd_image/tiles
+```
+
+### SD card image (recommended)
+
+To improve to the maxium speed you could make first an full image with all tiles and copy there all tiles, and then burn this image in the SD card partion. For that follow the next commands:
+
+create a empty image:
+
+```bash
+truncate -s 16G sd_image.img
+```
+
+format the empty image. For instance for Meshcore:
+
+```bash
+sudo mkfs.vfat -F 32 -n "MeshCore2" sd_image.img
+```
+
+mount the image:
+
+```bash
+mkdir /mnt/img
+sudo mount -o loop,uid=$(id -u),gid=$(id -g),umask=000 /tmp/sd_image.img /mnt/img
+```
+
+copy the tiles. For instance for Meshcore:
+
+```bash
+rsync -av --progress tiles_grey /mnt/img
+mv /mnt/img/tiles_grey /mnt/img/tiles
+sudo umount /mnt/img
+```
+
+## Results
+
+{% capture images %}
+  {{ site.url }}/assets/img/meshcore_map_tiles_preview00.jpg
+  {{ site.url }}/assets/img/meshcore_map_tiles_preview01.jpg
+  {{ site.url }}/assets/img/meshcore_map_tiles_preview02.jpg
+{% endcapture %}
+{% include gallery images=images cols=3 %}
+
+
