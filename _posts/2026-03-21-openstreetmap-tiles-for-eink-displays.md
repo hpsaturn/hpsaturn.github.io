@@ -3,7 +3,7 @@ layout: post
 title:  "OpenStreetMap tiles for eInk displays"
 date:   2026-03-21
 excerpt: "Alternative to pay APIs for get scale grays map tiles optimized for eInk displays"
-feature: "https://hpsaturn.com/assets/img/picocalc_x48ng_preview.jpg"
+feature: "https://hpsaturn.com/assets/img/meshcore_map_tiles_preview01.jpg"
 tag:
 - GNU-Linux
 - OSM
@@ -13,19 +13,19 @@ comments: false
 
 ## Map tiles for eInk displays
 
-On some map apps using microcontrollers and eInk displays, like Meshtastic or Meshcore, you need special map tiles, but some guides using restricted API to download maps with special rules for improve the tiles for this kind of screens, the problem is that in some cases these APIs have a free quote or don't have all zones.
+In some map applications that run on microcontrollers with eInk displays, such as Meshtastic or Meshcore, you need special map tiles. Some guides recommend using restricted APIs, or some guide provide map tiles with specific or tricky rules to optimize them for these screens. The problem is that these APIs often have limited free quotas or do not cover all geographic areas.
 
-This alternative use Maperitive without tricky rules, only the default rule and one Python script to post-procesing these tiles. That is also useful for previous downloaded tiles, for instance, your old color tiles for your TFT screens.
+This alternative uses Maperitive with the default rule set (no complex configuration) and a Python script for post-processing. It also works with previously downloaded tiles, for example, color tiles you might already have for TFT screens.
 
-Also in this guide, I included some tips for Linux, and some improvements in the copy of these tiles to the SDCard of the device. All here was tested on a LilyGO T-Deck Pro that has eInk display.
+This guide also includes some Linux tips and improvements for copying tiles to the device's SD card. All steps were tested on a LilyGO T-Deck Pro, which features an eInk display.
 
 ## Maperitive installation (Linux)
 
-Download first [Maperative](http://maperitive.net/). This is a software only for Windows but we have some alternatives here for running it on Linux:
+First, download [Maperitive](http://maperitive.net/). This software is designed for Windows, but there are a few ways to run it on Linux.
 
 ### docker-wine
 
-This version of wine is easy to launch and it contains everthing already tunned for have a good desktop integration. Download [docker-wine](https://hub.docker.com/r/scottyhardy/docker-wine/) and run it on the Maperitive directory like this:
+This version of Wine is easy to launch and comes preconfigured for good desktop integration. Download [docker-wine](https://hub.docker.com/r/scottyhardy/docker-wine/) and run it inside the Maperitive directory as follows:
 
 ```bash
 cd Maperitive
@@ -34,7 +34,7 @@ docker-wine --as-root --force-owner --volume=$PWD:/data wine /data/Maperitive.ex
 
 ### mono
 
-Other alternative to run Maperitive is using [Mono libraries](https://wiki.openstreetmap.org/wiki/Maperitive#Ubuntu_10.04_-_12.10). But the disadvantage of this option is that you should install these libraries in your system. With docker-wine all stuff will be in an image that you could remove in any moment without affect your system. After install mono run this:
+Another option is to run Maperitive using [Mono libraries](https://wiki.openstreetmap.org/wiki/Maperitive#Ubuntu_10.04_-_12.10). The downside is that you need to install these libraries on your system. With docker-wine, everything runs inside an image that you can remove later without affecting your system. After installing Mono, run:
 
 ```bash
 cd Maperitive
@@ -44,7 +44,7 @@ chmod +x ./Maperitive.sh
 
 ## Tiles Generation
 
-After launch Maperitive your able to select your zone and generate your tiles. For that enter to `MAP-> Set Geometry bounds` and then draw or expand the square of your zone and run the next commands in the `Command prompt` box:
+Once Maperitive is running, you can select your area and generate tiles. To do this, go to `MAP -> Set Geometry bounds`, draw or expand the square around your desired area, and then run the following commands in the `Command prompt` box:
 
 (only for docker-wine option:)
 
@@ -58,7 +58,7 @@ tiles generation:
 generate-tiles minzoom=6 maxzoom=17
 ```
 
-it could takes long time, maybe 1 hour or more depending your area and zoom. After that you should have your Tiles in the Maperitive directory.
+This may take a while, possibly an hour or more, depending on the area and zoom levels. Once finished, you will find the tiles in the Maperitive directory.
 
 {% capture images %}
   {{ site.url }}/assets/img/maperitive_tiles_generation.jpg
@@ -67,23 +67,23 @@ it could takes long time, maybe 1 hour or more depending your area and zoom. Aft
 
 ## Grey Scale Tiles Convertion
 
-Now we could convert these tiles to an optimized version for eInk display, for instance for our T-Deck Pro. For that download this script [osm_tile_to_eink.py](https://gist.github.com/hpsaturn/757f4ffb77f97570b42d355e355120e9) and run it like this:
+Now we can convert these tiles to an optimized version for eInk displays, such as the one on the T-Deck Pro. Download this script [osm_tile_to_eink.py](https://gist.github.com/hpsaturn/757f4ffb77f97570b42d355e355120e9) and run it like this:
 
 ```bash
 python osm_tile_to_eink.py Tiles tiles_grey --mode bw
 ```
 
-the `Tiles` directory should be in Maperitive directory. And then will be not modified. You are able to backup these for instance for TFT displays or other color devices.
+The `Tiles` directory should be inside the Maperitive directory. The original tiles will remain unmodified, so you can keep a backup for TFT screens or other color devices.
 
 ## Transfer Tiles to SD
 
-Depending what firmware or device you are using, you should copy this tiles in the root of its SD card, for instance for Meshcore, it should be in `tiles` directory in the root of the SD.
+Depending on the firmware or device you are using, you should copy these tiles to the root of the SD card. For example, with Meshcore, they need to go into a `tiles` directory at the SD card root.
 
-The copy could be so slow because are many files. For that, here I shared some alternatives:
+Copying can be slow due to the large number of files. Below are a few alternatives to speed up the process.
 
 ### rsync
 
-It is better than the normal `cp` command, but also could be taking many time in the process.
+This is better than the normal `cp` command, but it can still take a considerable amount of time.
 
 ```bash
 rsync -av --progress /path/to/source/Tiles /mnt/sd_image/tiles
@@ -91,7 +91,7 @@ rsync -av --progress /path/to/source/Tiles /mnt/sd_image/tiles
 
 ### SD card image (recommended)
 
-To improve to the maxium speed you could make first an full image with all tiles and copy there all tiles, and then burn this image in the SD card partion. For that follow the next commands:
+For maximum speed, create a full disk image with all the tiles, then write that image to the SD card partition. Follow these steps:
 
 create a empty image:
 
