@@ -73,7 +73,7 @@ Now we can convert these tiles to an optimized version for eInk displays, such a
 python osm_tile_to_eink.py Tiles tiles_grey --mode bw
 ```
 
-The `Tiles` directory should be inside the Maperitive directory. The original tiles will remain unmodified, so you can keep a backup for TFT screens or other color devices.
+The `Tiles` directory should be inside the Maperitive directory. The original tiles will remain unmodified, so you can keep a backup for TFT screens or other color devices, or for future post-processing modifications.
 
 ## Transfer Tiles to SD
 
@@ -120,6 +120,8 @@ mv /mnt/img/tiles_grey /mnt/img/tiles
 sudo umount /mnt/img
 ```
 
+done. You are able to test your new map tiles :)
+
 ## Results
 
 {% capture images %}
@@ -128,3 +130,9 @@ sudo umount /mnt/img
   {{ site.url }}/assets/img/meshcore_map_tiles_preview02.jpg
 {% endcapture %}
 {% include gallery images=images cols=3 %}
+
+## Credits
+
+[IceNav Project](https://github.com/jgauchia/IceNav-v3) for initial tips and a first understanding of Maperitive  
+[Meshcore Project](https://buymeacoffee.com/ripplebiz/t-deck-pro-map-support) for its initial guide using restrictive APIs (inspiration for this guide 😄)  
+[OpenStreetMap](https://wiki.openstreetmap.org/wiki/Maperitive) and its community. None of this would have been possible without them.
