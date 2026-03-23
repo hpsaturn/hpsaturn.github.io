@@ -8,6 +8,11 @@ tag:
 - GNU-Linux
 - OSM
 - ESP32
+- GPS
+- API
+- Arduino
+- IoT
+- Python
 comments: false
 ---
 
@@ -91,7 +96,7 @@ rsync -av --progress /path/to/source/Tiles /mnt/sd_image/tiles
 
 ### SD card image (recommended)
 
-For maximum speed, create a full disk image with all the tiles, then write that image to the SD card partition. Follow these steps:
+For maximum speed, create a full disk image with all the tiles, then write that image to the SD card partition. Please keep in mind that you should back up the card beforehand. Follow these steps:
 
 create a empty image:
 
@@ -118,6 +123,13 @@ copy the tiles. For instance for Meshcore:
 rsync -av --progress tiles_grey /mnt/img
 mv /mnt/img/tiles_grey /mnt/img/tiles
 sudo umount /mnt/img
+```
+
+Now write the image to the SD card. The card may be /dev/sdd (whole device) or /dev/sdd1 (if you only want to overwrite the first partition).
+If you want to preserve the existing partition table (e.g you have a boot partition), write only to the data partition:
+
+```bash
+sudo dd if=sd_image.img of=/dev/sdd1 bs=4M status=progress
 ```
 
 done. You are able to test your new map tiles :)
