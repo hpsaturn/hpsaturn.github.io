@@ -28,7 +28,7 @@ Current issues and steps to replicate it:
 - [x] execution test: x48ng -help [PASS]
 - [x] execution full emulation [PASS]
 - [x] F7 shortcut fails (general problem with Lyra). Fix: F1 new Exit
-- [ ] SDL2 support
+- [x] SDL2 support
 - [ ] hash commit missing for buildroot
 - [ ] possible patch for improve buildroot recipe
 

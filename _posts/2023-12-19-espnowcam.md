@@ -3,7 +3,7 @@ layout: post
 title:  "ESPNowCam Library"
 date:   2023-12-19
 excerpt: "It is simple and direct video or data streamer utilizing the ESPNow protocol"
-feature: https://img.youtube.com/vi/ibuKil7jjsg/maxresdefault.jpg
+feature: https://raw.githubusercontent.com/hpsaturn/ESPNowCam/master/pictures/broadcast-camera-mode.gif
 tag:
 - PlatformIO
 - Arduino
@@ -19,7 +19,7 @@ comments: false
 
 ## ESPNowCam
 
-This library is a simple and direct data streamer, designed for popular ESP32 devices, utilizing the ESPNow protocol. No need for IPs, routers, or credentials—keeping it straightforward and hassle-free! :D
+The ESPNowCam library is a simple and direct video or data streamer designed for popular ESP32 devices, utilizing ESPNow and WiFi-raw (80211tx) protocols. No need for IPs, routers, or credentials-keeping it straightforward and hassle-free! :D
 
 **This library is for general purpose**, as it accepts pointers to various types of data, including buffers, strings, images, or any byte-formatted content. This flexibility enables transmission of larger packages across different scenarios, not limited to cameras alone. For instance, a buffer of 4000 bytes takes approximately 1/9 of a second to transmit, resulting in a frame rate of around 9FPS.
 
@@ -32,6 +32,7 @@ The latest version brings numerous enhancements and is currently highly stable. 
 - One transmitter to multiple receivers using the internal ESPNow broadcasting feature (1:N mode).
 - Peer-to-peer (P2P) connections utilizing MAC address targeting (1:1 mode).
 - Multi-sender mode with one receiver (N:1 mode).
+- **!! N E W !!**: [80211tx()](#wifi-raw-80211tx-mode-experimental) WiFi-raw ESPNow alternative. This achieves a **performance improvement of around 40%** in P2P mode (Beta).
 
 {% capture images %}
   https://raw.githubusercontent.com/hpsaturn/ESPNowCam/master/pictures/broadcast-camera-mode.gif
@@ -48,14 +49,16 @@ It's important to note that the library is versatile and capable of transmitting
 
 The current version was tested with the next cameras:
 
-| Sender |  Frame | PSRAM | JPGQ | FPS | Status |
-|:---------|:-----:|:-----:|:------:|:-------:|:------:|
-| TTGO TJournal |  QVGA | No | 12 | ~11 FPS | STABLE |
-| XIAO Sense S3 | QVGA | Yes | 12 | ~11 FPS | STABLE |
-| Freenove S3 | QVGA | Yes | 12 | ~10 FPS | STABLE |
-| Freenove S3 | HVGA | Yes | 12 | ~6 FPS | STABLE |
-| M5CoreS3 | QVGA | Yes | 12  | ~11 FPS | STABLE |
-| M5UnitCamS3 | QVGA | Yes | 12 | ~9 FPS | STABLE |
+| Sender | Impl | Frame | PSRAM | JPGQ | FPS | Status |
+|:---------|:-----:|:-----:|:-----:|:------:|:-------:|:------:|
+| M5CoreS3 | [80211tx()](#wifi-raw-80211tx-mode-experimental) | QVGA | Yes | 12 | **~14 FPS** | TESTING |
+| Freenove | [80211tx()](#wifi-raw-80211tx-mode-experimental) | QVGA | Yes | 12 | **~13 FPS** | TESTING |
+| TTGO TJournal | ESPNOW |  QVGA | No | 12 | ~11 FPS | STABLE |
+| XIAO Sense S3 | ESPNOW | QVGA | Yes | 12 | ~11 FPS | STABLE |
+| Freenove S3 | ESPNOW | QVGA | Yes | 12 | ~10 FPS | STABLE |
+| Freenove S3 | ESPNOW | HVGA | Yes | 12 | ~6 FPS | STABLE |
+| M5CoreS3 | ESPNOW | QVGA | Yes | 12  | ~11 FPS | STABLE |
+| M5UnitCamS3 | ESPNOW | QVGA | Yes | 12 | ~9 FPS | STABLE |
 
 [Full list of senders and receivers that was tested](https://github.com/hpsaturn/ESPNowCam/wiki/Supported-Devices)
 
@@ -140,6 +143,42 @@ radio.setRecvFilter(fb_cam3, mac_cam3, onCam3DataReady);
 ```
 
 and each camera should have configured the receiver MAC like a target. Fore more details, please follow the [multi-camera-one-receiver](https://github.com/hpsaturn/ESPNowCam/tree/master/examples/multi-camera-one-receiver/) directory example.
+
+### WiFi Raw 802.11tx mode (experimental)
+
+Now is possible use 80211tx() primitive or WiFi RAW mode without ESPNow internals. Using this raw mode it could be better performance. For that, only do that:
+
+**sender**:
+
+```cpp
+WiFiRawComm wifiRaw;
+ESPNowCam radio(&wifiRaw);
+
+radio.setTarget(macRecv); // receiver mac address to improve quality
+radio.setChannel(6);      // improve quality (recommended)
+radio.init(512);          // you are able to change the chunk size
+
+radio.sendData(out_data, out_data_len);
+```  
+
+[full wifiraw-80211tx-freenove-sender example](https://github.com/hpsaturn/ESPNowCam/tree/master/examples/wifiraw-80211tx-freenove-sender)  
+[full wifiraw-80211tx-m5cores3-sender example](https://github.com/hpsaturn/ESPNowCam/tree/master/examples/wifiraw-80211tx-m5cores3-sender)
+
+**receiver**:
+
+```cpp
+WiFiRawComm wifiRaw;
+ESPNowCam radio(&wifiRaw);
+
+radio.setRecvBuffer(fb);            // fixed buffer
+radio.setRecvCallback(onDataReady); // similar callback to other modes
+radio.setChannel(6);                // improve quality
+radio.init(512);                    // the same sender chunk size
+```  
+
+[full wifiraw-80211tx-receiver example](https://github.com/hpsaturn/ESPNowCam/tree/master/examples/wifiraw-80211tx-receiver)
+
+**Note**: The N:1 mode is not full implemented on WiFi raw. It is recommended use channel and mac address target on the sender for improve quality. Please sse the examples for details.
 
 ### Predefined drivers
 
@@ -231,12 +270,16 @@ This project was developed and thoroughly tested on PlatformIO. While I did comp
 - [x] Add sender callback to improve speed
 - [x] Added internal drivers for some popular Cameras
 - [x] Added multi-camera support with one only target
-- [ ] Migration to esp_wifi_80211_tx() to improve Payload and Quality
+- [x] Migration to esp_wifi_80211_tx() to improve Payload and Quality
+- [ ] PC support using WiFi adapters with monitor mode
+- [ ] Audio transmission examples
+- [ ] Improve 802.11tx() using modified version
 
 ## Credits
 
 I want to extend my gratitude to:
 
+[CNX-Software](https://www.cnx-software.com/2025/02/24/espnowcam-library-enables-esp32-video-camera-or-data-transmission-with-the-esp-now-protocol/) (Embedded Systems News) for this review.  
 [@ElectroZeusTIC](https://github.com/electrozeustic) and [@AcoranTf](https://github.com/AcoranTf) for testing on Arduino IDE.  
 [@UtaAoya](https://x.com/UtaAoya) for findings related to the M5UnitCam device.  
 [@MeloCuentan](https://github.com/MeloCuentan) for fixing issues with the AI-Thinker Camera and the new ESP32S3 RGB receiver.  
