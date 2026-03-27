@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hotspot using Network Manager CLI"
+title:  "Hostspot using Network Manager CLI"
 date:   2025-05-26
 excerpt: "How to share your connection using NMCLI on headless devices"
 feature: "https://hpsaturn.com/assets/img/pilauncher_feature.jpg"
@@ -13,7 +13,7 @@ comments: false
 
 ## NMCLI Hotspot
 
-This guide is an update of my old guide for creating a Hotspot using legacy Debian commands. The `network-manager` package (via the `nmcli` command) simplifies the setup and reduces system overhead, making it ideal for headless devices like servers or RaspberryPi.
+This guide is an update of my old guide for creating a Hostspot using legacy Debian commands. The `network-manager` package (via the `nmcli` command) simplifies the setup and reduces system overhead, making it ideal for headless devices like servers or RaspberryPi.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ nmcli con up Hostspot
 
 Notes:
 
-- Replace my Hotspot with your desired SSID.
+- Replace my Hostspot with your desired SSID.
 - Use bg band for 2.4 GHz or a for 5 GHz (check adapter support).
 
 **Done!** you are able to connect to your Hostspot. And also you could up/down the hostspot connection in any moment using the last command line only. You don't need repeat the previous steps.
@@ -79,7 +79,7 @@ nordvpn whitelist add port 22
 nordvpn whitelist add port 67
 ```
 
-Also you should permit traffic from the Hotspot subnet, for instance:
+Also you should permit traffic from the Hostspot subnet, for instance:
 
 ```bash
 nordvpn add subnet 10.42.0.0/24
