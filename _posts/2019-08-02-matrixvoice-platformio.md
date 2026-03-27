@@ -18,9 +18,9 @@ comments: false
 
 # MatrixVoice PlatformIO
 
-The current guide show how build and upload any firmware for the [MatrixVoice ESP32 board](https://www.matrix.one/products/voice) using [PlatformIO](https://platformio.org/) via OTA updates or `Arduino OTA`. 
+The current guide show how build and upload any firmware for the [MatrixVoice ESP32 board](https://www.matrix.one/products/voice) using [PlatformIO](https://platformio.org/) via OTA updates or `Arduino OTA`.
 
-**note**: The next documentation is based on [Program Over the Air on ESP32 MATRIX Voice](https://www.hackster.io/matrix-labs/program-over-the-air-on-esp32-matrix-voice-5e76bb) documentation but it using PlatformIO instead Arduino IDE. You dont need IDF toolchain or any library, PlatformIO do it for you.
+**note**: The next documentation is based on [Program Over the Air on ESP32 MATRIX Voice](https://www.hackster.io/matrix-labs/program-over-the-air-on-esp32-matrix-voice-5e76bb) documentation but it using PlatformIO instead Arduino IDE. You don't need IDF toolchain or any library, PlatformIO do it for you.
 
 ---
 

@@ -29,7 +29,7 @@ ESP32-Powered eInk Panel for Cryptocurrency Updates and News, using a LilyGo EDP
 - Panel installation and configuration using an easy [Web installer](https://hpsaturn.com/crypto-panel-installer/)
 - Configuration via command line (CLI) using the web installer or any Serial console
 - Support hundreds of coins from [Coingecko API](https://api.coingecko.com/api/v3/coins/list?include_platform=false)
-- Random cryptocurrencies news from Cointelegrah and others news portals
+- Random cryptocurrencies news from Coin Telegraph and others news portals
 - QR Code of each coin news link
 - Base currency USD/EUR configurable
 - Firmware update via automatic OTA updates
@@ -42,7 +42,7 @@ ESP32-Powered eInk Panel for Cryptocurrency Updates and News, using a LilyGo EDP
 
 ## Firmware install
 
-You able to install this firmware on only one click, without compiling nothing only using this [Web installer](https://hpsaturn.com/crypto-panel-installer/). Also you can follow the full instruccions and steps on the [Hackaday Instructions Section](https://hackaday.io/project/182527/instructions).
+You able to install this firmware on only one click, without compiling nothing only using this [Web installer](https://hpsaturn.com/crypto-panel-installer/). Also you can follow the full instructions and steps on the [Hackaday Instructions Section](https://hackaday.io/project/182527/instructions).
 
 ## Panel config
 
@@ -50,7 +50,7 @@ After the boot or first restart, please enter via serial console or terminal and
 
 ![CPanel CLI demo](https://raw.githubusercontent.com/hpsaturn/crypto-panel/refs/heads/master/images/cli_help.jpg)
 
-Please visit the [project page](https://hackaday.io/project/182527-crypto-news-eink-panel) and its full instruccions and steps on the [Hackaday Instructions Section](https://hackaday.io/project/182527/instructions) for complete details.
+Please visit the [project page](https://hackaday.io/project/182527-crypto-news-eink-panel) and its full instructions and steps on the [Hackaday Instructions Section](https://hackaday.io/project/182527/instructions) for complete details.
 
 ## Firmware build
 

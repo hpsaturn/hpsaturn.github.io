@@ -11,11 +11,11 @@ tag:
 comments: false
 ---
 
-# Debian Hotspot loader
+# Debian Hostspot loader
 
 #### Last update: 2019.12.20
 
-Debian hotspot on Wifi device using `dnsmask` and `hostapd` with a simple bash script for `enable/disable` it.
+Debian hostpot on Wifi device using `dnsmask` and `hostapd` with a simple bash script for `enable/disable` it.
 
 ! ! ! D E P R E C A T E D ! ! !  
 (Alternative: [NMCLI Hotspot Guide](https://hpsaturn.com/nmcli-hotspot/))
@@ -27,7 +27,7 @@ Please create the next script in `/usr/bin/loadhotspot`, also you can download i
 ``` bash
 #!/bin/sh
 ###################################################################
-# Load hotspot
+# Load hostspot
 # 2009-2010 Hpsaturn v1.0
 # hpsaturn@gmail.com
 ###################################################################
@@ -154,7 +154,7 @@ sudo loadhotspot start
 
 Output:  
 
-```
+```bash
 remove modules..done.
 install modules..done.
 set static gateway..ok
@@ -165,13 +165,13 @@ start dnsmask:
 
 ## Stop hotspot
 
-``` bash
+```bash
 sudo loadhotspot stop
 ```
 
 Output:  
 
-```
+```bash
 stop services..done.
 remove modules..rmmod iwldvm
 done.
@@ -181,13 +181,13 @@ done.
 
 If you have the next error:
 
-``` bash
+```bash
 Failed to start hostapd.service: Unit hostapd.service is masked.
 ```
 
 Please run:
 
-``` bash
+```bash
 sudo systemctl unmask hostapd
 sudo systemctl enable hostapd
 ```
