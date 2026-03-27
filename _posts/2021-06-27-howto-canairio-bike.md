@@ -133,8 +133,8 @@ Other alternatives for upload the CanAirIO firmware, [here](https://canair.io/do
 
 ## Specifications
 
-| Specs    | CanAirIO Bike | CanAirIO CO2 |
-|:-------- |:-------------:|:---------------:| 
+| Specs | CanAirIO Bike | CanAirIO CO2 |
+| :-------- | :-------------: | :---------------: |
 | Main board | [TTGO T-Display][1]     | [TTGO T-Display][1] |
 | Air quality sensor | [Sensirion SPS30 (PM)][2] | [Sensirion SCD30 (CO2)][3] |
 | Environment sensor | [AM2320 T&H][4] | [SCD30 T&H][3] |

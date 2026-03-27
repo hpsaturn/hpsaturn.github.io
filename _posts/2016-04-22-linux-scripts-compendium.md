@@ -81,7 +81,7 @@ This document provides an overview of various scripts available in [this reposit
 | **pmload**            | Utility to list and load apks in the current directory                      |
 | **pmuninstall**       | Uninstalls a package by pattern.                                            |
 | **pmmediack**         | Force media scan trigger (for instance, when you push videos via adb)       |
-| **pmaudioinfo**       | Retreive audio device info for bug reports                                  |
+| **pmaudioinfo**       | Retrieve audio device info for bug reports                                  |
 
 ![pmvideo android tool demo](https://raw.githubusercontent.com/hpsaturn/linux_scripts/refs/heads/master/images/pmvideo.gif)
 
@@ -147,7 +147,7 @@ Related scripts: nasbackup, bkpinflxdb.sh
 | **build_opencv_android**   | Utility for building OpenCV by architecture.                           |
 | **cpustat**                | Utility for monitoring CPU statistics.                                 |
 | **lanips**                 | Returns the used IPs in the LAN network.                               |
-| **loadhotspot**            | Old hotspot implementation using `iptables` and Network Addressing.    |
+| **loadhotspot**            | Old hostspot implementation using `iptables` and Network Addressing.    |
 
 ## References
 

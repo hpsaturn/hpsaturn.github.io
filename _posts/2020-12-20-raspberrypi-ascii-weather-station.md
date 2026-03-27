@@ -21,12 +21,10 @@ The next guide reach that RaspberryPi launch a Go program that show the current 
 - [x] disabled some devices for improve power consumption
 - [x] fast boot improvements
 
-
 {% capture images %}
   {{ site.url }}/assets/img/ascii_weather_station.jpg
 {% endcapture %}
 {% include gallery images=images cols=1 %}
-
 
 # Materials
 
@@ -47,13 +45,13 @@ Please first install in your SD [RaspiOs lite](https://www.raspberrypi.org/softw
 
 In the **boot** partition or boot folder, modify and add the next configs:
 
-### Enable SSH:
+### Enable SSH
 
 Add a simple empty file for enable SSH access in boot folder:
 
 ```bash
 touch ssh
-``` 
+```
 
 ### WiFi Credentials
 
@@ -68,10 +66,9 @@ edit it and put the next line at the start of file:
 ```bash
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
-``` 
+```
 
 More info about WiFi headless configure [here](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md).
-
 
 # Connect your RaspberryPi 
 
@@ -116,12 +113,10 @@ sudo su -l pi -c "xinit -geometry =800x400+0+0 -fn 8x13 -j -fg white -bg black /
 
 reboot the Pi and it is all, the Pi will start the Wego app like unique X application.
 
-
 {% capture images %}
   {{ site.url }}/assets/img/ascii_weather_station.gif
 {% endcapture %}
 {% include gallery images=images cols=1 %}
-
 
 ---
 
@@ -143,8 +138,8 @@ dtparam=act_led_trigger=none
 dtparam=act_led_activelow=on
 boot_delay=0
 ```
-With that, we have: reduced CPU usage, no boot splash, disabled bluetooth, disabled LEDs and reduced the boot delay. 
 
+With that, we have: reduced CPU usage, no boot splash, disabled bluetooth, disabled LEDs and reduced the boot delay.
 
 In **cmdline.txt**:
 

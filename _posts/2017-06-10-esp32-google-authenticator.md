@@ -24,9 +24,9 @@ comments: false
 (soon I'm going to release a new version)
 
 Portable EAP Protected One-Time Password (EAP-POTP). Hardware for provides two-factor user authentication. This is a
-PlatformIO project that using `WeMOS` like board with a `ESP32` and OLED SSD1306 display that interfaced with `GoogleAuthenticator` Android app. 
+PlatformIO project that using `WeMOS` like board with a `ESP32` and OLED SSD1306 display that interfaced with `GoogleAuthenticator` Android app.
 
-## Development Status: 
+## Development Status:
 
 <img src="{{ site.url }}/assets/img/esp32_potp_intro.jpg"
 srcset="{{ site.url }}/assets/img/esp32_potp_intro.jpg 100w, {{ site.url }}/assets/img/esp32_potp_intro.jpg 200w"
@@ -42,7 +42,7 @@ alt="image alt text">
 - [ ] Sync RTC via Bluetooth
 - [ ] GUI Page viewer for OTP codes
 - [ ] Android GoogleAuth POTP sync
-- [ ] Vulnerability security test 
+- [ ] Vulnerability security test
 - [ ] 3D print case?
 - [ ] Resina case?
 - [ ] Latex case?
@@ -93,4 +93,3 @@ compilation terminated.
 ```
 
 it is because the TOTP Arduino library is broken, please clean and remove hidden directories with `rm -rf .pioenvs .piolibdeps` and run `git pull origin master` again.
-

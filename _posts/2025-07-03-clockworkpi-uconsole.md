@@ -46,7 +46,7 @@ This alternative runs a ncurses version for any terminal:
 
 ### Transfer files
 
-Maybe the easy way for transfer files to the emulator is using Kermit protocol, but is possible also other protocols like XModem. Here I'm going to explain the alternive using **ckermit**:
+Maybe the easy way for transfer files to the emulator is using Kermit protocol, but is possible also other protocols like XModem. Here I'm going to explain the alternative using **ckermit**:
 
 ```shell
 sudo apt install ckermit
@@ -79,10 +79,10 @@ Then run kermit script like this:
 kermit48 /dev/pts/16
 ```
 
-On the kermit terminal, you are able to navitage to any directory and send commands with `send xxx`. Previosly you should start in the emulator, the kermit server with the `server` command or with the RIGHT SHIFT + RIGHT ARROW shortcut.
+On the kermit terminal, you are able to navigate to any directory and send commands with `send xxx`. Previously you should start in the emulator, the kermit server with the `server` command or with the RIGHT SHIFT + RIGHT ARROW shortcut.
 
 ![x48ng uconsole kermit demo](/assets/img/uconsole_x48ng_kermit_demo.jpg)
-(left: kermit tranfering a file. right: x48ng receiving this file)
+(left: kermit transferring a file. right: x48ng receiving this file)
 
 ### ROM state backups
 
@@ -105,9 +105,9 @@ It's a [little demo](https://www.youtube.com/shorts/AzAMqLjMT-Q), of how to we u
 
 [![x48ng uConsole Demo](/assets/img/uconsole_x48ng_video.jpg)](https://www.youtube.com/shorts/AzAMqLjMT-Q)
 
-## Troubleshotting
+## Troubleshooting
 
-Sometimes the x48ng emulator will be to standby or poweroff state, and it is very difficult to poweron again. Please, try many times with the (ON) shortcut.. Or sometimes, you should perform reset shortuct (ON+C).  
+Sometimes the x48ng emulator will be to standby or poweroff state, and it is very difficult to poweron again. Please, try many times with the (ON) shortcut.. Or sometimes, you should perform reset shortcut (ON+C).  
 
 Some assembler executables sometimes freeze de execution. Please report it in the GitHub issues section.  
 

@@ -69,7 +69,7 @@ also is important notice that the `build_type` option, because in the last Platf
 
 ## Code
 
-In your setup or main funciton, you should have the validation and coredump initialization like this:
+In your setup or main function, you should have the validation and coredump initialization like this:
 
 ```cpp
 #include "esp_core_dump.h"
