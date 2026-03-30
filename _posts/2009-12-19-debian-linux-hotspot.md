@@ -15,7 +15,7 @@ comments: false
 
 #### Last update: 2019.12.20
 
-Debian hostpot on Wifi device using `dnsmask` and `hostapd` with a simple bash script for `enable/disable` it.
+Debian hotspot on Wifi device using `dnsmask` and `hostapd` with a simple bash script for `enable/disable` it.
 
 ! ! ! D E P R E C A T E D ! ! !  
 (Alternative: [NMCLI Hotspot Guide](https://hpsaturn.com/nmcli-hotspot/))
