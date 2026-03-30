@@ -13,3 +13,5 @@ _site
 *.vscode
 old
 temp
+.bundle
+chat_history.json
