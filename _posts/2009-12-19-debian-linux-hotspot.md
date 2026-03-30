@@ -11,7 +11,7 @@ tag:
 comments: false
 ---
 
-# Debian Hostspot loader
+# Debian Hotspot loader
 
 #### Last update: 2019.12.20
 
@@ -27,7 +27,7 @@ Please create the next script in `/usr/bin/loadhotspot`, also you can download i
 ``` bash
 #!/bin/sh
 ###################################################################
-# Load hostspot
+# Load hotspot
 # 2009-2010 Hpsaturn v1.0
 # hpsaturn@gmail.com
 ###################################################################

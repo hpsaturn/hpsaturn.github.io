@@ -147,7 +147,7 @@ Related scripts: nasbackup, bkpinflxdb.sh
 | **build_opencv_android**   | Utility for building OpenCV by architecture.                           |
 | **cpustat**                | Utility for monitoring CPU statistics.                                 |
 | **lanips**                 | Returns the used IPs in the LAN network.                               |
-| **loadhotspot**            | Old hostspot implementation using `iptables` and Network Addressing.    |
+| **loadhotspot**            | Old hotspot implementation using `iptables` and Network Addressing.    |
 
 ## References
 

@@ -10,5 +10,6 @@ _site
 *.*.swp
 
 #Project
+*.vscode
 old
 temp
