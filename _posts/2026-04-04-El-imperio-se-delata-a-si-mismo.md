@@ -7,9 +7,8 @@ excerpt: "Re-post de Caitlin Johnstone traducido por Rafael Poch de Feliu."
 feature: https://hpsaturn.com/assets/img/lo_hacemos_por_los_derechos_humanos.jpg
 life: true
 tag:
-- Recipe
-- Colombia
-- Berlin
+- Politics
+- USAF
 - Life
 comments: false
 ---
