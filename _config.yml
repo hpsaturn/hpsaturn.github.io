@@ -49,28 +49,12 @@ google:
 #bing-verify:
 #email:
 twitter:            hpsaturn
-#facebook:           
 github-url:         hpsaturn
 stackoverflow:      471690/hpsaturn
 linkedin:           hpsaturn
-#xing:              username
 instagram:          hpsaturn
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:         hpsaturn
-#steam:              username
-#dribbble:          username
 youtube:            hpsaturn
-#youtube-channel:   channel
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
+#soundcloud:        hpsaturn
 hackaday:           hpsaturn
 bandcamp:           hpsaturn
 
