@@ -63,5 +63,9 @@ Pero ahora todo está saliendo a la luz. Cada vez se ve más.
 
 Que las mentiras y las confusiones sigan desentrañándose. Que la verdad siga revelándose.
 
+---
+
 (Publicado en : [The Empire Exposes Itself – Consortium News](https://consortiumnews.com/2026/04/03/caitlin-johnstone-the-empire-exposes-itself/))  
 (Traducción al Español : [Rafael Poch de Feliu](https://rafaelpoch.com/2026/04/04/el-imperio-se-delata-a-si-mismo/))  
+
+---
