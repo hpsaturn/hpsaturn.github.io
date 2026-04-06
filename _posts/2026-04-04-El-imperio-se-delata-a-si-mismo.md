@@ -3,7 +3,7 @@ layout: post
 title:  "El imperio se delata a sí mismo"
 imghead: lo_hacemos_por_los_derechos_humanos_horizontal.jpg
 date:   2026-04-04
-excerpt: "Re-post de Caitlin Johnstone traducido por Rafael Poch de Feliu."
+excerpt: "Lo que antes solo revelaban los denunciantes, los periodistas de investigación, los activistas y los medios disidentes, ahora lo muestra el propio imperio."
 feature: https://hpsaturn.com/assets/img/lo_hacemos_por_los_derechos_humanos.jpg
 life: true
 tag:
@@ -13,9 +13,7 @@ tag:
 comments: false
 ---
 
-<center><b>El imperio se delata a sí mismo</b></center>
-
-Lo que antes solo revelaban los denunciantes, los periodistas de investigación, los activistas y los medios disidentes, ahora lo muestra el propio imperio.
+<center><h1>El imperio se delata a sí mismo</h1></center>
 
 Autor: [Caitlin Johnstone](https://consortiumnews.com/2026/04/03/caitlin-johnstone-the-empire-exposes-itself/)
 
@@ -65,5 +63,5 @@ Pero ahora todo está saliendo a la luz. Cada vez se ve más.
 
 Que las mentiras y las confusiones sigan desentrañándose. Que la verdad siga revelándose.
 
-(Publicado en : Caitlin Johnstone: [The Empire Exposes Itself – Consortium News](https://consortiumnews.com/2026/04/03/caitlin-johnstone-the-empire-exposes-itself/))  
-(Traducido al Español por: Rafael Poch de Feliu: [El imperio se delata a sí mismo](https://rafaelpoch.com/2026/04/04/el-imperio-se-delata-a-si-mismo/))  
+(Publicado en : [The Empire Exposes Itself – Consortium News](https://consortiumnews.com/2026/04/03/caitlin-johnstone-the-empire-exposes-itself/))  
+(Traducción al Español : [Rafael Poch de Feliu](https://rafaelpoch.com/2026/04/04/el-imperio-se-delata-a-si-mismo/))  
