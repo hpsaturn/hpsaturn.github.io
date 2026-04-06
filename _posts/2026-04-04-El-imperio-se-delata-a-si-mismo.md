@@ -13,8 +13,6 @@ tag:
 comments: false
 ---
 
-<center><h1>El imperio se delata a sí mismo</h1></center>
-
 Autor: [Caitlin Johnstone](https://consortiumnews.com/2026/04/03/caitlin-johnstone-the-empire-exposes-itself/)
 
 Antes era difícil hacer ver a los occidentales la depravación del imperio estadounidense. Ahora está ahí, ante los ojos de todos, con imágenes crudas de genocidio y un belicismo increíblemente perverso con consecuencias económicas directas.
@@ -69,3 +67,5 @@ Que las mentiras y las confusiones sigan desentrañándose. Que la verdad siga r
 (Traducción al Español : [Rafael Poch de Feliu](https://rafaelpoch.com/2026/04/04/el-imperio-se-delata-a-si-mismo/))  
 
 ---
+
+<center>If you want to add a comment or report an issue, please use the button below.</center>
