@@ -11,8 +11,7 @@ tag:
 - C++
 - IoT
 - Hp48
-- Hardware
-- Motorola
+- OpenHardware
 comments: false
 ---
 

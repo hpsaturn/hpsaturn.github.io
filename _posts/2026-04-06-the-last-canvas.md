@@ -69,5 +69,3 @@ comments: false
 {% include gallery images=images cols=3 %}
 
 ---
-
-<center>If you want to add a comment or report an issue, please use the button below.</center>

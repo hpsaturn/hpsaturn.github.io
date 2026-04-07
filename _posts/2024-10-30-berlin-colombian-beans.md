@@ -60,12 +60,8 @@ Another option to replace the "panela" is the African banana, that is different 
 
 Of course, if you are vegan, you can simply replace the meat with something else. This alternative is also very good and can be served with other side dishes.
 
-
 {% capture images %}
   {{ site.url }}/assets/img/colombian_beans_cargamanto.jpg
   {{ site.url }}/assets/img/colombian_beans_maduro.jpg
 {% endcapture %}
 {% include gallery images=images cols=2 %}
-
-If you want to add a comment or report an issue, please use the button below.
-

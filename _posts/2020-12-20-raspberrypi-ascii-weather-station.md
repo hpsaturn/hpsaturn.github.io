@@ -197,7 +197,3 @@ For example for turn off USB ports, put the next line **before** xinit line on *
 ```bash
 echo '1-1' |sudo tee /sys/bus/usb/drivers/usb/unbind &
 ```
-
-## Troubleshooting
-
-Any feedback, bug or issue, please report it using the report issue button below.

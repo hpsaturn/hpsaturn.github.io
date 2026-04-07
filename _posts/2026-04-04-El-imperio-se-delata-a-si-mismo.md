@@ -67,5 +67,3 @@ Que las mentiras y las confusiones sigan desentrañándose. Que la verdad siga r
 (Traducción al Español : [Rafael Poch de Feliu](https://rafaelpoch.com/2026/04/04/el-imperio-se-delata-a-si-mismo/))  
 
 ---
-
-<center>If you want to add a comment or report an issue, please use the button below.</center>
