@@ -52,7 +52,9 @@ comments: false
 "Al-Salmi, best known as Frans, was a visual artist, and Abu Hatab was a filmmaker and photojournalist. The close friends had been meeting colleagues and friends at the café when they were killed…"
 </p>
 
-**News:** [Two artists killed in Israeli air strike on Gaza cafe](https://www.theartnewspaper.com/2025/07/01/two-artists-killed-in-israeli-air-strike-on-gaza-cafe)
+<p style="text-align:right;">
+<b>News:</b> <a href="https://www.theartnewspaper.com/2025/07/01/two-artists-killed-in-israeli-air-strike-on-gaza-cafe" target="_blank">Two artists killed in Israeli air strike on Gaza cafe</a>
+</p>
 
 {% capture images %}
   {{ site.url }}/assets/img/usaf_al-salmi_art01.jpg
@@ -67,5 +69,10 @@ comments: false
   {{ site.url }}/assets/img/usaf_al-salmi_art00.jpg
 {% endcapture %}
 {% include gallery images=images cols=3 %}
+
+---
+
+**instagram:** [francalsalmi](https://www.instagram.com/francalsalmi/)  
+**twitter:** [news reference](https://x.com/SuppressedNws/status/1939693077523816945)
 
 ---
