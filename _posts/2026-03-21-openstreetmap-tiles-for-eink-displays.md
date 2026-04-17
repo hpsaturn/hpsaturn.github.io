@@ -18,7 +18,7 @@ comments: false
 
 ## Map tiles for eInk displays
 
-In some map applications that run on microcontrollers with eInk displays, such as Meshtastic or Meshcore, you need special map tiles. Some guides recommend using restricted APIs, or some guide provide map tiles with specific or tricky rules to optimize them for these screens. The problem is that these APIs often have limited free quotas or do not cover all geographic areas.
+In some map applications that run on microcontrollers with eInk displays, such as decentralised mesh radio projects like [Meshtastic](https://meshtastic.org/) or [Meshcore](https://meshcore.co.uk/), you need special map tiles. Some guides recommend using restricted APIs, or some guide provide map tiles with specific or tricky rules to optimize them for these screens. The problem is that these APIs often have limited free quotas or do not cover all geographic areas.
 
 This alternative uses Maperitive with the default rule set (no complex configuration) and a Python script for post-processing. It also works with previously downloaded tiles, for example, color tiles you might already have for TFT screens.
 
@@ -147,4 +147,5 @@ done. You are able to test your new map tiles :)
 
 [IceNav Project](https://github.com/jgauchia/IceNav-v3) for initial tips and a first understanding of Maperitive  
 [Meshcore Project](https://buymeacoffee.com/ripplebiz/t-deck-pro-map-support) for its initial guide using restrictive APIs (inspiration for this guide 😄)  
+[Meshtastic](https://meshtastic.org/) and [Meshcore](https://meshcore.co.uk/) for its secure, decentralised mesh radio projects.  
 [OpenStreetMap](https://wiki.openstreetmap.org/wiki/Maperitive) and its community. None of this would have been possible without them.
