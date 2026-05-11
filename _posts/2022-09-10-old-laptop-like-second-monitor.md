@@ -5,6 +5,7 @@ date:   2022-09-10
 excerpt: "How to connect old monitor to virtual xorg space"
 feature: http://hpsaturn.com/assets/img/xorg-virtual-monitor.jpg
 tag:
+- GNU-Linux
 - Debian
 - Xorg
 comments: false
