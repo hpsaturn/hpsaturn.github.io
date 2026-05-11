@@ -9,3 +9,5 @@ group :jekyll_plugins do
   gem 'jekyll-commonmark-ghpages'
 end
 gem "kramdown-parser-gfm"
+
+gem "webrick", "~> 1.9"
