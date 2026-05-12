@@ -16,11 +16,13 @@ When maybe you chosen a small partition for swap and you need enable the hiberna
 ## Swap file creation
 
 ```bash
-sudo fallocate -l 5G /swapfile
+sudo fallocate -l 16G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 ```
+
+This could be works for instance for a system with 16Gb of RAM.
 
 ## Fstab config
 
