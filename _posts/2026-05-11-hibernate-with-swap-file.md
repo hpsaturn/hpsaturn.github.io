@@ -2,7 +2,7 @@
 layout: post
 title:  "Hibernate using swap file"
 date:   2026-03-21
-excerpt: "Fast how to the how enable hibernate using swap files instead disk partition"
+excerpt: "How to enable hibernate using swap files instead disk partition"
 tag:
 - GNU-Linux
 - Debian
