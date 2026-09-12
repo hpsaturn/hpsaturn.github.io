@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hibernate using swap file"
-date:   2026-03-21
+date:   2026-05-11
 excerpt: "How to enable hibernate using swap files instead disk partition"
 tag:
 - GNU-Linux
