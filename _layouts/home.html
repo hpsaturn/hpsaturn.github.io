@@ -15,30 +15,30 @@ layout: compress
     <header class="header flex" role="banner">
         <div class="container animated fadeIn">
             <div class="row">
-                    <a href="{{ site.url }}">
-                        <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn">
+                    <a href="{{ '/' | relative_url }}">
+                        <img src="{{ site.logo | relative_url }}" class="img-circle zoombtn animated rotateIn">
                     </a>
                     <h3 class="title">
-                        <a class="zoombtn" href="{{ site.url }}">
+                        <a class="zoombtn" href="{{ '/' | relative_url }}">
                         	<p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
 			            </a>
                     </h3>
                     <hr class="hr-line">
                     <h3 class="title">
-                        <a href="{{ site.url }}">
+                        <a href="{{ '/' | relative_url }}">
                         	<p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
 			            </a>
                     </h3>
                     {% include social-links.html %}
                   <hr class="hr-line">
                   <h3 class="title">
-                         <a class="btn zoombtn" href="{{ site.url }}/about">
+                         <a class="btn zoombtn" href="{{ '/about' | relative_url }}">
                          About
                          </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/projects">
+                         <a class="btn zoombtn" href="{{ '/projects' | relative_url }}">
                          Projects
                          </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/posts">
+                         <a class="btn zoombtn" href="{{ '/posts' | relative_url }}">
                          Posts
                          </a>
                          
