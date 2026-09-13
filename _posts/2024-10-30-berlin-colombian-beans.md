@@ -42,7 +42,7 @@ Possible Berlin places:
 * All special ingredients maybe in [Latino point Supermarket](https://maps.app.goo.gl/dYSf5JsrmprxLX728)
 
 {% capture images %}
-  {{ site.url }}/assets/img/colombian_beans.jpg
+  {{ '/assets/img/colombian_beans.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=1 %}
 
@@ -61,7 +61,7 @@ Another option to replace the "panela" is the African banana, that is different 
 Of course, if you are vegan, you can simply replace the meat with something else. This alternative is also very good and can be served with other side dishes.
 
 {% capture images %}
-  {{ site.url }}/assets/img/colombian_beans_cargamanto.jpg
-  {{ site.url }}/assets/img/colombian_beans_maduro.jpg
+  {{ '/assets/img/colombian_beans_cargamanto.jpg' | relative_url }}
+  {{ '/assets/img/colombian_beans_maduro.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=2 %}

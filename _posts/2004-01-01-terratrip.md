@@ -37,12 +37,12 @@ Rally computer for amateur and professional rally teams. Using a Hp48 calculator
 ## Nav48 app
 
 {% capture images %}
-  {{ site.url }}/assets/img/nav48_00.jpg
-  {{ site.url }}/assets/img/nav48_01.jpg
-  {{ site.url }}/assets/img/nav48_02.jpg
-  {{ site.url }}/assets/img/nav48_03.jpg
-  {{ site.url }}/assets/img/nav48_04.jpg
-  {{ site.url }}/assets/img/nav48_05.jpg
+  {{ '/assets/img/nav48_00.jpg' | relative_url }}
+  {{ '/assets/img/nav48_01.jpg' | relative_url }}
+  {{ '/assets/img/nav48_02.jpg' | relative_url }}
+  {{ '/assets/img/nav48_03.jpg' | relative_url }}
+  {{ '/assets/img/nav48_04.jpg' | relative_url }}
+  {{ '/assets/img/nav48_05.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images caption="Hewlett Packard Hp48 application Nav48 screenshots" cols=3 %}
 
@@ -55,10 +55,10 @@ Unfortunately I lost the source code directory, but in 2025 I found some things.
 ## Nav48 Hardware
 
 {% capture images %}
-  {{ site.url }}/assets/img/nav48_hardware00.jpg
-  {{ site.url }}/assets/img/nav48_hardware02.jpg
-  {{ site.url }}/assets/img/nav48_hardware05.jpg
-  {{ site.url }}/assets/img/nav48_hardware07.jpg
+  {{ '/assets/img/nav48_hardware00.jpg' | relative_url }}
+  {{ '/assets/img/nav48_hardware02.jpg' | relative_url }}
+  {{ '/assets/img/nav48_hardware05.jpg' | relative_url }}
+  {{ '/assets/img/nav48_hardware07.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images caption="Nav48 hardware photos" cols=3 %}
 
@@ -67,6 +67,6 @@ Unfortunately I lost the source code directory, but in 2025 I found some things.
 With this hardware and software that I did, my team won around 8 trophies and two championship on Bogotá on three years in two modalities, 4x4 and regularity.
 
 {% capture images %}
-  {{ site.url }}/assets/img/nav48_1280_collage.jpg
+  {{ '/assets/img/nav48_1280_collage.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=1 %}

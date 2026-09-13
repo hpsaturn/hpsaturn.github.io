@@ -31,16 +31,16 @@ comments: false
 ---
 
 {% capture images %}
-  {{ site.url }}/assets/img/usaf_marah_art03.jpg
-  {{ site.url }}/assets/img/usaf_marah_art04.jpg
-  {{ site.url }}/assets/img/usaf_marah_art05.jpg
+  {{ '/assets/img/usaf_marah_art03.jpg' | relative_url }}
+  {{ '/assets/img/usaf_marah_art04.jpg' | relative_url }}
+  {{ '/assets/img/usaf_marah_art05.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=3 %}
 
 {% capture images %}
-  {{ site.url }}/assets/img/usaf_marah_art01.jpg
-  {{ site.url }}/assets/img/usaf_marah_art00.jpg
-  {{ site.url }}/assets/img/usaf_marah_art02.jpg
+  {{ '/assets/img/usaf_marah_art01.jpg' | relative_url }}
+  {{ '/assets/img/usaf_marah_art00.jpg' | relative_url }}
+  {{ '/assets/img/usaf_marah_art02.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=3 %}
 
@@ -57,16 +57,16 @@ comments: false
 </p>
 
 {% capture images %}
-  {{ site.url }}/assets/img/usaf_al-salmi_art01.jpg
-  {{ site.url }}/assets/img/usaf_al-salmi_art02.jpg
-  {{ site.url }}/assets/img/usaf_al-salmi_art05.jpg
+  {{ '/assets/img/usaf_al-salmi_art01.jpg' | relative_url }}
+  {{ '/assets/img/usaf_al-salmi_art02.jpg' | relative_url }}
+  {{ '/assets/img/usaf_al-salmi_art05.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=3 %}
 
 {% capture images %}
-  {{ site.url }}/assets/img/usaf_al-salmi_art03.jpg
-  {{ site.url }}/assets/img/usaf_al-salmi_art04.jpg
-  {{ site.url }}/assets/img/usaf_al-salmi_art00.jpg
+  {{ '/assets/img/usaf_al-salmi_art03.jpg' | relative_url }}
+  {{ '/assets/img/usaf_al-salmi_art04.jpg' | relative_url }}
+  {{ '/assets/img/usaf_al-salmi_art00.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=3 %}
 

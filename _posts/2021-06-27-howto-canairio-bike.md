@@ -27,7 +27,7 @@ Also CanAirIO firmware supports [more sensors](https://github.com/kike-canaries/
 
 ## Features
 
-![CanAirIO Bike 3D printer files]({{ site.url }}/assets/img/canairio_bike_header.jpg)
+![CanAirIO Bike 3D printer files]({{ '/assets/img/canairio_bike_header.jpg' | relative_url }})
 
 These devices able to work in standalone mode without clouds, apps, Bluetooth, WiFi, etc. but also you could have the next features:
 
@@ -57,11 +57,11 @@ These devices able to work in standalone mode without clouds, apps, Bluetooth, W
 
 ## Building Guide
 
-<a href="https://youtu.be/V2eO1UN5u7Y" target="_blank" style="padding-left: 20px" ><img src="{{ site.url }}/assets/img/canairio_bike_make_of_youtube.jpg" width="480" ></a>
+<a href="https://youtu.be/V2eO1UN5u7Y" target="_blank" style="padding-left: 20px" ><img src="{{ '/assets/img/canairio_bike_make_of_youtube.jpg' | relative_url }}" width="480" ></a>
 
 ## Soldering improvements
 
-<a href="https://youtu.be/Oarq0K0Sz3c" target="_blank" style="padding-left: 20px" ><img src="{{ site.url }}/assets/img/canairio_bike_soldering_on_youtube.jpg" width="480" ></a>
+<a href="https://youtu.be/Oarq0K0Sz3c" target="_blank" style="padding-left: 20px" ><img src="{{ '/assets/img/canairio_bike_soldering_on_youtube.jpg' | relative_url }}" width="480" ></a>
 
 ## Components
 
@@ -95,27 +95,27 @@ The full updated and last versions for all box versions, are in the [official re
 
 ** ***************** **
 
-![CanAirIO Bike 3D printer files]({{ site.url }}/assets/img/canairio_bike_3dprint_models.jpg)
+![CanAirIO Bike 3D printer files]({{ '/assets/img/canairio_bike_3dprint_models.jpg' | relative_url }})
 
 ## Instructions
 
-[![CanAirIO Instructions]({{ site.url }}/assets/img/canairio_bike_instructions_display.jpg)](https://hackaday.io/project/179753/instructions)
+[![CanAirIO Instructions]({{ '/assets/img/canairio_bike_instructions_display.jpg' | relative_url }})](https://hackaday.io/project/179753/instructions)
 
 Complete list of steps and instructions [here](https://hackaday.io/project/179753/instructions).
 
 ## Schematics
 
-![CanAirIO Bike Schematics]({{ site.url }}/assets/img/canairio_bike_schematics_grid.jpg)
+![CanAirIO Bike Schematics]({{ '/assets/img/canairio_bike_schematics_grid.jpg' | relative_url }})
 
 Please note that it is a general diagram, for details of pin connections please review the datasheet of each component. For example the next diagrams:
 
 ### SPS30 pinout diagram
 
-![CanAirIO Bike Schematics]({{ site.url }}/assets/img/canairio_bike_schematics_sps30.jpg)
+![CanAirIO Bike Schematics]({{ '/assets/img/canairio_bike_schematics_sps30.jpg' | relative_url }})
 
 ### AM2320 pinout diagram
 
-![CanAirIO Bike Schematics]({{ site.url }}/assets/img/canairio_bike_schematics_am2320.jpg)
+![CanAirIO Bike Schematics]({{ '/assets/img/canairio_bike_schematics_am2320.jpg' | relative_url }})
 
 ## Firmware Upload
 
@@ -129,7 +129,7 @@ Other alternatives for upload the CanAirIO firmware, [here](https://canair.io/do
 
 ## Quick start guide
 
-![CanAirIO Bike Quick Start]({{ site.url }}/assets/img/canairio_bike_quick_start.jpg)
+![CanAirIO Bike Quick Start]({{ '/assets/img/canairio_bike_quick_start.jpg' | relative_url }})
 
 ## Specifications
 
