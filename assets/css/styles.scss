@@ -1,3 +1,7 @@
 ---
 ---
-@import "main";
+/* Legacy entry kept for compatibility. Note: it must reference the partial
+   explicitly ("../../_sass/main") because assets/css/main.scss is also a
+   page and a bare @import "main" would resolve to that page (which carries
+   YAML front matter and is not valid SCSS). */
+@import "../../_sass/main";

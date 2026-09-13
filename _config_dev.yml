@@ -1,0 +1,9 @@
+# Local development overrides. Use with:
+#   bundle exec jekyll serve --config _config.yml,_config_dev.yml
+#
+# The production config sets url: "https://hpsaturn.com" and every template
+# builds absolute asset URLs with {{ site.url }}. When previewing on
+# localhost that makes the browser fetch CSS/JS/fonts from the live site
+# (and Firefox may refuse them), so for local builds we blank the url and
+# let assets resolve as root-relative paths.
+url: ""

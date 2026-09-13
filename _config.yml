@@ -28,6 +28,13 @@ mathjax:            true
 sass:
   sass_dir:         _sass
   style:            compressed
+  # Jekyll 4 uses Dart Sass (jekyll-sass-converter 3.x); source maps are
+  # not emitted by Jekyll 3, so disable them to keep _site output identical.
+  sourcemap:        never
+  # Font Awesome 6.2 still uses @import internally; silence the Dart Sass
+  # 'import is deprecated' notices until the SCSS is migrated to @use.
+  silence_deprecations:
+    - import
 
 # CommonMarkGhPages
 commonmark:
@@ -69,4 +76,6 @@ jekyll-mentions:
     base_url: https://github.com
 
 # Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+# NOTE: chat_history.json and old/ are not tracked in git (see .gitignore) but
+# Jekyll copies them when present locally, which leaks them into _site.
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, chat_history.json, old]
