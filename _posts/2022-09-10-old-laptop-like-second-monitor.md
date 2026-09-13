@@ -7,11 +7,15 @@ feature: http://hpsaturn.com/assets/img/xorg-virtual-monitor.jpg
 tag:
 - GNU-Linux
 - Debian
-- Xorg
+- xorg
 comments: false
 ---
 
 # Your old laptop like a second monitor
+
+!!! D E P R E C A T E D !!!
+
+**(This guide is deprecated. Please see this new [way](http://hpsaturn.com/sunshine-moonlight-virtual-display/))**
 
 I have an Asus Zenbook UX534, it isn't a old laptop but I wanted join it to my new desktop machine, because this laptop has two monitors. For this reason here I post the conclusions of this goal.
 
