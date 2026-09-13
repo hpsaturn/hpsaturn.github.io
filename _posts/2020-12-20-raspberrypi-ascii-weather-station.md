@@ -22,7 +22,7 @@ The next guide reach that RaspberryPi launch a Go program that show the current 
 - [x] fast boot improvements
 
 {% capture images %}
-  {{ site.url }}/assets/img/ascii_weather_station.jpg
+  {{ '/assets/img/ascii_weather_station.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=1 %}
 
@@ -114,7 +114,7 @@ sudo su -l pi -c "xinit -geometry =800x400+0+0 -fn 8x13 -j -fg white -bg black /
 reboot the Pi and it is all, the Pi will start the Wego app like unique X application.
 
 {% capture images %}
-  {{ site.url }}/assets/img/ascii_weather_station.gif
+  {{ '/assets/img/ascii_weather_station.gif' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=1 %}
 

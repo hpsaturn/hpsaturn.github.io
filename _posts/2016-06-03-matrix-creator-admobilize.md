@@ -42,11 +42,11 @@ Together with [Admobilize](https://www.admobilize.com/) team we released two boa
 - Android Things implementation over RaspberryPi
 - Our Balena implementation in parallel to Android Things development
 
-![Admobilize Face detection]({{ site.url }}/assets/img/admobilize_face_detection.jpg)
+![Admobilize Face detection]({{ '/assets/img/admobilize_face_detection.jpg' | relative_url }})
 
 ---
 
-<a href="https://youtu.be/YMRRN0Mzvw0" target="_blank"><img src="{{ site.url }}/assets/img/matrixvoice_youtube.jpg" align="center"></a>
+<a href="https://youtu.be/YMRRN0Mzvw0" target="_blank"><img src="{{ '/assets/img/matrixvoice_youtube.jpg' | relative_url }}" align="center"></a>
 
 ## References
 
@@ -57,7 +57,7 @@ Together with [Admobilize](https://www.admobilize.com/) team we released two boa
 [MatrixVoice posts here](https://hpsaturn.com/tags/#MatrixVoice)
 
 {% capture images %}
-  {{ site.url }}/assets/img/matrixcreatorheader.png
-  {{ site.url }}/assets/img/matrixvoiceheader.png
+  {{ '/assets/img/matrixcreatorheader.png' | relative_url }}
+  {{ '/assets/img/matrixvoiceheader.png' | relative_url }}
 {% endcapture %}
 {% include gallery images=images caption="MatrixCreator / MatrixVoice Gallery" cols=3 %}

@@ -66,7 +66,7 @@ generate-tiles minzoom=6 maxzoom=17
 This may take a while, possibly an hour or more, depending on the area and zoom levels. Once finished, you will find the tiles in the Maperitive directory.
 
 {% capture images %}
-  {{ site.url }}/assets/img/maperitive_tiles_generation.jpg
+  {{ '/assets/img/maperitive_tiles_generation.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=1 %}
 
@@ -137,9 +137,9 @@ done. You are able to test your new map tiles :)
 ## Results
 
 {% capture images %}
-  {{ site.url }}/assets/img/meshcore_map_tiles_preview00.jpg
-  {{ site.url }}/assets/img/meshcore_map_tiles_preview01.jpg
-  {{ site.url }}/assets/img/meshcore_map_tiles_preview02.jpg
+  {{ '/assets/img/meshcore_map_tiles_preview00.jpg' | relative_url }}
+  {{ '/assets/img/meshcore_map_tiles_preview01.jpg' | relative_url }}
+  {{ '/assets/img/meshcore_map_tiles_preview02.jpg' | relative_url }}
 {% endcapture %}
 {% include gallery images=images cols=3 %}
 

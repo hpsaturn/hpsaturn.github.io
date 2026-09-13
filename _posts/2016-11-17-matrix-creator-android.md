@@ -33,8 +33,8 @@ Please review the last version of this document in [github](https://github.com/m
 
 ## Current Features
 
-<img src="{{ site.url }}/assets/img/matrixcreatorandroid.jpg"
-srcset="{{ site.url }}/assets/img/matrixcreatorandroid.jpg 100w, {{ site.url }}/assets/img/matrixcreatorandroid.jpg 200w"
+<img src="{{ '/assets/img/matrixcreatorandroid.jpg' | relative_url }}"
+srcset="{{ '/assets/img/matrixcreatorandroid.jpg' | relative_url }} 100w, {{ '/assets/img/matrixcreatorandroid.jpg' | relative_url }} 200w"
 sizes="10vw"
 align="right"
 alt="image alt text">

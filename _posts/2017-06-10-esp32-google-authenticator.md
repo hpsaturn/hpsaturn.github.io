@@ -27,8 +27,8 @@ PlatformIO project that using `WeMOS` like board with a `ESP32` and OLED SSD1306
 
 ## Development Status:
 
-<img src="{{ site.url }}/assets/img/esp32_potp_intro.jpg"
-srcset="{{ site.url }}/assets/img/esp32_potp_intro.jpg 100w, {{ site.url }}/assets/img/esp32_potp_intro.jpg 200w"
+<img src="{{ '/assets/img/esp32_potp_intro.jpg' | relative_url }}"
+srcset="{{ '/assets/img/esp32_potp_intro.jpg' | relative_url }} 100w, {{ '/assets/img/esp32_potp_intro.jpg' | relative_url }} 200w"
 sizes="2vw"
 align="right"
 alt="image alt text">
