@@ -35,7 +35,7 @@ layout: compress
                             </p>
                             <p>
                                 <a href="{{ site.url }}{{ post.url }}">
-                                    <img src="{{ site.url }}/assets/img/{{ post.imghead }}">
+                                    <img src="{{ post.imghead | prepend: '/assets/img/' | relative_url }}">
                                 </a>
                             </p>
                             {% include meta-in-item.html %}
@@ -52,7 +52,7 @@ layout: compress
         </div>
     </header>
     {% include scripts.html %}
-    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
+    <script src="{{ '/assets/js/wow.min.js' | relative_url }}"></script>
     <script type="text/javascript">(new WOW).init();</script>
 </body>
 </html>
