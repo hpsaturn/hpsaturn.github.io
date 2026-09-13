@@ -1,0 +1,54 @@
+# Dependabot configuration.
+#
+# Before this file existed, updates arrived one pull request at a time: the
+# nokogiri alert alone produced a run that the bundler updater could not
+# complete (nokogiri 1.16.0 renamed its precompiled variants from
+# -x86_64-linux to -x86_64-linux-gnu, so the update has to rewrite the gem
+# name in Gemfile.lock), plus a separate PR for every other alert.
+#
+# Version updates are now grouped: one PR for all minor/patch bumps, both for
+# rubygems (via the bundler ecosystem) and for the actions used by the Pages
+# workflow. Major bumps stay individual on purpose, they deserve review.
+# Security updates follow their own channel and are not scheduled by this file.
+version: 2
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "UTC"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "ruby"
+    commit-message:
+      prefix: "bump"
+      include: "scope"
+    groups:
+      bundler-minor-patch:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "UTC"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
