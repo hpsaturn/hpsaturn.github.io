@@ -6,9 +6,8 @@ source "https://rubygems.org"
 # requirement stays on the 3.1 line so that Debian 12's stock Ruby 3.1.2 can
 # also run local builds; bumping to 3.2+ must be a deliberate decision because
 # several gems (e.g. nokogiri >= 1.19) gate themselves on it.
-ruby "~> 3.1"
 
-gem "jekyll", "~> 4.4"
+gem "jekyll", "~> 4.4.1"
 gem "jekyll-sitemap"
 gem "jekyll-gist"
 gem "jekyll-mentions"

@@ -1,6 +1,7 @@
 # jekyll
 _site
 .sass-cache/
+*.lock
 
 # Log Files
 *.log
