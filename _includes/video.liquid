@@ -1,0 +1,18 @@
+{%- comment -%}
+  Responsive embedded video (YouTube / Vimeo / any iframe source).
+
+  Usage (Liquid include):
+    include video.liquid path="https://www.youtube.com/embed/VIDEO_ID"
+    include video.liquid path="https://player.vimeo.com/video/ID" class="img-fluid"
+
+  "path" is used verbatim as the iframe src, so pass the *embed* URL.
+  Optional "class" is applied to the iframe.
+  Aspect ratio / responsiveness is handled by fitVids, already loaded in
+  _includes/scripts.html and bound to ".content" in assets/js/scripts.js.
+{%- endcomment -%}
+<iframe src="{{ include.path }}"
+        {% if include.class %}class="{{ include.class }}"{% endif %}
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
