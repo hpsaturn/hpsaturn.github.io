@@ -35,9 +35,9 @@ DVI-I-2-2 disconnected (normal left inverted right x axis y axis)
 DVI-I-1-1 disconnected (normal left inverted right x axis y axis)
 ```
 
-Why we need Virtual Displaykink and why not hacks with xorg fake or dummy monitors?
+Why do we need Virtual DisplayLink and why not hacks with Xorg fake or dummy monitors?
 
-Because the performance of the second ones is so bad, and some programs like Firefox or Mplayer o whatever with acceleration could be failing, sometimes crashing them.
+Because the performance of the latter ones is so bad, and some programs like Firefox or MPlayer or whatever with acceleration could fail, sometimes crashing them.
 
 ## Virtual Screen Config
 
@@ -171,7 +171,7 @@ The config is very similar, but the difference is the port config, which means t
 {% endcapture %}
 {% include gallery images=images cols=1 %}
 
-You can launch each one for separated:
+You can launch each one separately:
 
 ```bash
 sunshine ~/.config/sunshine_laptop/sunshine.conf
@@ -179,7 +179,7 @@ sunshine ~/.config/sunshine_laptop/sunshine.conf
 
 TIP:
 
-Some times you need to launch one, connect its Moonlingh client and then, launch the second one Sunshine server, because sometimes the second moonlight client maybe could found the first instance of Sunshine. You can improve this seperating the network ports more.  
+Sometimes you need to launch one, connect its Moonlight client and then launch the second Sunshine server, because sometimes the second Moonlight client might find the first instance of Sunshine. You can improve this by separating the network ports further.
 
 ## DEMO
 
@@ -187,5 +187,5 @@ Some times you need to launch one, connect its Moonlingh client and then, launch
   {% include video.liquid path="https://www.youtube.com/embed/-WwW6cJrLbQ" class="img-fluid rounded z-depth-1" %}
 </div>
 
-In this video the Tablet and the laptop in the right, are virtual screen of my Desktop CPU. The other screens are real screens. All working together with the same OS in different spaces.
+In this video the tablet and the laptop on the right are virtual screens of my Desktop CPU. The other screens are real screens. All working together with the same OS in different spaces.
 
