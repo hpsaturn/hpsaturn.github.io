@@ -2,7 +2,7 @@
 layout: post
 title:  "Virtual display using Sunshine"
 date:   2026-09-13
-excerpt: "How to use unused screens like a real displays for your desktop"
+excerpt: "How to use unused screens as real displays for your desktop"
 feature: http://hpsaturn.com/assets/img/sunshine_multi_screens.jpg
 tag:
 - GNU-Linux
@@ -12,21 +12,21 @@ tag:
 comments: false
 ---
 
-Some years ago I wrote a [guide](https://hpsaturn.com/old-laptop-like-second-monitor/) that explained how to give support to old hardware, like a tables or old laptops and join them like a real displays connected to your main PC, but it has a low performance and some issues because old and vncserver was unmaintained.
+Some years ago I wrote a [guide](https://hpsaturn.com/old-laptop-like-second-monitor/) that explained how to give support to old hardware, like tablets or old laptops and join them as real displays connected to your main PC, but it has low performance and some issues because it is old and vncserver was unmaintained.
 
-But now we have [Sunshine](https://app.lizardbyte.dev/Sunshine/), a recommended game streaming server, very optimized to launch your virtual screens using [Virtual Displaylink](https://github.com/AdnanHodzic/displaylink-debian) to have the same idea.
+But now we have [Sunshine](https://app.lizardbyte.dev/Sunshine/), a recommended game streaming server, very optimized to launch your virtual screens using [Virtual Displaylink](https://github.com/AdnanHodzic/displaylink-debian) to get the same result.
 
-This guide only wants put some tips for Linux using xorg to do that, because I now that Sunshine have many source possibilities and we have different GPU boards, for that this guide is not for all scenarios.
+This guide only wants to put some tips for Linux using Xorg to do that, because I know that Sunshine has many source possibilities and we have different GPU boards, so this guide is not for all scenarios.
 
 ## Scenario
 
 - You have unused screens, for instance an Android Tablet or an old laptop
-- You have a GNU-Linux (with Nividia is possible that you don't need to use Displaylink step)
-- You want have more screens only, this guide is not for gamers (but it is possible too :D)
+- You have GNU-Linux (with NVIDIA it is possible that you don't need to use the Displaylink step)
+- You just want to have more screens, this guide is not for gamers (but it is possible too :D)
 
 ## Virtual Screens
 
-First, we need to add virtual screens to our X session, for instance a virtual monitor below of main monitor that it will be our Android tablet, and maybe a second screen that will be our old tablet. For that we need to generate virtual screen devices and configure them. For that we are going to use [Virtual Displaylink](https://github.com/AdnanHodzic/displaylink-debian). Please see the documentation and install it. At the end you should have something like that:
+First, we need to add virtual screens to our X session, for instance a virtual monitor below the main monitor, which will be our Android tablet, and maybe a second screen that will be our old tablet. For that we need to generate virtual screen devices and configure them. For that we are going to use [Virtual Displaylink](https://github.com/AdnanHodzic/displaylink-debian). Please see the documentation and install it. At the end you should have something like this:
 
 ```bash
 DVI-I-4-4 disconnected (normal left inverted right x axis y axis)
@@ -37,7 +37,7 @@ DVI-I-1-1 disconnected (normal left inverted right x axis y axis)
 
 ## Virtual Screen Config
 
-Now, you have 4 monitors more in theory, but you need to add this to your setup, for instance using `xrandr` command. Here, for instance this script could configure my Tablet space:
+Now, in theory you have 4 more monitors, but you need to add them to your setup, for instance using the `xrandr` command. Here, for instance this script could configure my Tablet space:
 
 ```bash
 #!/bin/bash
@@ -88,12 +88,12 @@ DVI-I-1-1 disconnected 1920x1080+0+1080 (normal left inverted right x axis y axi
 
 ## Sunshine server
 
-[Sunshine](https://app.lizardbyte.dev/Sunshine/) has many options and possibilities, but it is easy to configure. But some things are important here:
+[Sunshine](https://app.lizardbyte.dev/Sunshine/) has many options and possibilities, but it is easy to configure. However, some things are important here:
 
-- You will need to able to change or open some firewall ports
-- Depends if you have NVidia or AMD.
-- Is important first configure the virtual space before to launch Sunshine
-- In theory works with Wayland. (for me it still has many issues)
+- You will need to be able to change or open some firewall ports
+- It depends on whether you have NVIDIA or AMD.
+- It is important to first configure the virtual space before launching Sunshine
+- In theory it works with Wayland (for me it still has many issues).
 - Please try first with the default config of Sunshine
 
 My current config:
@@ -115,20 +115,20 @@ In `~/.config/sunshine/sunshine.conf`:
 
 Tips:
 
-- `port` please enter to network setting on Sunshine to understand which ports more and protocols you need open in your firewall.
-- `capture = x11` for me fixed many issues, but maybe is different for you.
-- `output_name` seems that is sometimes the list number position of your xrandr output, but maybe you will need to play with that.
-- `vaapi` maybe only works in AMD cards
+- `port` please go to the Network Settings in Sunshine to understand which other ports and protocols you need to open in your firewall.
+- `capture = x11` for me fixed many issues, but maybe it is different for you.
+- `output_name` seems to be sometimes the list number position of your xrandr output, but maybe you will need to play with that.
+- `vaapi` maybe only works on AMD cards
 
 ## Moonlight
 
-Moonlight is the client of Sunshine server. It is able to run in many architectures. Add the host IP, type the PIN shown in the Sunshine web UI and match the client resolution (1920x1080). You don't need many changes in Moonlight config, maybe the bitrate. I limited it to 2Mb, and is enough for full HD.
+Moonlight is the client of the Sunshine server. It is able to run in many architectures. Add the host IP, type the PIN shown in the Sunshine web UI and match the client resolution (1920x1080). You don't need many changes in Moonlight config, maybe the bitrate. I limited it to 2Mb, and it is enough for full HD.
 
 ## Multiple Sunshine servers
 
-That is optional, but is possible launch Sunshine many times for handling more monitors. Of course is important tunning these instances, because Sunshine don't have a heavy CPU footprint, is very light, but with two or three virtual screens working, that means two or three Sunshine servers running, your CPU maybe feeling that.
+That is optional, but it is possible to launch Sunshine many times for handling more monitors. Of course it is important to tune these instances, because Sunshine doesn't have a heavy CPU footprint, it is very light, but with two or three virtual screens working, that means two or three Sunshine servers running, and your CPU may feel that.
 
-For that you need to replicate your config and change the port range of each one, for instance I have these structure:
+For that you need to replicate your config and change the port range of each one, for instance I have this structure:
 
 ```bash
 ls ~/.config/
@@ -158,9 +158,9 @@ ls ~/.config/
     └── sunshine_state.json
 ```
 
-For that please configure one, copy the structure, and then configure the second one. Please notice that always you need a `sunshine` directory in `~/.config`
+For that please configure one, copy the structure, and then configure the second one. Please notice that you always need a `sunshine` directory in `~/.config`.
 
-The config is very similar, but the difference is the port config, that means that you need to open the ports showed in each config in the Network Settings section.
+The config is very similar, but the difference is the port config, which means that you need to open the ports shown in each config in the Network Settings section.
 
 {% capture images %}
   {{ '/assets/img/sunshine_multi_config.jpg' | relative_url }}
