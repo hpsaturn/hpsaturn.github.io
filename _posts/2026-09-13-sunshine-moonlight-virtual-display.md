@@ -9,6 +9,8 @@ tag:
 - Debian
 - Gaming
 - Xorg
+- Android
+
 comments: false
 ---
 
@@ -70,6 +72,10 @@ enable_virtual () {
 wmaker_restart () {
   kill -usr1 `pgrep wmaker | tail -1`
 }
+
+config_virtual
+enable_virtual
+wmaker_restart
 ```
 
 After that, you could use `arandr` command to see your final setup, for instance for me:

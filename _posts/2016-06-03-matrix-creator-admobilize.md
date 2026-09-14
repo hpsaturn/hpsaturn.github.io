@@ -46,7 +46,9 @@ Together with [Admobilize](https://www.admobilize.com/) team we released two boa
 
 ---
 
-<a href="https://youtu.be/YMRRN0Mzvw0" target="_blank"><img src="{{ '/assets/img/matrixvoice_youtube.jpg' | relative_url }}" align="center"></a>
+<div class="col-sm mt-3 mt-md-0">
+  {% include video.liquid path="https://www.youtube.com/embed/YMRRN0Mzvw0" class="img-fluid rounded z-depth-1" %}
+</div>
 
 ## References
 
