@@ -26,7 +26,7 @@ This guide only wants to put some tips for Linux using Xorg to do that, because 
 
 ## Virtual Screens
 
-First, we need to add virtual screens to our X session, for instance a virtual monitor below the main monitor, which will be our Android tablet, and maybe a second screen that will be our old tablet. For that we need to generate virtual screen devices and configure them. For that we are going to use [Virtual Displaylink](https://github.com/AdnanHodzic/displaylink-debian). Please see the documentation and install it. At the end you should have something like this:
+First, we need to add virtual screens to our X session, for instance a virtual monitor below the main monitor, which will be our Android tablet, and maybe a second screen that will be our old laptop. For that we need to generate virtual screen devices and configure them. For that we are going to use [Virtual Displaylink](https://github.com/AdnanHodzic/displaylink-debian). Please see the documentation and install it. At the end you should have something like this:
 
 ```bash
 DVI-I-4-4 disconnected (normal left inverted right x axis y axis)
@@ -34,6 +34,10 @@ DVI-I-3-3 disconnected (normal left inverted right x axis y axis)
 DVI-I-2-2 disconnected (normal left inverted right x axis y axis) 
 DVI-I-1-1 disconnected (normal left inverted right x axis y axis)
 ```
+
+Why we need Virtual Displaykink and why not hacks with xorg fake or dummy monitors?
+
+Because the performance of the second ones is so bad, and some programs like Firefox or Mplayer o whatever with acceleration could be failing, sometimes crashing them.
 
 ## Virtual Screen Config
 
@@ -122,7 +126,7 @@ Tips:
 
 ## Moonlight
 
-Moonlight is the client of the Sunshine server. It is able to run in many architectures. Add the host IP, type the PIN shown in the Sunshine web UI and match the client resolution (1920x1080). You don't need many changes in Moonlight config, maybe the bitrate. I limited it to 2Mb, and it is enough for full HD.
+[Moonlight](https://github.com/moonlight-stream/moonlight-android) is the client of the Sunshine server. It is able to run in many architectures, like tablets or PCs. Add the host IP, type the PIN shown in the Sunshine web UI and match the client resolution (1920x1080). You don't need many changes in Moonlight config, maybe the bitrate. I limited it to 2Mb, and it is enough for full HD.
 
 ## Multiple Sunshine servers
 
@@ -167,8 +171,21 @@ The config is very similar, but the difference is the port config, which means t
 {% endcapture %}
 {% include gallery images=images cols=1 %}
 
+You can launch each one for separated:
+
+```bash
+sunshine ~/.config/sunshine_laptop/sunshine.conf
+```
+
+TIP:
+
+Some times you need to launch one, connect its Moonlingh client and then, launch the second one Sunshine server, because sometimes the second moonlight client maybe could found the first instance of Sunshine. You can improve this seperating the network ports more.  
+
 ## DEMO
 
 <div class="col-sm mt-3 mt-md-0">
   {% include video.liquid path="https://www.youtube.com/embed/-WwW6cJrLbQ" class="img-fluid rounded z-depth-1" %}
 </div>
+
+In this video the Tablet and the laptop in the right, are virtual screen of my Desktop CPU. The other screens are real screens. All working together with the same OS in different spaces.
+
