@@ -7,7 +7,7 @@ feature: http://hpsaturn.com/assets/img/xorg-virtual-monitor.jpg
 tag:
 - GNU-Linux
 - Debian
-- xorg
+- Xorg
 comments: false
 ---
 

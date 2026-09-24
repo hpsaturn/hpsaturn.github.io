@@ -194,4 +194,3 @@ Sometimes you need to launch one, connect its Moonlight client and then launch t
 </div>
 
 In this video the tablet and the laptop on the right are virtual screens of my Desktop CPU. The other screens are real screens. All working together with the same OS in different spaces.
-

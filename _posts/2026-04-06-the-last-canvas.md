@@ -13,6 +13,9 @@ tag:
 comments: false
 ---
 
+
+<center><b>The Unsilenced: Art from the Brink of Annihilation</b></center>
+
 ## Marah Khaled
 
 #### From Gaza, Palestine
